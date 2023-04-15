@@ -1,4 +1,62 @@
 :root {
+  --primary-color: #fea82f;
+  --secondary-color: #45a3d9;
+  --black: #181108 #220C10;
+  --light-grey: #C4C0BA;
+  --dark-gray: #3B3936;
+  --white: #fff;
+  /* * CAN TRY THIS BLACK, CAFE-ISH COLOR: #220C10 */
+
+  --width-80: 80%;
+  --max-width: 1100px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -104,4 +162,4 @@ a {
   html {
     color-scheme: dark;
   }
-}
+} */

@@ -1,0 +1,75 @@
+.navbar {
+  width: 100%;
+  /* margin-bottom: 5rem; */
+  background-color: white;
+  position: fixed;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: 5rem; */
+
+  /* height: 5rem; */
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+
+  display: inline-block;
+  margin: 1.5rem;
+  padding-bottom: 0.2rem;
+
+  /* ! NAV LINK HOVER EFFECT */
+  /* background:
+  linear-gradient(
+    to right,
+    rgb(254, 168, 47, 0),
+    rgb(254, 168, 47, 0)
+  ),
+  linear-gradient(
+    to right,
+    rgb(254, 168, 47, 1),
+    rgb(69, 163, 217, 1)
+  );
+  background-size: 100% 2.5px, 0 2.5px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms; */
+}
+
+/* .navbar a:hover {
+  background-size: 0 2.5px, 100% 2.5px;
+} */
+
+.navbar a.active {
+  /* background:
+  linear-gradient(
+    to right,
+    rgb(254, 168, 47, 0),
+    rgb(254, 168, 47, 0)
+  ),
+  linear-gradient(
+    to right,
+    rgb(254, 168, 47, 1),
+    rgb(69, 163, 217, 1)
+  );
+  background-size: 0 2.5px, 100% 2.5px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms; */
+}
+
+/* ! THIS CLASS IS USED BY FRAMER-MOTION */
+.underline {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: rgb(69, 163, 217, 0.75);
+}

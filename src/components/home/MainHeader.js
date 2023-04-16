@@ -1,12 +1,13 @@
 import ButtonCTA from "../UI/ButtonCTA";
-
 import Image from "next/image";
-import classes from "@/styles/header-images.module.css"
+import classes from "@/styles/header-images.module.css";
 
 const MainHeader = () => {
+
   return (
     <div className={classes["header-image-container"]}>
       <Image // ? Position absolute by default
+        key={"Home page image"}
         src="/student-working.jpg"
         alt="Picture of the author"
         fill
@@ -27,6 +28,6 @@ const MainHeader = () => {
       </div>
     </div>
   );
-}
+};
 
 export default MainHeader;

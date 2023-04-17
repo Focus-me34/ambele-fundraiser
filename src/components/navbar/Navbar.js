@@ -3,34 +3,17 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState, useRef } from "react";
 
+import MenuToggle from "./MenuToggle";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { frame, useCycle } from "framer-motion";
-// import { useDimensions } from "./use-dimensions";
-
+import { useCycle } from "framer-motion";
 
 import classes from "./Navbar.module.css";
 
 
-const Path = (props) => (
-  <motion.path
-    fill="transparent"
-    strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
-    strokeLinecap="round"
-    {...props}
-  />
-);
-
-
-
 const Navbar = () => {
   const router = useRouter();
-
   const [isOpen, toggleOpen] = useCycle(false, true);
-  // const containerRef = useRef(null);
-  // const { height } = useDimensions(containerRef);
-
+  const containerRef = useRef(null);
 
   const [isNotreActionHovered, setIsNotreActionHovered] = useState(false);
   const handleMouseEnter = () => setIsNotreActionHovered(true);
@@ -179,9 +162,9 @@ const Navbar = () => {
       {isNavbarShrinked && (
         <nav
           className={classes["navbar"]}
-          // initial={false}
+          initial={"false"}
           animate={isOpen ? "open" : "closed"}
-          // ref={containerRef}
+          ref={containerRef}
           // custom={height}
         >
           <Image // ? Position absolute by default
@@ -195,36 +178,7 @@ const Navbar = () => {
             // }}
           />
 
-          <button onClick={() => toggleOpen()}>
-            <svg
-              width="23"
-              height="23"
-              viewBox="0 0 23 23"
-            >
-              <Path
-                d="M 2 2.5 L 20 2.5"
-                variants={{
-                  closed: { d: "M 2 2.5 L 20 2.5" },
-                  open: { d: "M 3 16.5 L 17 2.5" },
-                }}
-              />
-              <Path
-                d="M 2 9.423 L 20 9.423"
-                variants={{
-                  closed: { opacity: 1 },
-                  open: { opacity: 0 },
-                }}
-                transition={{ duration: 0.1 }}
-              />
-              <Path
-                d="M 2 16.346 L 20 16.346"
-                variants={{
-                  closed: { d: "M 2 16.346 L 20 16.346" },
-                  open: { d: "M 3 2.5 L 17 16.346" },
-                }}
-              />
-            </svg>
-          </button>
+          <MenuToggle isOpen={isOpen} toggle={toggleOpen} />
         </nav>
       )}
     </>

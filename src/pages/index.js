@@ -8,12 +8,6 @@ const Home = () => {
     <>
       <MainHeader />
       <MainContent />
-
-
-      {/* <section>
-
-        <h1>AMBELE</h1>
-      </section> */}
     </>
   );
 }

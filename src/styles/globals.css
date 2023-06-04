@@ -9,6 +9,13 @@
 
   --container-width: 80%;
   --container-max-width: 1100px;
+
+  /* * Font sizes */
+  --font-small: 1.5rem;
+  --font-medium: 2rem;
+  --font-large: 3rem;
+  --font-xlarge: 4rem;
+  --font-xxlarge: 6rem;
 }
 
 html {
@@ -38,8 +45,13 @@ h2 {
   font-size: 4rem;
 }
 
-p {
+p, ul {
   font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-left: 5rem;
 }
 
 a {

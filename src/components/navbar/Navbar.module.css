@@ -10,9 +10,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,0.25);
   /* gap: 5rem; */
 
-  /* height: 5rem; */
+  height: 6.5rem;
 }
 
 .navbar img {
@@ -96,12 +97,6 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .navbar {
-    justify-content: flex-end;
-  }
-}
-
  .navbar button {
   height: 5rem;
   outline: none;
@@ -118,3 +113,7 @@
   border-radius: 50%;
   background: transparent;
 }
+
+ .navbar button svg {
+  margin-top: 1rem;
+ }

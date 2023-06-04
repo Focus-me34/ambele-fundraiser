@@ -24,7 +24,10 @@ const Navbar = () => {
     // * Check if the window width is less than or equal to 1300 pixels
     function handleResize() {
       // ? Set the isNavbarShrinked state variable based on the window width
-      setIsNavbarShrinked(window.innerWidth <= 1300);
+      setIsNavbarShrinked(window.innerWidth <= 1060);
+      if (window.innerWidth > 1060) {
+        isOpen ? toggleOpen() : null;
+      }
     }
 
     // * Add a resize event listener and call handleResize
@@ -144,7 +147,7 @@ const Navbar = () => {
               href={"/contact"}
               // className={router.pathname == "/contact" ? classes["active"] : ""}
             >
-              Contact
+              Nous contacter
               {router.pathname == "/contact" ? (
                 <motion.div
                   className={classes["underline"]}

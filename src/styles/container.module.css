@@ -1,0 +1,13 @@
+.main-container {
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.content-container {
+  padding-top: 6.5rem;
+  overflow-x: hidden;
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}

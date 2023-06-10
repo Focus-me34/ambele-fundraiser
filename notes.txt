@@ -1,0 +1,4 @@
+1. START SERVER ON SPECIFIC PORT:
+  PORT=3005 npm run dev
+
+2.

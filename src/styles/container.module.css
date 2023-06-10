@@ -5,9 +5,8 @@
 }
 
 .content-container {
-  padding-top: 6.5rem;
+  margin: 6.5rem auto;
   overflow-x: hidden;
   width: var(--container-width);
   max-width: var(--container-max-width);
-  margin: 0 auto;
 }

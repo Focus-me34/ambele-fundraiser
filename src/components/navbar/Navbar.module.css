@@ -3,6 +3,7 @@
   /* margin-bottom: 5rem; */
   background-color: white;
   position: fixed;
+  top: 0;
   z-index: 1000;
 
   padding: 0.5rem 4rem;

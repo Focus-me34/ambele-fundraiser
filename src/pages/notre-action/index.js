@@ -8,7 +8,7 @@ const NotreAction = () => {
         populaire autour d'un cyber accompagnement scolaire
       </h2>
       <hr />
-      <h2>A) On est ensemble à Kobaya, pourquoi ?</h2>
+      <h3>A) On est ensemble à Kobaya, pourquoi ?</h3>
       <p style={{ color: "blue" }}>
         Dans un contexte local de fortes inégalités dans le maintien dans la
         scolarité des adolescents en fonction des ressources et situations
@@ -65,7 +65,7 @@ const NotreAction = () => {
         décision.
       </p>
       {/* // ! ===================================== */}
-      <h2>B) On est ensemble à Kobaya, comment ?</h2>
+      <h3>B) On est ensemble à Kobaya, comment ?</h3>
       <p>
         L’activité concerne des élèves de 13 à 18 ans, provenant exclusivement,
         à ce jour, du Lycée de jeunes filles.
@@ -128,7 +128,7 @@ const NotreAction = () => {
         des jeunes, des enseignants et le coordinateur local
       </p>
       {/* // ! ===================================== */}
-      <h2>C) Quel contexte ?</h2>
+      <h3>C) Quel contexte ?</h3>
       <p>
         Le Grand Conakry dans lequel se situe le quartier de Kobaya regroupe 50%
         de la population urbaine de Guinée sur 1% du territoire. Il compte
@@ -240,7 +240,7 @@ const NotreAction = () => {
         ayant redoublé ou abandonné leur scolarité.
       </p>
       {/* // ! ===================================== */}
-      <h2>D)Quels acteurs ?</h2>
+      <h3>D)Quels acteurs ?</h3>
       <p>
         Le projet repose sur un partenariat opérationnel et organisationnel
         entre 3 structures : une française et deux guinéennes.
@@ -360,7 +360,7 @@ const NotreAction = () => {
         </p>
       </ul>
       {/* // ! ===================================== */}
-      <h2>E) Quels résultats ?</h2>
+      <h3>E) Quels résultats ?</h3>
       <p>
         Le projet s'est mis en place, pas à pas, à partir du mois de février
         2022.
@@ -482,6 +482,259 @@ const NotreAction = () => {
         -Vidéo Anglais Matière : anglais, classe de 11ème (équivalent 2nde
         française) Conversation autour du vocabulaire du rythme de la journée
       </p>
+      {/* // ! ===================================== */}
+      // ! TEMOIGNAGE CAROUSEL
+      <div className="temoignages">
+        <div className="carousel">
+          <div className="carousel-item">
+            {/* <img src={temoignage1} alt="temoignage1" /> */}
+          </div>
+
+          <div className="carousel-item">
+            {/* <img src={temoignage2} alt="temoignage2" /> */}
+          </div>
+        </div>
+
+        <h3>
+          Des effets quantitatifs et qualitatifs identifiés par les acteurs...
+        </h3>
+
+        <div className="temoignage">
+          <h4>
+            Jérôme Mbemba Millimouno, proviseur du Lycée de Jeunes Filles de
+            Kobaya
+          </h4>
+          <p>
+            Je suis assistant technique bénévole de l’activité de
+            cyber-accompagnement auprès des élèves déshérités du quartier Kobaya
+            depuis près de 2 ans. Ces élèves appartiennent à des familles dans
+            lesquelles bon nombre a abandonné les études à cause d’échecs
+            répétés et fautes de moyens financiers. Ainsi, ces élèves
+            représentent bien souvent l’espoir de leur famille.
+          </p>
+          <p>
+            Ces cours consistent à relever le niveau d’acquisition des
+            compétences académiques par une formation, une consolidation voire
+            un perfectionnement.
+          </p>
+          <p>
+            Durant ces deux années scolaires, la plupart des participants a
+            progressé significativement parmi leurs camarades de classe. Au
+            dernier classement d’évaluation de fin d’année 2022-2023, quinze
+            d’entre eux occupent les meilleurs rangs. Parmi les nombreux
+            exemples, je peux citer les cas d’un élève passé de la 7ème place de
+            sa classe à la 1ère (parmi 48 camarades) et d’une autre passée de la
+            8ème place à la 1ère (parmi 68 élèves). 
+          </p>
+          <p>
+            L’on doit ces résultats à l’apport des bénévoles du projet : des
+            hommes et des femmes capables, responsables et compétent(e)s.
+          </p>
+          <p>
+            Grâce à ce projet, les élèves rencontrent des personnes d’âge et de
+            culture différentes des leurs, ce qui est très enrichissant pour
+            eux.
+          </p>
+          <p>
+            Aujourd’hui le monde est ouvert, c’est pourquoi ces cours à distance
+            nous aident beaucoup.{" "}
+          </p>
+          <p>
+            Face à l’injustice de ne pas pouvoir réaliser de bonnes études en
+            Guinée faute de moyens suffisants, bon nombre de jeunes éprouvent de
+            la colère et l’envie d’émmigrer en Europe.
+          </p>
+          <p>
+            Pour les enfants, suivre ces cours en direct, c’est comme étudier en
+            Occident.
+          </p>
+          <p>
+            Malgré mon titre de bénévolat, mon intérêt est total pour le projet.
+          </p>
+          <p>
+            Je me réjouis d’avoir des confrères d’Europe qui apportent aux
+            jeunes guinéens du soutien pour préparer leur avenir. »
+          </p>
+        </div>
+
+        <div className="temoignage">
+          <h4>Hawa Dounamou, participante</h4>
+          <p>
+            « Je fais la 9ème année [équivalent de 4ème française] du Lycée de
+            Jeunes filles de Kobaya.
+          </p>
+          <p>Je participe à ce soutien depuis deux années déjà.</p>
+          <p>
+            Depuis ce temps, j’ai remarqué beaucoup de progrès dans mon niveau
+            de français et je suis très heureuse de ça. En effet, ce soutien
+            m’intéresse parce qu’il me permet d’améliorer mes connaissances et
+            d’être meilleure qu’avant, et aussi il nous permettra de nous
+            défendre dans d’autres matières à l’avenir. 
+          </p>
+          <p>
+            Vraiment, je remercie Madame Sophie [bénévole] pour le temps
+            précieux qu’elle nous accorde. »
+          </p>
+        </div>
+
+        <div className="temoignage">
+          <h4>Danièle Grisot, intervenante bénévole</h4>
+          <p>
+            Professeure de mathématiques retraitée depuis peu, passionnée par
+            les mathématiques et appréciant de rester en contact avec des
+            jeunes, j’ai répondu favorablement à la proposition de Raphaël l’an
+            dernier, de travailler un après-midi par semaine avec ces lycéens et
+            lycéennes de Conakry.
+          </p>
+          <p>
+            Grâce à Skype, et à mon tableau disposé devant l’ordinateur - je
+            trouve fascinant de communiquer ainsi grâce aux nouvelles
+            technologies, et de faire des mathématiques avec des jeunes qui sont
+            à plusieurs milliers de kilomètres de chez moi ! -nous nous
+            retrouvons chaque semaine depuis un an maintenant……pour faire des
+            maths !
+          </p>
+          <p>
+            Il est à noter que Jérôme est présent et veille attentivement au bon
+            déroulement de la séance, ce qui est vraiment appréciable ;
+            j’apprécie aussi bien sûr la disponibilité de Raphaël, très investi
+            dans le projet, qui coordonne nos rencontres.
+          </p>
+          <p>
+            L’an passé les jeunes étaient repartis en deux groupes, parfois
+            assez nombreux et même si tous ne participaient pas forcément, il y
+            avait un petit groupe motivé qui posait des questions, montrait son
+            désir de progresser.
+          </p>
+          <p>
+            Si je peux me permettre de comparer avec nos jeunes élèves français,
+            je trouve qu’ils ont un niveau d'algèbre bien supérieur , que ce
+            soit dans le calcul numérique ou littéral… très appréciable !
+          </p>
+          <p>
+            Ils m’ont fait progressé de mon côté dans l’usage du tableau et de
+            sa position face à l’ordinateur : un véritable échange :) »
+          </p>
+        </div>
+
+        <h3>...Mais des limites et difficultés matérielles</h3>
+
+        <div className="temoignage">
+          <h4>
+            Jérôme Mbemba Millimouno, proviseur du Lycée de Jeunes Filles de
+            Kobaya
+          </h4>
+          <p>Nos difficultés se résument par:</p>
+          <ul>
+            <li>un local trop restreint</li>
+            <li>
+              un manque de matériel logistique, de supports adéquats au cours,
+              de matériel didactique (livres, manuels…)
+            </li>
+          </ul>
+
+          <p>
+            Notre ambition est aussi de toucher un plus grand nombre d’enfants
+            de familles pauvres qui veulent réussir leur vie à travers les
+            études.
+          </p>
+          <p>
+            Je souhaiterais que des bienfaiteurs, des donateurs, des partenaires
+            d’Occident soutiennent ce projet presque pour sauver, en changeant
+            les vies d’enfants de familles pauvres de Guinée.
+          </p>
+          <p>
+            A tous et toutes, soutenons les plus démunis et nous réussirons à
+            sauver les vies
+          </p>
+        </div>
+
+        <div className="temoignage">
+          <h4>Hawa Dounamou, participante</h4>
+          <p>
+            C’est un beau projet, c’est pourquoi je pense que ce projet serait
+            encore mieux s’il y avait plus de matières et aussi une grande
+            salle, des ordinateurs pour apprendre l’informatique et une
+            bibliothèque. Et, tout comme nous, ça intéressera beaucoup d’autres
+            élèves. J’aime ce projet et je veux qu’il s’agrandisse. 
+          </p>
+        </div>
+
+        <div className="temoignage">
+          <h4>Danièle Grisot, intervenante bénévole</h4>
+          <p>
+            Cette année, les jeunes sont nettement moins nombreux, mais sérieux
+            et toujours intéressés : ils savent ce pourquoi ils sont là et les
+            questions sont pertinentes. Il est parfois arrivé que la connexion
+             à internet soit délicate  mais la nouvelle caméra  a rendu la
+            communication nettement plus facile...
+          </p>
+        </div>
+
+        {/* // ! TEMOIGNAGE A CE SATDE SONT TERMINES */}
+        <p>
+          De fait, rapidement, l'activité a atteint ses limites matérielles et a
+          été l'objet d'une forme de « crise de croissance ». 
+        </p>
+        <p>
+          Les propositions spontanées de bénévolat en France ont été croissantes
+          et, sur place, des élèves d'autres établissements ont rapidement
+          sollicité le Lycée de Jeunes filles sans qu'il n'ait été ni ne soit
+          matériellement possible de saisir ces opportunités et répondre à ces
+          attentes.
+        </p>
+        <p>
+          Des demandes et propositions récurrentes en matière d'autonomisation
+          des jeunes sont restées sans réponse: accès à plusieurs postes
+          informatiques pour se familiariser avec l'outil, accès simplement à un
+          espace de travail adapté pour un travail scolaire autonome en groupe,
+          consultation et emprunt de livres et manuels par la mise en place
+          d'une bibliothèque auto-gérée...
+        </p>
+
+        <p>Cela, en raison:</p>
+        <ul>
+          <li>
+            d'une insuffisance de ressource humaine bénévole sur site pour
+            accompagner dans la durée la démarche participative ainsi que le
+            potentiel développement de l'activité : le peu de temps que peut
+            dégager actuellement le coordinateur bénévole, s'ajoutant à ses
+            missions de direction du lycée, est dévolu au suivi du
+            fonctionnement de l'activité de cyber-accompagnement existante,
+          </li>
+          <li>
+            -de contraintes matérielles rédhibitoires ou freinantes : manque de
+            matériel bureautique (imprimante, photocopieur et scanner), et (à la
+            place de la virgule) informatique (écran d'ordinateur de taille
+            insuffisante, matériel de prise de vue et de son de qualité
+            insuffisante), inconfort du local (exiguïté et manque d’équipement
+            du local, forte chaleur, visite de rongeurs dégradant le
+            matériel...)
+          </li>
+        </ul>
+
+        <p>
+          Du fait de ces difficultés techniques, et de l'aspect expérimental et
+          inédit de l'activité pour les acteurs locaux, l'organisation
+          matérielle a été régulièrement ajustée au cours des premiers
+          mois (organisation de l'espace, nombre d'élèves par séance...) Il est
+          progressivement apparu que, en l'état, la configuration avec 3 élèves
+          maximum face à la caméra était la plus adaptée.
+        </p>
+        <p>
+          Ces limites matérielles et ces ajustements réguliers ont pu être
+          dissuasifs pour certains élèves accompagnés et participants
+          potentiels.
+        </p>
+
+        <p
+          style={{ "font-size": "3rem", color: "red", "line-height": "2.5rem" }}
+        >
+          Photo élève debout / Légende : Des conditions de travail parfois
+          précaires : deux collégiennes se partageant une même chaise, une autre
+          debout
+        </p>
+      </div>
     </div>
   );
 };

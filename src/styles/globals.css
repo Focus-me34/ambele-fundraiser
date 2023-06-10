@@ -45,6 +45,10 @@ h2 {
   font-size: 4rem;
 }
 
+h3 {
+  font-size: 3rem;
+}
+
 p, ul {
   font-size: 2rem;
   margin-bottom: 2rem;

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import classes from "@/styles/buttons.module.css";
+import classes from "@/styles/buttons.module.scss";
 
 const ButtonCTA = () => {
   return (

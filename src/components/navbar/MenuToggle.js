@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import classes from "./Navbar.module.css";
+import classes from "./Navbar.module.scss";
 
 
 const Path = ({isOpen, ...props }) => {

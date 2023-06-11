@@ -1,4 +1,4 @@
-import classes from "../../styles/container.module.css"
+import classes from "../../styles/container.module.scss"
 
 const NotreAction = () => {
   return (

@@ -1,11 +1,12 @@
+import Link from "next/link";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { useAnimationControls } from "framer-motion";
 
 import Image from "next/image";
-import classes from "./MainContent.module.css"
-import containerClasses from "../../styles/container.module.css"
-
+import classes from "./MainContent.module.scss";
+import containerClasses from "../../styles/container.module.scss";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 const MainContent = () => {
   const rowAnimation = useAnimationControls();
@@ -23,18 +24,18 @@ const MainContent = () => {
   const fourthRowisInView = useInView(fourthRowRef, { once: true, amount: 1 });
 
   return (
-    <main className={containerClasses["main-container"]}>
-      <div className={classes["grid-container"]}>
-        {/* // ! ================ ROW 1 ================ */}
-        <div
-          ref={firstRowRef}
-          animate={rowAnimation}
-          style={{
-            opacity: firstRowisInView ? 1 : 0.25,
-            transition: "all 1s 0s",
-          }}
-          className={`${classes["row-1"]} ${classes["row"]}`}
-        >
+    <main
+      className={`${containerClasses["main-container"]} ${classes["home-content"]}`}
+    >
+      {/* // ! ================ ROW 1 ================ */}
+      <section
+        ref={firstRowRef}
+        animate={rowAnimation}
+        style={{
+          opacity: firstRowisInView ? 1 : 0.25,
+          transition: "all 1s 0s",
+        }}
+      >
           <Image // ? Position absolute by default
             key={"about"}
             src="/about.svg"
@@ -61,19 +62,34 @@ const MainContent = () => {
               coopération et soutient l'exercice de la citoyenneté. Elle permet
               de corriger les inégalités et est vecteur d'égalité des chances.
             </p>
-          </div>
-        </div>
 
-        {/* // ! ================ ROW 2 ================ */}
-        <div
-          ref={secondRowRef}
-          animate={rowAnimation}
-          style={{
-            opacity: secondRowisInView ? 1 : 0.25,
-            transition: "all 1s 0s",
-          }}
-          className={`${classes["row-2"]} ${classes["row"]}`}
-        >
+            <Link href={"/qui-sommes-nous"}>
+              <ArrowForwardRoundedIcon />
+              EN SAVOIR PLUS
+            </Link>
+          </div>
+      </section>
+
+      {/* // ! ================ ROW 2 ================ */}
+      <section
+        ref={secondRowRef}
+        animate={rowAnimation}
+        style={{
+          opacity: secondRowisInView ? 1 : 0.25,
+          transition: "all 1s 0s",
+        }}
+      >
+          <Image // ? Position absolute by default
+            key={"notre action"}
+            src="/action.svg"
+            alt="Light bulb representing the organization's action idea"
+            width={350}
+            height={200}
+            style={{
+              objectFit: "cover",
+            }}
+          />
+
           <div className={classes["text"]}>
             <h2>Notre action</h2>
             <p>
@@ -104,29 +120,23 @@ const MainContent = () => {
               académiques des élèves, leur confiance en eux et leur motivation à
               réussir à l'école.
             </p>
-          </div>
-          <Image // ? Position absolute by default
-            key={"notre action"}
-            src="/action.svg"
-            alt="Light bulb representing the organization's action idea"
-            width={350}
-            height={200}
-            style={{
-              objectFit: "cover",
-            }}
-          />
-        </div>
 
-        {/* // ! ================ ROW 3 ================ */}
-        <div
-          ref={thirdRowRef}
-          animate={rowAnimation}
-          style={{
-            opacity: thirdRowisInView ? 1 : 0.25,
-            transition: "all 1s 0s",
-          }}
-          className={`${classes["row-3"]} ${classes["row"]}`}
-        >
+            <Link href={"/notre-action"}>
+              <ArrowForwardRoundedIcon />
+              EN SAVOIR PLUS
+            </Link>
+          </div>
+      </section>
+
+      {/* // ! ================ ROW 3 ================ */}
+      <section
+        ref={thirdRowRef}
+        animate={rowAnimation}
+        style={{
+          opacity: thirdRowisInView ? 1 : 0.25,
+          transition: "all 1s 0s",
+        }}
+      >
           <Image // ? Position absolute by default
             key={"help us"}
             src="/support.svg"
@@ -137,6 +147,7 @@ const MainContent = () => {
               objectFit: "cover",
             }}
           />
+
           <div className={classes["text"]}>
             <h2>Nous soutenir</h2>
             <p>
@@ -153,26 +164,23 @@ const MainContent = () => {
               augmenter le volume d'activité pour accueillir un plus grand
               nombre d'élèves.
             </p>
-          </div>
-        </div>
 
-        {/* // ! ================ ROW 4 ================ */}
-        <div
-          ref={fourthRowRef}
-          animate={rowAnimation}
-          style={{
-            opacity: fourthRowisInView ? 1 : 0.25,
-            transition: "all 1s 0s",
-          }}
-          className={`${classes["row-4"]} ${classes["row"]}`}
-        >
-          <div className={classes["text"]}>
-            <h2>Contact</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-            officiis praesentium alias fugiat sit iusto id ab dolores eveniet
-            accusamus perferendis fugit exercitationem optio numquam ex, ipsam
-            tenetur enim amet?
+            <Link href={"/nous-soutenir"}>
+              <ArrowForwardRoundedIcon />
+              EN SAVOIR PLUS
+            </Link>
           </div>
+      </section>
+
+      {/* // ! ================ ROW 4 ================ */}
+      <section
+        ref={fourthRowRef}
+        animate={rowAnimation}
+        style={{
+          opacity: fourthRowisInView ? 1 : 0.25,
+          transition: "all 1s 0s",
+        }}
+      >
           <Image // ? Position absolute by default
             key={"contact"}
             src="/contact.svg"
@@ -183,10 +191,23 @@ const MainContent = () => {
               objectFit: "cover",
             }}
           />
-        </div>
-      </div>
+
+          <div className={classes["text"]}>
+            <h2>Contact</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+            officiis praesentium alias fugiat sit iusto id ab dolores eveniet
+            accusamus perferendis fugit exercitationem optio numquam ex, ipsam
+            tenetur enim amet?
+
+            <Link href={"/contact"}>
+              <ArrowForwardRoundedIcon />
+              EN SAVOIR PLUS
+            </Link>
+          </div>
+
+      </section>
     </main>
   );
-}
+};
 
 export default MainContent;

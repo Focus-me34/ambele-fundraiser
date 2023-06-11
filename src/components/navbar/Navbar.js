@@ -7,7 +7,7 @@ import MenuToggle from "./MenuToggle";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCycle } from "framer-motion";
 
-import classes from "./Navbar.module.css";
+import classes from "./Navbar.module.scss";
 
 
 const Navbar = () => {

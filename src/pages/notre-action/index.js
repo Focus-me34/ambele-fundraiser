@@ -17,7 +17,7 @@ const NotreAction = () => {
         />
       </div>
 
-      <iframe
+      {/* <iframe
         id="haWidget"
         allowtransparency="true"
         src="https://www.helloasso.com/associations/ambele/formulaires/1/widget-bouton"
@@ -29,14 +29,14 @@ const NotreAction = () => {
         allowtransparency="true"
         src="https://www.helloasso.com/associations/ambele/formulaires/1/widget"
         style={{ width: "100%", height: "750px", border: "none" }}
-      ></iframe>
+      ></iframe> */}
 
       <div className={classes["content-container"]}>
         <h2>
           Notre action « On est ensemble à Kobaya » : une action d'éducation
           populaire autour d'un cyber accompagnement scolaire
         </h2>
-        <h3>A) On est ensemble à Kobaya, pourquoi ?</h3>
+        <h3>A - On est ensemble à Kobaya, pourquoi ?</h3>
         <p>
           Dans un contexte local de fortes inégalités dans le maintien dans la
           scolarité des adolescents en fonction des ressources et situations
@@ -58,8 +58,7 @@ const NotreAction = () => {
           Le projet se construit en partenariat avec deux structures locales :
           un Lycée mixte public du quartier dit Lycée de jeunes filles et la
           Coguiféminine DD, ONG guinéenne dont le siège se situe dans le
-          quartier (
-          <Link href="#section-quels-acteurs">lien quels acteurs ?</Link>).
+          quartier (<Link href="#section-quels-acteurs">en savoir plus</Link>).
         </p>
         <p>
           Le projet s'adresse à des élèves aux potentiels reconnus par leurs
@@ -97,7 +96,7 @@ const NotreAction = () => {
           responsabilité et de décision.
         </p>
         {/* // ! ===================================== */}
-        <h3>B) On est ensemble à Kobaya, comment ?</h3>
+        <h3>B - On est ensemble à Kobaya, comment ?</h3>
         <p>
           L’activité concerne des élèves de 13 à 18 ans, provenant
           exclusivement, à ce jour, du Lycée de jeunes filles.
@@ -105,9 +104,9 @@ const NotreAction = () => {
         <ul>
           Elle s'effectue :
           <li>après les cours, 4 après-midi par semaine</li>
-          <li style={{ color: "blue" }}>
+          <li>
             dans un local proche du Lycée mis à disposition par la Coguiféminine
-            DD (lien Quels acteurs?)
+            DD (<Link href="#section-quels-acteurs">en savoir plus</Link>)
           </li>
         </ul>
         <p>
@@ -127,7 +126,7 @@ const NotreAction = () => {
           <li>
             en séances hebdomadaires d'1 heure voire 1 heure 1 /2 réunissant
             autour d'une matière spécifique un(e) bénévole français(e) et de 1 à
-            5 élèves maximum de (dans une?) même classe,
+            5 élèves maximum dans une même classe,
           </li>
           <li>
             par l'intermédiaire d'une application de visiophonie permettant la
@@ -152,7 +151,28 @@ const NotreAction = () => {
           disposition de sites internet autour de la langue française et par
           leur prise en main de l'outil informatique.
         </p>
-        <p
+        <div className={classes["container-images-flex"]}>
+          <Image
+            src="/IMG/gpe-avec-Jérôme-ordi.jpg"
+            alt="Accompagnement à la prise en main de l'outil informatique"
+            width={500}
+            height={380}
+          />
+
+          <Image
+            src="/IMG/gpe-avec-Jérôme-ordi.jpg"
+            alt="Accompagnement à la prise en main de l'outil informatique"
+            width={500}
+            height={380}
+          />
+          {/* <Image
+            src="/IMG/conseil-de-maison.png"
+            alt="Un conseil de maison réunissant des jeunes, des enseignants et le coordinateur local"
+            width={500}
+            height={380}
+          /> */}
+        </div>
+        {/* <p
           style={{ "font-size": "3rem", color: "red", "line-height": "2.5rem" }}
         >
           Photo « gpe avec Jérôme ordi » Légende : Accompagnement à la prise en
@@ -163,9 +183,9 @@ const NotreAction = () => {
         >
           Photo « Conseil de Maison » Légende : Un conseil de maison réunissant
           des jeunes, des enseignants et le coordinateur local
-        </p>
+        </p> */}
         {/* // ! ===================================== */}
-        <h3 id="section-quel-contexte">C) Quel contexte ?</h3>
+        <h3 id="section-quel-contexte">C - Quel contexte ?</h3>
         <p>
           Le Grand Conakry dans lequel se situe le quartier de Kobaya regroupe
           50% de la population urbaine de Guinée sur 1% du territoire. Il compte
@@ -279,14 +299,17 @@ const NotreAction = () => {
           ayant redoublé ou abandonné leur scolarité.
         </p>
         {/* // ! ===================================== */}
-        <h3 id="section-quels-acteurs">D) Quels acteurs ?</h3>
+        <h3 id="section-quels-acteurs">D - Quels acteurs ?</h3>
         <p>
           Le projet repose sur un partenariat opérationnel et organisationnel
           entre 3 structures : une française et deux guinéennes.
         </p>
         <ul>
           <h3>En France:</h3>
-          <li>l'association Ambélé (lien Qui sommes-nous?)</li>
+          <li>
+            l'association Ambélé (
+            <Link href="#section-quels-acteurs">qui sommes nous ?</Link>)
+          </li>
           <p>
             Ambélé prend en charge les frais mensuels de connexion internet sur
             place (via un don à l'ONG partenaire Coguiféminine)
@@ -390,7 +413,23 @@ const NotreAction = () => {
             disposition de son mobilier et de son équipement informatique.
           </p>
 
-          <p
+          <div className={classes["container-images-flex"]}>
+            <Image
+              src="/IMG/maison-des-jeunes.jpg"
+              alt="L'entrée de la Maison des jeunes de Kobaya"
+              width={500}
+              height={380}
+            />
+
+            <Image
+              src="/IMG/local-activité.jpg"
+              alt="Local (Coguiféminine DD) où se déroule l'activité"
+              width={500}
+              height={380}
+            />
+          </div>
+
+          {/* <p
             style={{
               "font-size": "3rem",
               color: "red",
@@ -399,9 +438,9 @@ const NotreAction = () => {
           >
             Photo maison des jeunes de Kobaya Légende : L'entrée de la Maison
             des jeunes de Kobaya
-          </p>
+          </p> */}
 
-          <p
+          {/* <p
             style={{
               "font-size": "3rem",
               color: "red",
@@ -410,7 +449,7 @@ const NotreAction = () => {
           >
             Photo : Local activité Légende : Local (Coguiféminine DD) où se
             déroule l'activité{" "}
-          </p>
+          </p> */}
 
           <p style={{ "font-weight": "bold" }}>
             Les rôles respectifs de chacun de ces acteurs ainsi que les
@@ -419,7 +458,7 @@ const NotreAction = () => {
           </p>
         </ul>
         {/* // ! ===================================== */}
-        <h3>E) Quels résultats ?</h3>
+        <h3>E - Quels résultats ?</h3>
         <p>
           Le projet s'est mis en place, pas à pas, à partir du mois de février
           2022.

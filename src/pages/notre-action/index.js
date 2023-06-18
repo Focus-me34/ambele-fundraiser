@@ -1,7 +1,9 @@
 import classes from "../../styles/container.module.scss"
 import Image from "next/image"
+import Link from "next/link";
 
 const NotreAction = () => {
+
   return (
     <>
       <div className={classes["gradient-container"]} />
@@ -15,34 +17,49 @@ const NotreAction = () => {
         />
       </div>
 
+      <iframe
+        id="haWidget"
+        allowtransparency="true"
+        src="https://www.helloasso.com/associations/ambele/formulaires/1/widget-bouton"
+        style={{ width: "100%", height: "70px", border: "none" }}
+      ></iframe>
+
+      <iframe
+        id="haWidget"
+        allowtransparency="true"
+        src="https://www.helloasso.com/associations/ambele/formulaires/1/widget"
+        style={{ width: "100%", height: "750px", border: "none" }}
+      ></iframe>
+
       <div className={classes["content-container"]}>
         <h2>
           Notre action « On est ensemble à Kobaya » : une action d'éducation
           populaire autour d'un cyber accompagnement scolaire
         </h2>
-        <hr />
         <h3>A) On est ensemble à Kobaya, pourquoi ?</h3>
-        <p style={{ color: "blue" }}>
+        <p>
           Dans un contexte local de fortes inégalités dans le maintien dans la
           scolarité des adolescents en fonction des ressources et situations
-          familiales mais aussi en fonction du genre (lien Quel contexte ?), le
-          projet consiste à mettre en relation des compétences pédagogiques de
-          bénévoles français avec des besoins scolaires spécifiques d'élèves du
-          secondaire du quartier par un accompagnement scolaire à distance via
-          le support numérique.
+          familiales mais aussi en fonction du genre (
+          <Link href="#section-quel-contexte">en savoir plus</Link>
+          ), le projet consiste à mettre en relation des compétences
+          pédagogiques de bénévoles français avec des besoins scolaires
+          spécifiques d'élèves du secondaire du quartier par un accompagnement
+          scolaire à distance via le support numérique.
         </p>
-        <h3>Cette activité de cyber-accompagnement est au centre du projet.</h3>
+        <h4>Cette activité de cyber-accompagnement est au centre du projet.</h4>
         <p>
           Le projet s'appuie sur le constat de trois facteurs facilitants : la
           francophonie partagée, la proximité des systèmes et programmes
           scolaires entre les deux pays et la présence d'une couverture internet
           sur place.
         </p>
-        <p style={{ color: "blue" }}>
+        <p>
           Le projet se construit en partenariat avec deux structures locales :
           un Lycée mixte public du quartier dit Lycée de jeunes filles et la
           Coguiféminine DD, ONG guinéenne dont le siège se situe dans le
-          quartier (lien Quels acteurs ?).
+          quartier (
+          <Link href="#section-quels-acteurs">lien quels acteurs ?</Link>).
         </p>
         <p>
           Le projet s'adresse à des élèves aux potentiels reconnus par leurs
@@ -148,7 +165,7 @@ const NotreAction = () => {
           des jeunes, des enseignants et le coordinateur local
         </p>
         {/* // ! ===================================== */}
-        <h3>C) Quel contexte ?</h3>
+        <h3 id="section-quel-contexte">C) Quel contexte ?</h3>
         <p>
           Le Grand Conakry dans lequel se situe le quartier de Kobaya regroupe
           50% de la population urbaine de Guinée sur 1% du territoire. Il compte
@@ -262,7 +279,7 @@ const NotreAction = () => {
           ayant redoublé ou abandonné leur scolarité.
         </p>
         {/* // ! ===================================== */}
-        <h3>D)Quels acteurs ?</h3>
+        <h3 id="section-quels-acteurs">D) Quels acteurs ?</h3>
         <p>
           Le projet repose sur un partenariat opérationnel et organisationnel
           entre 3 structures : une française et deux guinéennes.

@@ -1,8 +1,42 @@
 import classes from "../../styles/container.module.scss"
 import Image from "next/image"
 import Link from "next/link";
+import Carousel from "@/components/UI/Carousel";
+// import { useState } from "react";
+
 
 const NotreAction = () => {
+  // const [carouselIndex, setCarouselIndex] = useState(0);
+
+  const carouselKobayaData = [
+    { id: 1, src:"/IMG/kobaya-1.jpg" },
+    { id: 2, src:"/IMG/kobaya-2.jpg" },
+    { id: 3, src:"/IMG/kobaya-3.jpg" },
+    { id: 4, src:"/IMG/kobaya-4.jpg" }
+  ]
+
+  // const handleCarousel = (direction) => {
+  //   if (direction === "left") {
+  //     if (carouselIndex === 0) {
+  //       setCarouselIndex(carouselItems.length - 1);
+  //     } else {
+  //       setCarouselIndex(carouselIndex - 1);
+  //     }
+  //   } else if (direction === "right") {
+  //     if (carouselIndex === carouselItems.length - 1) {
+  //       setCarouselIndex(0);
+  //     } else {
+  //       setCarouselIndex(carouselIndex + 1);
+  //     }
+  //   }
+  // };
+
+  // setInterval(() => {
+  //   handleCarousel("right");
+
+  // }, 5000);
+
+
 
   return (
     <>
@@ -13,6 +47,7 @@ const NotreAction = () => {
           src="/photo-physique-d.jpg"
           alt="Qui sommes nous"
           fill={true}
+          priority={true}
           style={{ objectFit: "cover", objectPosition: "50% 10%" }}
         />
       </div>
@@ -172,18 +207,6 @@ const NotreAction = () => {
             height={380}
           /> */}
         </div>
-        {/* <p
-          style={{ "font-size": "3rem", color: "red", "line-height": "2.5rem" }}
-        >
-          Photo « gpe avec Jérôme ordi » Légende : Accompagnement à la prise en
-          main de l'outil informatique
-        </p>
-        <p
-          style={{ "font-size": "3rem", color: "red", "line-height": "2.5rem" }}
-        >
-          Photo « Conseil de Maison » Légende : Un conseil de maison réunissant
-          des jeunes, des enseignants et le coordinateur local
-        </p> */}
         {/* // ! ===================================== */}
         <h3 id="section-quel-contexte">C - Quel contexte ?</h3>
         <p>
@@ -256,6 +279,23 @@ const NotreAction = () => {
           sans transition des environnements sociaux et d'habitats extrêmement
           contrastés
         </p>
+
+        {/* <div
+          className={classes["carousel-container"]}
+          style={{ width: "100%", position: "relative", height: "500px" }}
+        >
+          <Image
+            src={carouselItems[carouselIndex].src}
+            alt="Un paysage urbain alternant sans transition des environnements sociaux et d'habitats extrêmement contrastés"
+            fill={true}
+            style={{ objectFit: "cover", objectPosition: "50% 10%" }}
+          />
+
+          <div>LEFT</div>
+          <div>RIGHT</div>
+        </div> */}
+
+        <Carousel carouselData={carouselKobayaData}/>
         <p>
           En matière d'éducation, le quartier compte 5 écoles publiques pour 40
           écoles privées, dans lesquelles la plupart des familles économiquement
@@ -451,7 +491,7 @@ const NotreAction = () => {
             déroule l'activité{" "}
           </p> */}
 
-          <p style={{ "font-weight": "bold" }}>
+          <p style={{ fontWeight: "bold" }}>
             Les rôles respectifs de chacun de ces acteurs ainsi que les
             modalités de leur coordination ont été formalisés par une convention
             tripartite.

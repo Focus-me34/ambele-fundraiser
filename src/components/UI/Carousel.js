@@ -2,24 +2,30 @@ import classes from "@/styles/container.module.scss";
 import { useState } from "react";
 import Image from "next/image";
 
+import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
+import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
+
 
 const Carousel = ({ carouselData }) => {
   const [activeIndicator, setActiveIndicator] = useState(0);
   const [carouselIndex, setCarouselIndex] = useState(0)
 
   const handleCarousel = (direction) => {
-    console.log("HEY THERE");
     if (direction === "left") {
       if (carouselIndex === 0) {
         setCarouselIndex(carouselData.length - 1);
+        setActiveIndicator(carouselData.length - 1);
       } else {
         setCarouselIndex(carouselIndex - 1);
+        setActiveIndicator(carouselIndex - 1);
       }
     } else if (direction === "right") {
       if (carouselIndex === carouselData.length - 1) {
         setCarouselIndex(0);
+        setActiveIndicator(0);
       } else {
         setCarouselIndex(carouselIndex + 1);
+        setActiveIndicator(carouselIndex + 1);
       }
     }
   };
@@ -44,8 +50,9 @@ const Carousel = ({ carouselData }) => {
         );
       })}
 
-      <div className={classes["arrow-left"]} onClick={() => handleCarousel("left")}>LEFT</div>
-      <div className={classes["arrow-right"]} onClick={() => handleCarousel("right")}>RIGHT</div>
+      <div className={classes["arrow-left"]} onClick={() => handleCarousel("left")}><KeyboardArrowLeftRoundedIcon /></div>
+      <div className={classes["arrow-right"]} onClick={() => handleCarousel("right")}><KeyboardArrowRightRoundedIcon /></div>
+
       <div className={classes["carousel-indicators-container"]}>
         {carouselData.map((carouselItem, index) => {
           return(

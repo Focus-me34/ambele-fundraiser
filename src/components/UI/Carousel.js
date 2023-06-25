@@ -1,5 +1,5 @@
 import classes from "@/styles/container.module.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 import KeyboardArrowLeftRoundedIcon from "@mui/icons-material/KeyboardArrowLeftRounded";
@@ -35,38 +35,58 @@ const Carousel = ({ carouselData }) => {
     setActiveIndicator(index);
   };
 
+  useEffect(() => {
+    // TODO SET TIME OUT RIGHT HANDLER HERE
+  })
+
   return (
-    <div className={classes["carousel-container"]}>
-
-      { carouselData.map((carouselItem, index) => {
-        return (
-          <Image
-            key={carouselItem.id}
-            src={carouselItem.src}
-            alt="Un paysage urbain alternant sans transition des environnements sociaux et d'habitats extrêmement contrastés"
-            fill={true}
-            className={index === carouselIndex ? classes["active-img"] : ""}
-          />
-        );
-      })}
-
-      <div className={classes["arrow-left"]} onClick={() => handleCarousel("left")}><KeyboardArrowLeftRoundedIcon /></div>
-      <div className={classes["arrow-right"]} onClick={() => handleCarousel("right")}><KeyboardArrowRightRoundedIcon /></div>
-
-      <div className={classes["carousel-indicators-container"]}>
+    <>
+      <div className={classes["carousel-container"]}>
         {carouselData.map((carouselItem, index) => {
-          return(
-            <span
-            key={carouselItem.id}
-            className={`${classes["carousel-indicator"]} ${
-              index === activeIndicator ? classes["active-indicator"] : ""
-            }`}
-            onClick={() => handleIndicatorClick(index)}
-            ></span>
-          )
+          return (
+            <Image
+              key={carouselItem.id}
+              src={carouselItem.src}
+              alt="Un paysage urbain alternant sans transition des environnements sociaux et d'habitats extrêmement contrastés"
+              fill={true}
+              className={index === carouselIndex ? classes["active-img"] : ""}
+            />
+          );
         })}
+
+        <div
+          className={classes["arrow-left"]}
+          onClick={() => handleCarousel("left")}
+        >
+          <KeyboardArrowLeftRoundedIcon />
+        </div>
+        <div
+          className={classes["arrow-right"]}
+          onClick={() => handleCarousel("right")}
+        >
+          <KeyboardArrowRightRoundedIcon />
+        </div>
+
+        <div className={classes["carousel-indicators-container"]}>
+          {carouselData.map((carouselItem, index) => {
+            return (
+              <span
+                key={carouselItem.id}
+                className={`${classes["carousel-indicator"]} ${
+                  index === activeIndicator ? classes["active-indicator"] : ""
+                }`}
+                onClick={() => handleIndicatorClick(index)}
+              ></span>
+            );
+          })}
+        </div>
       </div>
-    </div>
+
+      <p className={classes["carousel-caption"]}>
+        Un paysage urbain alternant sans transition des environnements sociaux
+        et d'habitats extrêmement contrastés
+      </p>
+    </>
   );
 };
 

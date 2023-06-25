@@ -119,3 +119,39 @@
  .navbar button svg {
   margin-top: 1rem;
  }
+
+
+// ! SIDE NAV
+.side-nav {
+  position: absolute;
+  top: 6.5rem;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2rem;
+  gap: 1rem;
+
+  a {
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+
+    display: inline-block;
+    margin: 1.5rem;
+    padding-bottom: 0.2rem;
+
+  }
+
+  .underline {
+    color: rebeccapurple !important;
+  }
+}

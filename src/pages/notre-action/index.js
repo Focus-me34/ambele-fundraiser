@@ -15,28 +15,6 @@ const NotreAction = () => {
     { id: 4, src:"/IMG/kobaya-4.jpg" }
   ]
 
-  // const handleCarousel = (direction) => {
-  //   if (direction === "left") {
-  //     if (carouselIndex === 0) {
-  //       setCarouselIndex(carouselItems.length - 1);
-  //     } else {
-  //       setCarouselIndex(carouselIndex - 1);
-  //     }
-  //   } else if (direction === "right") {
-  //     if (carouselIndex === carouselItems.length - 1) {
-  //       setCarouselIndex(0);
-  //     } else {
-  //       setCarouselIndex(carouselIndex + 1);
-  //     }
-  //   }
-  // };
-
-  // setInterval(() => {
-  //   handleCarousel("right");
-
-  // }, 5000);
-
-
 
   return (
     <>
@@ -272,30 +250,12 @@ const NotreAction = () => {
           pied en béton et tôle, parfois sans eau ni électricité), immeubles et
           villas très confortables.
         </p>
-        <p
-          style={{ "font-size": "3rem", color: "red", "line-height": "2.5rem" }}
-        >
-          Photos Kobaya 1, 2, 3, 4 Légende globale : Un paysage urbain alternant
+        <Carousel
+          carouselData={carouselKobayaData}
+          caption="Un paysage urbain alternant
           sans transition des environnements sociaux et d'habitats extrêmement
-          contrastés
-        </p>
-
-        {/* <div
-          className={classes["carousel-container"]}
-          style={{ width: "100%", position: "relative", height: "500px" }}
-        >
-          <Image
-            src={carouselItems[carouselIndex].src}
-            alt="Un paysage urbain alternant sans transition des environnements sociaux et d'habitats extrêmement contrastés"
-            fill={true}
-            style={{ objectFit: "cover", objectPosition: "50% 10%" }}
-          />
-
-          <div>LEFT</div>
-          <div>RIGHT</div>
-        </div> */}
-
-        <Carousel carouselData={carouselKobayaData}/>
+          contrastés"
+        />
         <p>
           En matière d'éducation, le quartier compte 5 écoles publiques pour 40
           écoles privées, dans lesquelles la plupart des familles économiquement
@@ -345,7 +305,7 @@ const NotreAction = () => {
           entre 3 structures : une française et deux guinéennes.
         </p>
         <ul>
-          <h3>En France:</h3>
+          <h4>En France:</h4>
           <li>
             l'association Ambélé (
             <Link href="#section-quels-acteurs">qui sommes nous ?</Link>)
@@ -370,7 +330,7 @@ const NotreAction = () => {
             (conseil de maison).
           </p>
 
-          <h3>A Conakry</h3>
+          <h4>À Conakry:</h4>
           <li>Le Lycée de Jeunes Filles de Kobaya</li>
           <p>
             Situé au cœur du quartier, le lycée accueille 432 élèves dont 270
@@ -378,26 +338,21 @@ const NotreAction = () => {
             professeurs.
           </p>
 
-          <p
-            style={{
-              "font-size": "3rem",
-              color: "red",
-              "line-height": "2.5rem",
-            }}
-          >
-            Photo Lycée 1 Légende : Le Lycée de Jeunes filles de Kobaya
-            (bâtiment de gauche)
-          </p>
+          <div className={classes["container-images-flex"]}>
+            <Image
+              src="/IMG/lycée-1.jpg"
+              alt="Le Lycée de Jeunes filles de Kobaya (bâtiment de gauche)"
+              width={500}
+              height={380}
+            />
 
-          <p
-            style={{
-              "font-size": "3rem",
-              color: "red",
-              "line-height": "2.5rem",
-            }}
-          >
-            Photo Lycée 2 Légende : Entrée principale du Lycée de Jeunes filles
-          </p>
+            <Image
+              src="/IMG/lycée-2.jpg"
+              alt="Entrée principale du Lycée de Jeunes filles"
+              width={500}
+              height={380}
+            />
+          </div>
 
           <p>
             Le proviseur du Lycée, M. Jérôme Mbemba Millimouno, est le
@@ -427,7 +382,7 @@ const NotreAction = () => {
           </p>
 
           <li>
-            -La coalition guinéenne Coguifeminine DD (Coalition Guinéenne des
+            La coalition guinéenne Coguifeminine DD (Coalition Guinéenne des
             Femmes pour les Mines et le Développement Durable)
           </li>
           <p>
@@ -469,29 +424,7 @@ const NotreAction = () => {
             />
           </div>
 
-          {/* <p
-            style={{
-              "font-size": "3rem",
-              color: "red",
-              "line-height": "2.5rem",
-            }}
-          >
-            Photo maison des jeunes de Kobaya Légende : L'entrée de la Maison
-            des jeunes de Kobaya
-          </p> */}
-
-          {/* <p
-            style={{
-              "font-size": "3rem",
-              color: "red",
-              "line-height": "2.5rem",
-            }}
-          >
-            Photo : Local activité Légende : Local (Coguiféminine DD) où se
-            déroule l'activité{" "}
-          </p> */}
-
-          <p style={{ fontWeight: "bold" }}>
+          <p>
             Les rôles respectifs de chacun de ces acteurs ainsi que les
             modalités de leur coordination ont été formalisés par une convention
             tripartite.
@@ -544,7 +477,7 @@ const NotreAction = () => {
         </p>
         <p
           style={{
-            "font-size": "3rem",
+            fontSize: "3rem",
             color: "purple",
             "line-height": "2.5rem",
           }}
@@ -555,7 +488,7 @@ const NotreAction = () => {
         </p>
         <p
           style={{
-            "font-size": "3rem",
+            fontSize: "3rem",
             color: "purple",
             "line-height": "2.5rem",
           }}
@@ -566,7 +499,7 @@ const NotreAction = () => {
         </p>
         <p
           style={{
-            "font-size": "3rem",
+            fontSize: "3rem",
             color: "purple",
             "line-height": "2.5rem",
           }}
@@ -578,7 +511,7 @@ const NotreAction = () => {
         </p>
         <p
           style={{
-            "font-size": "3rem",
+            fontSize: "3rem",
             color: "purple",
             "line-height": "2.5rem",
           }}
@@ -589,7 +522,7 @@ const NotreAction = () => {
         </p>
         <p
           style={{
-            "font-size": "3rem",
+            fontSize: "3rem",
             color: "purple",
             "line-height": "2.5rem",
           }}
@@ -600,7 +533,7 @@ const NotreAction = () => {
         </p>
         <p
           style={{
-            "font-size": "3rem",
+            fontSize: "3rem",
             color: "purple",
             "line-height": "2.5rem",
           }}
@@ -613,7 +546,7 @@ const NotreAction = () => {
         </p>
         <p
           style={{
-            "font-size": "3rem",
+            fontSize: "3rem",
             color: "purple",
             "line-height": "2.5rem",
           }}
@@ -844,7 +777,7 @@ const NotreAction = () => {
               fonctionnement de l'activité de cyber-accompagnement existante,
             </li>
             <li>
-              -de contraintes matérielles rédhibitoires ou freinantes : manque
+              de contraintes matérielles rédhibitoires ou freinantes : manque
               de matériel bureautique (imprimante, photocopieur et
               scanner), et (à la place de la virgule) informatique (écran
               d'ordinateur de taille insuffisante, matériel de prise de vue et
@@ -870,7 +803,7 @@ const NotreAction = () => {
 
           <p
             style={{
-              "font-size": "3rem",
+              fontSize: "3rem",
               color: "red",
               "line-height": "2.5rem",
             }}

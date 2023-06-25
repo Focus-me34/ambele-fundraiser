@@ -37,6 +37,7 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 6.5rem auto;
+  gap: 2rem;
 }
 
 .carousel-container {
@@ -75,8 +76,12 @@
   }
 
   .arrow-left, .arrow-right {
+    transition: 0.2s;
+
     &:hover {
       cursor: pointer;
+      color: var(--primary-color);
+      transition: 0.2s;
     }
 
     svg {
@@ -113,4 +118,11 @@
   .active-indicator {
     background-color: var(--primary-color);
   }
+}
+
+.carousel-caption {
+  font-style: italic;
+  font-weight: bold;
+  margin: 1rem auto 3rem;
+  color: var(--secondary-color);
 }

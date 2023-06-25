@@ -1,6 +1,10 @@
 import ButtonCTA from "../UI/ButtonCTA";
 import Image from "next/image";
+<<<<<<< HEAD
 import classes from "@/styles/header-images.module.scss";
+=======
+import classes from "@/styles/header-images.module.css";
+>>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
 
 const MainHeader = () => {
 

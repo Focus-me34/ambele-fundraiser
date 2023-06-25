@@ -64,7 +64,10 @@ h3 {
 h4 {
   font-size: 2.5rem;
   margin: 1.5rem 0 0.5rem;
+<<<<<<< HEAD
   color: var(--secondary-color);
+=======
+>>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
 }
 
 p, ul {
@@ -76,12 +79,21 @@ li {
   margin-left: 5rem;
 }
 
+<<<<<<< HEAD
 // a {
 //   text-decoration: none;
 //   color: var(--secondary-color);
 //   font-weight: bold;
 //   text-decoration: underline;
 // }
+=======
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+>>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
 
 @media (max-width: 860px) {
   h1 {
@@ -114,6 +126,7 @@ li {
 //   margin-top: -6.5rem;
 //   visibility: hidden;
 // }
+<<<<<<< HEAD
 
 
 // @keyframes ImgFadeIn {
@@ -129,3 +142,5 @@ li {
 // img {
 //   animation: 2s ImgFadeIn
 // }
+=======
+>>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521

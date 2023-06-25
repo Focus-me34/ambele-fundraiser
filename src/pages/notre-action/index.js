@@ -4,7 +4,6 @@ import Link from "next/link";
 import Carousel from "@/components/UI/Carousel";
 // import { useState } from "react";
 
-
 const NotreAction = () => {
   // const [carouselIndex, setCarouselIndex] = useState(0);
 
@@ -14,7 +13,6 @@ const NotreAction = () => {
     { id: 3, src:"/IMG/kobaya-3.jpg" },
     { id: 4, src:"/IMG/kobaya-4.jpg" }
   ]
-
 
   return (
     <>
@@ -475,85 +473,52 @@ const NotreAction = () => {
           principales abordées pendant la séance et transmises aux élèves
           concernés...
         </p>
-        <p
-          style={{
-            fontSize: "3rem",
-            color: "purple",
-            "line-height": "2.5rem",
-          }}
-        >
-          -Vidéo Physique 1 Légende : Matière : physique, classe de 8ème
-          (équivalent 5ème française) Travail en commun sur un devoir (exercices
-          écrits) : coefficient de dilatation des métaux.
+
+        <video src="/VIDEOS/vidéo-physique-1.mp4" controls="true" />
+        <p className={classes["video-caption"]}>
+          Matière : physique, classe de 8ème (équivalent 5ème française) Travail
+          en commun sur un devoir (exercices écrits) : coefficient de dilatation
+          des métaux.
         </p>
-        <p
-          style={{
-            fontSize: "3rem",
-            color: "purple",
-            "line-height": "2.5rem",
-          }}
-        >
-          -Vidéo Math 1 Légende : Matière : mathématiques, classe de 11ème
-          (équivalent 2nde française) Exercice de mise en pratique d'un cours  :
-          inégalités et encadrement.
+
+        <video src="/VIDEOS/vidéo-math-1.mp4" controls="true" />
+        <p className={classes["video-caption"]}>
+          Matière : mathématiques, classe de 11ème (équivalent 2nde française)
+          Exercice de mise en pratique d'un cours  : inégalités et encadrement.
         </p>
-        <p
-          style={{
-            fontSize: "3rem",
-            color: "purple",
-            "line-height": "2.5rem",
-          }}
-        >
-          -Vidéo français 2 Légende : Matière: français, classe de 9ème
+
+        <video src="/VIDEOS/vidéo-français-2.mp4.mp4" controls="true" />
+        <p className={classes["video-caption"]}>
+          Matière: français, classe de 9ème
           (équivalent de 4ème française) Correction d'exercices d'écriture
           transmis par la bénévole avant la séance sur des notions travaillées
           en cours (la description et le récit).
         </p>
-        <p
-          style={{
-            fontSize: "3rem",
-            color: "purple",
-            "line-height": "2.5rem",
-          }}
-        >
-          -Vidéo Math 3 Matière : mathématiques, classe de Terminale Travail en
-          commun sur des exercices de mise en pratique d'un cours : fonction
-          exponentielle
+
+        <video src="/VIDEOS/vidéo-math-3.mp4" controls="true" />
+        <p className={classes["video-caption"]}>
+          Matière : mathématiques, classe de Terminale
+          Travail en commun sur des exercices de mise en pratique d'un cours : fonction exponentielle.
         </p>
-        <p
-          style={{
-            fontSize: "3rem",
-            color: "purple",
-            "line-height": "2.5rem",
-          }}
-        >
-          -Vidéo Math 2 (2 garçons) Matière : mathématiques, classe de 12ème
-          (équivalent 1ère française) Explicitation d'une notion travaillée
-          depuis peu en cours : résolution d’une inéquation
+
+        <video src="/VIDEOS/vidéo-math-2.mp4" controls="true" />
+        <p className={classes["video-caption"]}>
+          Matière : mathématiques, classe de 12ème (équivalent 1ère française)
+          Explicitation d'une notion travaillée depuis peu en cours : résolution d’une inéquation.
         </p>
-        <p
-          style={{
-            fontSize: "3rem",
-            color: "purple",
-            "line-height": "2.5rem",
-          }}
-        >
-          -Vidéo Français 1 Définitif Matière travaillée : français, classe de
-          9ème (équivalent de 4ème française) Correction d’exercices
-          d’entraînement effectués avant la séance (lexique de l’espace/du lieu
-          puis des sensations), dans le cadre d’un travail régulier sur des
-          fiches d’enrichissement du vocabulaire transmises par la bénévole.
+
+        <video src="/VIDEOS/vidéo-français-1-définitif.mp4" controls="true" />
+        <p className={classes["video-caption"]}>
+          Matière travaillée : français, classe de 9ème (équivalent de 4ème française)
+          Correction d’exercices d’entraînement effectués avant la séance (lexique de l’espace/du lieu puis des sensations), dans le cadre d’un travail régulier sur des fiches d’enrichissement du vocabulaire transmises par la bénévole.
         </p>
-        <p
-          style={{
-            fontSize: "3rem",
-            color: "purple",
-            "line-height": "2.5rem",
-          }}
-        >
-          -Vidéo Anglais Matière : anglais, classe de 11ème (équivalent 2nde
-          française) Conversation autour du vocabulaire du rythme de la journée
+
+        <video src="/VIDEOS/vidéo-anglais.mp4" controls="true" />
+        <p className={classes["video-caption"]}>
+          Matière : anglais, classe de 11ème (équivalent 2nde française)
+          Conversation autour du vocabulaire du rythme de la journée.
         </p>
+
         {/* // ! ===================================== */}
         // ! TEMOIGNAGE CAROUSEL
         <div className="temoignages">
@@ -777,13 +742,13 @@ const NotreAction = () => {
               fonctionnement de l'activité de cyber-accompagnement existante,
             </li>
             <li>
-              de contraintes matérielles rédhibitoires ou freinantes : manque
-              de matériel bureautique (imprimante, photocopieur et
-              scanner), et (à la place de la virgule) informatique (écran
-              d'ordinateur de taille insuffisante, matériel de prise de vue et
-              de son de qualité insuffisante), inconfort du local (exiguïté et
-              manque d’équipement du local, forte chaleur, visite de rongeurs
-              dégradant le matériel...)
+              de contraintes matérielles rédhibitoires ou freinantes : manque de
+              matériel bureautique (imprimante, photocopieur et scanner), et (à
+              la place de la virgule) informatique (écran d'ordinateur de taille
+              insuffisante, matériel de prise de vue et de son de qualité
+              insuffisante), inconfort du local (exiguïté et manque d’équipement
+              du local, forte chaleur, visite de rongeurs dégradant le
+              matériel...)
             </li>
           </ul>
 
@@ -805,7 +770,7 @@ const NotreAction = () => {
             style={{
               fontSize: "3rem",
               color: "red",
-              "line-height": "2.5rem",
+              lineHeight: "2.5rem",
             }}
           >
             Photo élève debout / Légende : Des conditions de travail parfois

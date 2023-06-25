@@ -6,8 +6,9 @@ import { useEffect, useState, useRef } from "react";
 import MenuToggle from "./MenuToggle";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCycle } from "framer-motion";
+import SideNav from "./SideNav";
 
-import classes from "./Navbar.module.css";
+import classes from "./Navbar.module.scss";
 
 
 const Navbar = () => {
@@ -54,15 +55,11 @@ const Navbar = () => {
             alt="Logo"
             width={100}
             height={50}
-            // style={{
-            //   objectFit: "cover",
-            // }}
           />
 
           <div>
             <Link
               href={"/"}
-              // className={router.pathname == "/" ? classes["active"] : ""}
             >
               Acceuil
               {router.pathname == "/" ? (
@@ -73,12 +70,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-            <Link
-              href={"/qui-sommes-nous"}
-              // className={
-              //   router.pathname == "/qui-sommes-nous" ? classes["active"] : ""
-              // }
-            >
+            <Link href={"/qui-sommes-nous"}>
               Qui sommes-nous?
               {router.pathname == "/qui-sommes-nous" ? (
                 <motion.div
@@ -92,9 +84,6 @@ const Navbar = () => {
               href={"/notre-action"}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              // className={`${
-              //   router.pathname == "/notre-action" ? classes["active"] : ""
-              // } ${classes["discover"]}`}
             >
               <AnimatePresence mode="wait">
                 <motion.div
@@ -128,12 +117,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-            <Link
-              href={"/nous-soutenir"}
-              // className={
-              //   router.pathname == "/nous-soutenir" ? classes["active"] : ""
-              // }
-            >
+            <Link href={"/nous-soutenir"}>
               Nous soutenir
               {router.pathname == "/nous-soutenir" ? (
                 <motion.div
@@ -143,10 +127,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-            <Link
-              href={"/contact"}
-              // className={router.pathname == "/contact" ? classes["active"] : ""}
-            >
+            <Link href={"/contact"}>
               Nous contacter
               {router.pathname == "/contact" ? (
                 <motion.div
@@ -156,8 +137,6 @@ const Navbar = () => {
               ) : null}
             </Link>
           </div>
-
-          {/* <div></div> */}
         </nav>
       )}
 
@@ -168,7 +147,6 @@ const Navbar = () => {
           initial={"false"}
           animate={isOpen ? "open" : "closed"}
           ref={containerRef}
-          // custom={height}
         >
           <Image // ? Position absolute by default
             key={"Logo black"}
@@ -176,14 +154,15 @@ const Navbar = () => {
             alt="Logo"
             width={100}
             height={50}
-            // style={{
-            //   objectFit: "cover",
-            // }}
           />
 
           <MenuToggle isOpen={isOpen} toggle={toggleOpen} />
         </nav>
       )}
+
+      <AnimatePresence>
+        {isNavbarShrinked && isOpen && <SideNav />}
+      </AnimatePresence>
     </>
   );
 }

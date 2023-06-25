@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #fea82f;
+  --secondary-color: #45a3d9;
+  --black: #181108 #220C10;
+  --light-grey: #C4C0BA;
+  --dark-gray: #3B3936;
+  --white: #fff;
+  /* * CAN TRY THIS BLACK, CAFE-ISH COLOR: #220C10 */
+
+  --container-width: 80%;
+  --container-max-width: 1100px;
+
+  /* * Font sizes */
+  --font-small: 1.5rem;
+  --font-medium: 2rem;
+  --font-large: 3rem;
+  --font-xlarge: 4rem;
+  --font-xxlarge: 6rem;
+}
+
+html {
+  font-size: 62.5%;
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 6rem;
+  white-space: nowrap;
+}
+
+h2 {
+  font-size: 4rem;
+  margin: 6.5rem auto 1rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin: 3.25rem auto 0;
+}
+
+h4 {
+  font-size: 2.5rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+p, ul {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-left: 5rem;
+}
+
+// a {
+//   text-decoration: none;
+//   color: var(--secondary-color);
+//   font-weight: bold;
+//   text-decoration: underline;
+// }
+
+@media (max-width: 860px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+#section-quel-contexte, #section-quels-acteurs {
+  &::before {
+    content: '';
+    display: block;
+    height: 6.5rem;
+    margin-top: -6.5rem;
+    visibility: hidden;
+  }
+}
+
+video {
+  width: 100%;
+}

@@ -1,6 +1,6 @@
 import ButtonCTA from "../UI/ButtonCTA";
 import Image from "next/image";
-import classes from "@/styles/header-images.module.css";
+import classes from "@/styles/header-images.module.scss";
 
 const MainHeader = () => {
 
@@ -23,7 +23,7 @@ const MainHeader = () => {
         </h1>
 
         <h2>Solidarité France-Guinée par l'éducation populaire</h2>
-
+{/* <br /><br /> */}
         <ButtonCTA />
       </div>
     </div>

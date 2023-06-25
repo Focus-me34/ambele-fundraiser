@@ -48,7 +48,19 @@ const MainContent = () => {
         />
 
         <div className={classes["text"]}>
-          <h2>Qui Sommes nous?</h2>
+          <h2>
+            {/* <Image // ? Position absolute by default
+              key={"about"}
+              src="/about.svg"
+              alt="Question mark"
+              width={100}
+              height={100}
+              style={{
+                objectFit: "cover",
+              }}
+            /> */}
+
+          Qui Sommes nous?</h2>
           <p>
             Ambélé est une association française qui soutient et accompagne des
             initiatives d'éducation populaire en Guinée.

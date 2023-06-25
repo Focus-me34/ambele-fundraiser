@@ -4,7 +4,7 @@
   background-color: white;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 100000;
 
   padding: 0.5rem 4rem;
 
@@ -124,6 +124,7 @@
 // ! SIDE NAV
 .side-nav {
   position: absolute;
+  z-index: 50000;
   top: 6.5rem;
   left: 0;
   width: 100%;

@@ -6,18 +6,9 @@ import { useEffect, useState, useRef } from "react";
 import MenuToggle from "./MenuToggle";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCycle } from "framer-motion";
-<<<<<<< HEAD
 import SideNav from "./SideNav";
 
 import classes from "./Navbar.module.scss";
-=======
-
-<<<<<<< HEAD
-import classes from "./Navbar.module.css";
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
-=======
-import classes from "./Navbar.module.scss";
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
 
 
 const Navbar = () => {
@@ -64,21 +55,11 @@ const Navbar = () => {
             alt="Logo"
             width={100}
             height={50}
-<<<<<<< HEAD
-=======
-            // style={{
-            //   objectFit: "cover",
-            // }}
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
           />
 
           <div>
             <Link
               href={"/"}
-<<<<<<< HEAD
-=======
-              // className={router.pathname == "/" ? classes["active"] : ""}
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
             >
               Acceuil
               {router.pathname == "/" ? (
@@ -89,16 +70,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-<<<<<<< HEAD
             <Link href={"/qui-sommes-nous"}>
-=======
-            <Link
-              href={"/qui-sommes-nous"}
-              // className={
-              //   router.pathname == "/qui-sommes-nous" ? classes["active"] : ""
-              // }
-            >
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
               Qui sommes-nous?
               {router.pathname == "/qui-sommes-nous" ? (
                 <motion.div
@@ -112,12 +84,6 @@ const Navbar = () => {
               href={"/notre-action"}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-<<<<<<< HEAD
-=======
-              // className={`${
-              //   router.pathname == "/notre-action" ? classes["active"] : ""
-              // } ${classes["discover"]}`}
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
             >
               <AnimatePresence mode="wait">
                 <motion.div
@@ -151,16 +117,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-<<<<<<< HEAD
             <Link href={"/nous-soutenir"}>
-=======
-            <Link
-              href={"/nous-soutenir"}
-              // className={
-              //   router.pathname == "/nous-soutenir" ? classes["active"] : ""
-              // }
-            >
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
               Nous soutenir
               {router.pathname == "/nous-soutenir" ? (
                 <motion.div
@@ -170,14 +127,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-<<<<<<< HEAD
             <Link href={"/contact"}>
-=======
-            <Link
-              href={"/contact"}
-              // className={router.pathname == "/contact" ? classes["active"] : ""}
-            >
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
               Nous contacter
               {router.pathname == "/contact" ? (
                 <motion.div
@@ -187,11 +137,6 @@ const Navbar = () => {
               ) : null}
             </Link>
           </div>
-<<<<<<< HEAD
-=======
-
-          {/* <div></div> */}
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
         </nav>
       )}
 
@@ -202,10 +147,6 @@ const Navbar = () => {
           initial={"false"}
           animate={isOpen ? "open" : "closed"}
           ref={containerRef}
-<<<<<<< HEAD
-=======
-          // custom={height}
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
         >
           <Image // ? Position absolute by default
             key={"Logo black"}
@@ -213,24 +154,15 @@ const Navbar = () => {
             alt="Logo"
             width={100}
             height={50}
-<<<<<<< HEAD
-=======
-            // style={{
-            //   objectFit: "cover",
-            // }}
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
           />
 
           <MenuToggle isOpen={isOpen} toggle={toggleOpen} />
         </nav>
       )}
-<<<<<<< HEAD
 
       <AnimatePresence>
         {isNavbarShrinked && isOpen && <SideNav />}
       </AnimatePresence>
-=======
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
     </>
   );
 }

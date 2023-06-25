@@ -36,7 +36,6 @@ const MainContent = () => {
           transition: "all 1s 0s",
         }}
       >
-<<<<<<< HEAD
         <Image // ? Position absolute by default
           key={"about"}
           src="/about.svg"
@@ -47,18 +46,6 @@ const MainContent = () => {
             objectFit: "cover",
           }}
         />
-=======
-          <Image // ? Position absolute by default
-            key={"about"}
-            src="/about.svg"
-            alt="Question mark"
-            width={350}
-            height={200}
-            style={{
-              objectFit: "cover",
-            }}
-          />
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
 
         <div className={classes["text"]}>
           <h2>Qui Sommes nous?</h2>
@@ -69,7 +56,6 @@ const MainContent = () => {
 
           <p>Le nom signifie "on est ensemble" en malinké.</p>
 
-<<<<<<< HEAD
           <p>
             L'éducation populaire vise l'accès aux savoirs pour tous et
             encourage la participation active de chacun, favorise la coopération
@@ -84,22 +70,6 @@ const MainContent = () => {
         </div>
       </section>
 
-=======
-            <p>
-              L'éducation populaire vise l'accès aux savoirs pour tous et
-              encourage la participation active de chacun, favorise la
-              coopération et soutient l'exercice de la citoyenneté. Elle permet
-              de corriger les inégalités et est vecteur d'égalité des chances.
-            </p>
-
-            <Link href={"/qui-sommes-nous"}>
-              <ArrowForwardRoundedIcon />
-              EN SAVOIR PLUS
-            </Link>
-          </div>
-      </section>
-
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
       {/* // ! ================ ROW 2 ================ */}
       <section
         ref={secondRowRef}
@@ -109,7 +79,6 @@ const MainContent = () => {
           transition: "all 1s 0s",
         }}
       >
-<<<<<<< HEAD
         <Image // ? Position absolute by default
           key={"notre action"}
           src="/action.svg"
@@ -120,26 +89,6 @@ const MainContent = () => {
             objectFit: "cover",
           }}
         />
-=======
-          <Image // ? Position absolute by default
-            key={"notre action"}
-            src="/action.svg"
-            alt="Light bulb representing the organization's action idea"
-            width={350}
-            height={200}
-            style={{
-              objectFit: "cover",
-            }}
-          />
-
-          <div className={classes["text"]}>
-            <h2>Notre action</h2>
-            <p>
-              Notre action consiste en un projet de cyber-accompagnement pour
-              des élèves en difficulté scolaire dans un lycée de jeunes filles
-              en Afrique subsaharienne.
-            </p>
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
 
         <div className={classes["text"]}>
           <h2>Notre action</h2>
@@ -156,7 +105,6 @@ const MainContent = () => {
             compétences diverses ainsi que 10 à 15 élèves chaque semaine.
           </p>
 
-<<<<<<< HEAD
           <p>
             Le projet vise à avoir un impact significatif sur la scolarité des
             jeunes en permettant une évaluation sur le long terme. Les élèves
@@ -180,21 +128,6 @@ const MainContent = () => {
         </div>
       </section>
 
-=======
-            <p>
-              Le projet a pour objectif de développer les compétences
-              académiques des élèves, leur confiance en eux et leur motivation à
-              réussir à l'école.
-            </p>
-
-            <Link href={"/notre-action"}>
-              <ArrowForwardRoundedIcon />
-              EN SAVOIR PLUS
-            </Link>
-          </div>
-      </section>
-
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
       {/* // ! ================ ROW 3 ================ */}
       <section
         ref={thirdRowRef}
@@ -204,7 +137,6 @@ const MainContent = () => {
           transition: "all 1s 0s",
         }}
       >
-<<<<<<< HEAD
         <Image // ? Position absolute by default
           key={"help us"}
           src="/support.svg"
@@ -241,45 +173,6 @@ const MainContent = () => {
 
       {/* // ! ================ ROW 4 ================ */}
       {/* <section
-=======
-          <Image // ? Position absolute by default
-            key={"help us"}
-            src="/support.svg"
-            alt="Pieces of a puzzle fitting together, representing the support people could provide to the organization"
-            width={350}
-            height={200}
-            style={{
-              objectFit: "cover",
-            }}
-          />
-
-          <div className={classes["text"]}>
-            <h2>Nous soutenir</h2>
-            <p>
-              Vos dons sont essentiels pour soutenir l'avancement du projet en
-              finançant l'achat de matériels tels que du mobilier de rangement,
-              du matériel informatique, des postes d'ordinateurs supplémentaires
-              et une petite bibliothèque auto-gérée.
-            </p>
-
-            <p>
-              Ils contribueront également au financement d'un poste
-              d'animateur/trice de l'activité. Avec votre aide, nous pourrons
-              soutenir la démarche participative des élèves impliqués et
-              augmenter le volume d'activité pour accueillir un plus grand
-              nombre d'élèves.
-            </p>
-
-            <Link href={"/nous-soutenir"}>
-              <ArrowForwardRoundedIcon />
-              EN SAVOIR PLUS
-            </Link>
-          </div>
-      </section>
-
-      {/* // ! ================ ROW 4 ================ */}
-      <section
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
         ref={fourthRowRef}
         animate={rowAnimation}
         style={{
@@ -311,11 +204,7 @@ const MainContent = () => {
             </Link>
           </div>
 
-<<<<<<< HEAD
       </section> */}
-=======
-      </section>
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
     </main>
   );
 };

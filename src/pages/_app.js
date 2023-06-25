@@ -1,15 +1,7 @@
 import Head from "next/head";
 import Navbar from "@/components/navbar/Navbar";
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 import '@/styles/globals.scss'
-=======
-import '@/styles/globals.css'
->>>>>>> 3827b61ba5f19840a89540c93cc9472bc608d6db
-=======
-import '@/styles/globals.scss'
->>>>>>> 6a24fbbd3e56c79df1e75644d09cf17d33c0a521
 
 export default function App({ Component, pageProps }) {
   return (

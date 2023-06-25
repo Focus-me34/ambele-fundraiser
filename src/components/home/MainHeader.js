@@ -23,7 +23,7 @@ const MainHeader = () => {
         </h1>
 
         <h2>Solidarité France-Guinée par l'éducation populaire</h2>
-
+{/* <br /><br /> */}
         <ButtonCTA />
       </div>
     </div>

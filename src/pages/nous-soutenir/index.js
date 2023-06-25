@@ -19,8 +19,7 @@ const NousSoutenir = () => {
         <h2>Un don, dans quel but ?</h2>
 
         <h3>
-          Soutenir matériellement l'action, son optimisation et son
-          développement, en participant à l'achat de matériels permettant :
+          Soutenir matériellement l'action, son optimisation et son développement, en participant à l'achat de matériels permettant :
         </h3>
 
         <ul>
@@ -43,13 +42,13 @@ const NousSoutenir = () => {
         </ul>
 
         <h3>
-          Contribuer au financement d'un poste d'animateur/trice de l'activitévia
+          Contribuer au financement d'un poste d'animateur/trice de l'activité via
           l'association Coguifémine DD :
         </h3>
 
         <ul>
           <li>
-            projet de la création d'un poste à temps partiel, rémunéré et mis à
+            Projet de la création d'un poste à temps partiel, rémunéré et mis à
             disposition par l'association partenaire Coguifémine DD.
             <br />
             Véritable cheville-ouvrière du projet, missionné(e) sur les tâches
@@ -78,6 +77,13 @@ const NousSoutenir = () => {
             </ul>
           </li>
         </ul>
+
+      {/* <iframe
+        id="haWidget"
+        allowtransparency="true"
+        src="https://www.helloasso.com/associations/ambele/formulaires/1/widget-bouton"
+        style={{ width: "100%", height: "70px", border: "none" }}
+      /> */}
       </div>
     </>
   );

@@ -473,54 +473,50 @@ const NotreAction = () => {
           principales abordées pendant la séance et transmises aux élèves
           concernés...
         </p>
-
         <video src="/VIDEOS/vidéo-physique-1.mp4" controls="true" />
         <p className={classes["video-caption"]}>
           Matière : physique, classe de 8ème (équivalent 5ème française) Travail
           en commun sur un devoir (exercices écrits) : coefficient de dilatation
           des métaux.
         </p>
-
         <video src="/VIDEOS/vidéo-math-1.mp4" controls="true" />
         <p className={classes["video-caption"]}>
           Matière : mathématiques, classe de 11ème (équivalent 2nde française)
           Exercice de mise en pratique d'un cours  : inégalités et encadrement.
         </p>
-
         <video src="/VIDEOS/vidéo-français-2.mp4.mp4" controls="true" />
         <p className={classes["video-caption"]}>
-          Matière: français, classe de 9ème
-          (équivalent de 4ème française) Correction d'exercices d'écriture
-          transmis par la bénévole avant la séance sur des notions travaillées
-          en cours (la description et le récit).
+          Matière: français, classe de 9ème (équivalent de 4ème française)
+          Correction d'exercices d'écriture transmis par la bénévole avant la
+          séance sur des notions travaillées en cours (la description et le
+          récit).
         </p>
-
         <video src="/VIDEOS/vidéo-math-3.mp4" controls="true" />
         <p className={classes["video-caption"]}>
-          Matière : mathématiques, classe de Terminale
-          Travail en commun sur des exercices de mise en pratique d'un cours : fonction exponentielle.
+          Matière : mathématiques, classe de Terminale Travail en commun sur des
+          exercices de mise en pratique d'un cours : fonction exponentielle.
         </p>
-
         <video src="/VIDEOS/vidéo-math-2.mp4" controls="true" />
         <p className={classes["video-caption"]}>
           Matière : mathématiques, classe de 12ème (équivalent 1ère française)
-          Explicitation d'une notion travaillée depuis peu en cours : résolution d’une inéquation.
+          Explicitation d'une notion travaillée depuis peu en cours : résolution
+          d’une inéquation.
         </p>
-
         <video src="/VIDEOS/vidéo-français-1-définitif.mp4" controls="true" />
         <p className={classes["video-caption"]}>
-          Matière travaillée : français, classe de 9ème (équivalent de 4ème française)
-          Correction d’exercices d’entraînement effectués avant la séance (lexique de l’espace/du lieu puis des sensations), dans le cadre d’un travail régulier sur des fiches d’enrichissement du vocabulaire transmises par la bénévole.
+          Matière travaillée : français, classe de 9ème (équivalent de 4ème
+          française) Correction d’exercices d’entraînement effectués avant la
+          séance (lexique de l’espace/du lieu puis des sensations), dans le
+          cadre d’un travail régulier sur des fiches d’enrichissement du
+          vocabulaire transmises par la bénévole.
         </p>
-
         <video src="/VIDEOS/vidéo-anglais.mp4" controls="true" />
         <p className={classes["video-caption"]}>
           Matière : anglais, classe de 11ème (équivalent 2nde française)
           Conversation autour du vocabulaire du rythme de la journée.
         </p>
-
         {/* // ! ===================================== */}
-        // ! TEMOIGNAGE CAROUSEL
+        {/* // ! TEMOIGNAGE CAROUSEL */}
         <div className="temoignages">
           <div className="carousel">
             <div className="carousel-item">
@@ -766,7 +762,15 @@ const NotreAction = () => {
             potentiels.
           </p>
 
-          <p
+          {/* <Image
+            src="/IMG/i-photo-élève-debout.png"
+            alt="Accompagnement à la prise en main de l'outil informatique"
+            width={500}
+            height={500}
+          /> */}
+
+          {/* // TODO: CANNOT USE THE PICTURE ABOVE */}
+          {/* <p
             style={{
               fontSize: "3rem",
               color: "red",
@@ -776,7 +780,7 @@ const NotreAction = () => {
             Photo élève debout / Légende : Des conditions de travail parfois
             précaires : deux collégiennes se partageant une même chaise, une
             autre debout
-          </p>
+          </p> */}
         </div>
       </div>
     </>

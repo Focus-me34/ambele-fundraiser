@@ -46,13 +46,8 @@
 .main-header-content h2 {
   font-style: italic;
   font-weight: lighter;
+  margin: 0rem auto 3.5rem;
 }
-
-/* .main-header-content p {
-  font-weight: lighter;
-  text-align: left;
-} */
-
 
 @media (max-width: 860px) {
   .header-image-container img {

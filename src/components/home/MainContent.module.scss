@@ -35,10 +35,6 @@
       font-size: 2rem;
       transition: all 0.3s ease-in-out;
 
-      &:last-of-type {
-        margin-bottom: 2rem;
-      }
-
       &:hover {
         background-color: var(--white);
         color: var(--primary-color);

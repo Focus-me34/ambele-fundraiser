@@ -31,7 +31,7 @@ const SideNavContent = () => {
       </Link>
 
       <Link href={"/qui-sommes-nous"}>
-        Qui sommes-nous?
+        Qui sommes-nous ?
         {router.pathname == "/qui-sommes-nous" ? (
           <motion.div className={classes["underline"]} layoutId="underline" />
         ) : null}

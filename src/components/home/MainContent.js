@@ -7,6 +7,7 @@ import Image from "next/image";
 import classes from "./MainContent.module.scss";
 import containerClasses from "../../styles/container.module.scss";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+import { bottomNavigationActionClasses } from "@mui/material";
 
 const MainContent = () => {
   const rowAnimation = useAnimationControls();
@@ -136,6 +137,7 @@ const MainContent = () => {
         style={{
           opacity: thirdRowisInView ? 1 : 0.33,
           transition: "all 1s 0s",
+          marginBottom: "10rem"
         }}
       >
         <Image // ? Position absolute by default

@@ -57,9 +57,9 @@ const Navbar = () => {
           <Image // ? Position absolute by default
             key={"Logo black"}
             src="/logo-black.svg"
-            alt="Logo"
-            width={100}
-            height={50}
+            alt="Logo black"
+            width={200}
+            height={100}
           />
 
           <div>
@@ -74,7 +74,7 @@ const Navbar = () => {
             </Link>
 
             <Link href={"/qui-sommes-nous"}>
-              Qui sommes-nous?
+              Qui sommes-nous ?
               {router.pathname == "/qui-sommes-nous" ? (
                 <motion.div
                   className={classes["underline"]}

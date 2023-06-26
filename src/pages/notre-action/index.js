@@ -189,13 +189,7 @@ const NotreAction = () => {
             className="img-100"
           />
 
-          <Image
-            src="/IMG/gpe-avec-Jérôme-ordi.jpg"
-            alt="Accompagnement à la prise en main de l'outil informatique"
-            width={500}
-            height={380}
-            className="img-100"
-          />
+          {/* // ! IMAGE INUTILISABLE*/}
           {/* <Image
             src="/IMG/conseil-de-maison.png"
             alt="Un conseil de maison réunissant des jeunes, des enseignants et le coordinateur local"

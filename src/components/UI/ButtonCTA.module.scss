@@ -29,11 +29,17 @@
 }
 
 .floating {
-  position: fixed;
-  bottom: 15rem;
-  right: 3rem;
+  position: sticky;
+  bottom: 2rem;
   z-index: 100;
+
+  margin-bottom: 2rem;
+  margin-right: 2rem;
   transition: all 0.2s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     transform: scale(1.1);

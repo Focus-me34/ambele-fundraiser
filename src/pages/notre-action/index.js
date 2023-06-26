@@ -760,6 +760,11 @@ const NotreAction = () => {
             potentiels.
           </p>
 
+          <video src="/VIDEOS/video-eleve-debout.mp4" controls="true" />
+          <p className={classes["video-caption"]}>
+            Des conditions de travail parfois précaires : deux collégiennes se partageant une même chaise, une autre debout.
+          </p>
+
           {/* <Image
             src="/IMG/i-photo-élève-debout.png"
             alt="Accompagnement à la prise en main de l'outil informatique"

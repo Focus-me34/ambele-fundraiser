@@ -20,7 +20,7 @@ const Footer = () => {
       <div className={classes["footer-content"]}>
         <h2>
           Tous ensemble,&nbsp;
-          {/* <br /> */}
+          <div className={classes["content-dynamic-separator"]}></div>
           soutenons Ambélé
         </h2>
 

@@ -17,9 +17,9 @@ export default function App({ Component, pageProps }) {
 
       <Navbar />
       <Component {...pageProps} />
+      <ButtonCTA size="floating"/>
       <Footer />
 
-      <ButtonCTA size="floating"/>
     </>
   );
 }

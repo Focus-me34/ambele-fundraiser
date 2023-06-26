@@ -13,6 +13,7 @@ const QuiSommesNous = () => {
         width={2500}
         height={1500}
         style={{ maxHeight: "50vh", objectFit: "cover", objectPosition: "50% 40%" }}
+        className="img-100"
       />
 
       <div className={classes["content-container"]}>

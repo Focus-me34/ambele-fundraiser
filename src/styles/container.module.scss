@@ -10,6 +10,11 @@
   width: var(--container-width);
   max-width: var(--container-max-width);
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   a {
     text-decoration: none;
     color: var(--secondary-color);

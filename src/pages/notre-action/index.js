@@ -18,15 +18,19 @@ const NotreAction = () => {
     <>
       <div className={classes["gradient-container"]} />
 
-        <Image
-          src="/photo-physique-d.jpg"
-          alt="Qui sommes nous"
-          priority={true}
-          width={2500}
-          height={1500}
-          style={{ maxHeight: "50vh", objectFit: "cover", objectPosition: "50% 10%" }}
-
-        />
+      <Image
+        src="/photo-physique-d.jpg"
+        alt="Qui sommes nous"
+        priority={true}
+        width={2500}
+        height={1500}
+        style={{
+          maxHeight: "50vh",
+          objectFit: "cover",
+          objectPosition: "50% 10%",
+        }}
+        className="img-100"
+      />
       {/* </div> */}
 
       {/* <iframe
@@ -182,6 +186,7 @@ const NotreAction = () => {
             alt="Accompagnement à la prise en main de l'outil informatique"
             width={500}
             height={380}
+            className="img-100"
           />
 
           <Image
@@ -189,6 +194,7 @@ const NotreAction = () => {
             alt="Accompagnement à la prise en main de l'outil informatique"
             width={500}
             height={380}
+            className="img-100"
           />
           {/* <Image
             src="/IMG/conseil-de-maison.png"
@@ -360,6 +366,7 @@ const NotreAction = () => {
               alt="Le Lycée de Jeunes filles de Kobaya (bâtiment de gauche)"
               width={500}
               height={380}
+              className="img-100"
             />
 
             <Image
@@ -367,6 +374,7 @@ const NotreAction = () => {
               alt="Entrée principale du Lycée de Jeunes filles"
               width={500}
               height={380}
+              className="img-100"
             />
           </div>
 
@@ -432,6 +440,7 @@ const NotreAction = () => {
               alt="L'entrée de la Maison des jeunes de Kobaya"
               width={500}
               height={380}
+              className="img-100"
             />
 
             <Image
@@ -439,6 +448,7 @@ const NotreAction = () => {
               alt="Local (Coguiféminine DD) où se déroule l'activité"
               width={500}
               height={380}
+              className="img-100"
             />
           </div>
 
@@ -765,13 +775,13 @@ const NotreAction = () => {
             </li>
             <li>
               <p>
-                de contraintes matérielles rédhibitoires ou freinantes : manque de
-                matériel bureautique (imprimante, photocopieur et scanner), et (à
-                la place de la virgule) informatique (écran d'ordinateur de taille
-                insuffisante, matériel de prise de vue et de son de qualité
-                insuffisante), inconfort du local (exiguïté et manque d’équipement
-                du local, forte chaleur, visite de rongeurs dégradant le
-                matériel...)
+                de contraintes matérielles rédhibitoires ou freinantes : manque
+                de matériel bureautique (imprimante, photocopieur et
+                scanner), et (à la place de la virgule) informatique (écran
+                d'ordinateur de taille insuffisante, matériel de prise de vue et
+                de son de qualité insuffisante), inconfort du local (exiguïté et
+                manque d’équipement du local, forte chaleur, visite de rongeurs
+                dégradant le matériel...)
               </p>
             </li>
           </ul>

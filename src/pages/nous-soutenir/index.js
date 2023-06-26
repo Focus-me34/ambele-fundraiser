@@ -15,6 +15,7 @@ const NousSoutenir = () => {
         width={2500}
         height={1500}
         style={{ maxHeight: "60vh", objectFit: "cover", objectPosition: "50% 55%" }}
+        className="img-100"
       />
 
       <div className={classes["content-container"]}>

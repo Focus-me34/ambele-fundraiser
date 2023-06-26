@@ -18,15 +18,16 @@ const NotreAction = () => {
     <>
       <div className={classes["gradient-container"]} />
 
-      <div className={classes["image-header-container"]}>
         <Image
           src="/photo-physique-d.jpg"
           alt="Qui sommes nous"
-          fill={true}
           priority={true}
-          style={{ objectFit: "cover", objectPosition: "50% 10%" }}
+          width={2500}
+          height={1500}
+          style={{ maxHeight: "50vh", objectFit: "cover", objectPosition: "50% 10%" }}
+
         />
-      </div>
+      {/* </div> */}
 
       {/* <iframe
         id="haWidget"

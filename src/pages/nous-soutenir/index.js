@@ -8,15 +8,14 @@ const NousSoutenir = () => {
     <>
       <div className={classes["gradient-container"]} />
 
-      {/* <div className={classes["image-header-container"]}> */}
-        <Image
-          src="/nous-soutenir.jpg"
-          alt="Qui sommes nous"
-          width={2500}
-          height={1500}
-          style={{ maxHeight: "50vh", objectFit: "cover" }}
-        />
-      {/* </div> */}
+      <Image
+        src="/nous-soutenir.jpg"
+        alt="Qui sommes nous"
+        priority={true}
+        width={2500}
+        height={1500}
+        style={{ maxHeight: "60vh", objectFit: "cover", objectPosition: "50% 55%" }}
+      />
 
       <div className={classes["content-container"]}>
         <h2>Un don, dans quel but ?</h2>

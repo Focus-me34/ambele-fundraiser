@@ -16,6 +16,10 @@
     font-weight: bold;
     text-decoration: underline;
   }
+
+  @media (max-width: 930px) {
+    width: 90%;
+  }
 }
 
 .gradient-container {

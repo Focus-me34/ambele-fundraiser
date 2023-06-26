@@ -118,7 +118,7 @@ const NotreAction = () => {
           exclusivement, à ce jour, du Lycée de jeunes filles.
         </p>
         <ul>
-          Elle s'effectue :
+          <p>Elle s'effectue :</p>
           <li>
             <p>après les cours, 4 après-midi par semaine</p>
           </li>

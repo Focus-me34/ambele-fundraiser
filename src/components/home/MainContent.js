@@ -137,7 +137,7 @@ const MainContent = () => {
         style={{
           opacity: thirdRowisInView ? 1 : 0.33,
           transition: "all 1s 0s",
-          marginBottom: "10rem"
+          marginBottom: "0rem"
         }}
       >
         <Image // ? Position absolute by default

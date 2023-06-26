@@ -457,9 +457,7 @@ const NotreAction = () => {
           Il s'agit, à ce jour, du français, des mathématiques, de la physique,
           de la chimie, de la biologie et de l'anglais.
         </p>
-        <hr />
-        <hr />
-        <hr /> DUBLE CHECK HERE (architecture design)
+
         <h3>Un cyber accompagnement sous quelles formes ?</h3>
         <p>
           Différents types d’activités pédagogiques sont mis en place en

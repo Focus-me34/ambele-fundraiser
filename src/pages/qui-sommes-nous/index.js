@@ -6,14 +6,17 @@ const QuiSommesNous = () => {
     <>
       <div className={classes["gradient-container"]} />
 
-      <div className={classes["image-header-container"]}>
+      {/* <div className={classes["image-header-container"]}> */}
         <Image
           src="/qui-sommes-nous.jpg"
           alt="Qui sommes nous"
-          fill={true}
-          style={{ objectFit: "cover", objectPosition: "50% 40%" }}
+          width={2500}
+          height={1500}
+          // fill={true}
+          // style={{ objectFit: "cover", objectPosition: "50% 40%" }}
+          style={{ maxHeight: "50vh", objectFit: "cover" }}
         />
-      </div>
+      {/* </div> */}
 
       <div className={classes["content-container"]}>
         <h2>Qui sommes nous?</h2>

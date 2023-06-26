@@ -8,14 +8,15 @@ const NousSoutenir = () => {
     <>
       <div className={classes["gradient-container"]} />
 
-      <div className={classes["image-header-container"]}>
+      {/* <div className={classes["image-header-container"]}> */}
         <Image
           src="/nous-soutenir.jpg"
           alt="Qui sommes nous"
-          fill={true}
-          style={{ objectFit: "cover", objectPosition: "50% 55%" }}
+          width={2500}
+          height={1500}
+          style={{ maxHeight: "50vh", objectFit: "cover" }}
         />
-      </div>
+      {/* </div> */}
 
       <div className={classes["content-container"]}>
         <h2>Un don, dans quel but ?</h2>
@@ -29,19 +30,20 @@ const NousSoutenir = () => {
           <li>
             <p>
               une meilleure organisation et une « sécurisation » de l'activité :
-              meuble de rangement fermé, petit matériel bureautique, remplacement
-              des chaises en mauvais état, matériel informatique facilitant
-              l'activité pour les élèves et les intervenants bénévoles (écran
-              d'ordinateur de grande taille, caméra de visioconférence) mais aussi
-              pour leur accompagnateur : imprimante scanner photocopieur - achat
-              qui éviterait la perte de temps actuelle pour la réalisation de ces
-              opérations dans un «cyber café » du quartier.
+              meuble de rangement fermé, petit matériel bureautique,
+              remplacement des chaises en mauvais état, matériel informatique
+              facilitant l'activité pour les élèves et les intervenants
+              bénévoles (écran d'ordinateur de grande taille, caméra de
+              visioconférence) mais aussi pour leur accompagnateur : imprimante
+              scanner photocopieur - achat qui éviterait la perte de temps
+              actuelle pour la réalisation de ces opérations dans un «cyber
+              café » du quartier.
             </p>
           </li>
           <li>
             <p>
-              le développement matériel de l'activité en réponse aux attentes des
-              adolescents : postes d'ordinateurs supplémentaires pour une
+              le développement matériel de l'activité en réponse aux attentes
+              des adolescents : postes d'ordinateurs supplémentaires pour une
               familiarisation avec l'outil informatique, mise en place d'une
               petite bibliothèque auto-gérée.
             </p>
@@ -56,8 +58,8 @@ const NousSoutenir = () => {
         <ul>
           <li>
             <p>
-              Projet de la création d'un poste à temps partiel, rémunéré et mis à
-              disposition par l'association partenaire Coguifémine DD.
+              Projet de la création d'un poste à temps partiel, rémunéré et mis
+              à disposition par l'association partenaire Coguifémine DD.
               Véritable cheville-ouvrière du projet, missionné(e) sur les tâches
               administratives et d'animation de l'activité (suivi et
               accompagnement au quotidien de sa mise en œuvre), il/elle
@@ -69,9 +71,9 @@ const NousSoutenir = () => {
           <p>Ce poste permettrait:</p>
           <li>
             <p>
-            au coordinateur bénévole de Kobaya de se recentrer sur son rôle
-            d'interface entre l'activité et l'établissement scolaire (liens
-            avec l'équipe enseignante et les parents d'élèves),
+              au coordinateur bénévole de Kobaya de se recentrer sur son rôle
+              d'interface entre l'activité et l'établissement scolaire (liens
+              avec l'équipe enseignante et les parents d'élèves),
             </p>
           </li>
           <li>
@@ -87,7 +89,6 @@ const NousSoutenir = () => {
               participative des élèves impliqués.
             </p>
           </li>
-
         </ul>
       </div>
     </>

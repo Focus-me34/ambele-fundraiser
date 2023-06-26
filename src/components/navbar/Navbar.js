@@ -46,7 +46,7 @@ const Navbar = () => {
   }, []); // * Use an empty dependency array to run the effect only once on mount
 
   useEffect(() => {
-    toggleOpen();
+    isOpen && toggleOpen(false);
   },[router.pathname])
 
   return (

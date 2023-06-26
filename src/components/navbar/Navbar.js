@@ -46,9 +46,8 @@ const Navbar = () => {
   }, []); // * Use an empty dependency array to run the effect only once on mount
 
   useEffect(() => {
-    console.log(isNotreActionHovered);
-  }, [isNotreActionHovered]);
-
+    isOpen && toggleOpen(false);
+  },[router.pathname])
 
   return (
     <>
@@ -85,7 +84,7 @@ const Navbar = () => {
 
             <Link href={"/notre-action"}>
               <AnimatePresence mode="wait">
-                {!isNotreActionHovered &&
+                {!isNotreActionHovered && (
                   <motion.div
                     onMouseEnter={handleMouseEnter}
                     key={"NotreAction"}
@@ -94,13 +93,19 @@ const Navbar = () => {
                     exit={{ y: -10, opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <span style={{ display: "inline-block", width: "115px", textAlign: "center" }}>
+                    <span
+                      style={{
+                        display: "inline-block",
+                        width: "115px",
+                        textAlign: "center",
+                      }}
+                    >
                       Notre action
                     </span>
                   </motion.div>
-                }
+                )}
 
-                {isNotreActionHovered &&
+                {isNotreActionHovered && (
                   <motion.div
                     onMouseLeave={handleMouseLeave}
                     key={"Decouvrez"}
@@ -109,11 +114,18 @@ const Navbar = () => {
                     exit={{ y: -10, opacity: 0 }}
                     transition={{ duration: 0.2 }}
                   >
-                    <span style={{ display: "inline-block", width: "115px", textAlign: "center", color: "#fea82f" }}>
+                    <span
+                      style={{
+                        display: "inline-block",
+                        width: "115px",
+                        textAlign: "center",
+                        color: "#fea82f",
+                      }}
+                    >
                       Decouvrez
                     </span>
                   </motion.div>
-                }
+                )}
               </AnimatePresence>
 
               {router.pathname == "/notre-action" ? (
@@ -168,7 +180,7 @@ const Navbar = () => {
       )}
 
       <AnimatePresence>
-        {isNavbarShrinked && isOpen && <SideNav />}
+        {isNavbarShrinked && isOpen && <SideNav toggleOpen={toggleOpen} />}
       </AnimatePresence>
     </>
   );

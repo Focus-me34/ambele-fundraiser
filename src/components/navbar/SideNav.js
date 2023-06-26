@@ -6,14 +6,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import classes from "./Navbar.module.scss"
 
 
-const SideNavContent = () => {
+const SideNavContent = ({ toggleOpen }) => {
   const router = useRouter();
 
   const [isNotreActionHovered, setIsNotreActionHovered] = useState(false);
   const handleMouseEnter = () => setIsNotreActionHovered(true);
   const handleMouseLeave = () => setIsNotreActionHovered(false);
-
-  console.log(router.pathname);
 
   return (
     <motion.nav
@@ -30,16 +28,16 @@ const SideNavContent = () => {
         ) : null}
       </Link>
 
-      <Link href={"/qui-sommes-nous"}>
+      <Link href={"/qui-sommes-nous"} onClick={toggleOpen}>
         Qui sommes-nous ?
         {router.pathname == "/qui-sommes-nous" ? (
           <motion.div className={classes["underline"]} layoutId="underline" />
         ) : null}
       </Link>
 
-      <Link href={"/notre-action"}>
+      <Link href={"/notre-action"} onClick={toggleOpen}>
         <AnimatePresence mode="wait">
-          {!isNotreActionHovered &&
+          {!isNotreActionHovered && (
             <motion.div
               onMouseEnter={handleMouseEnter}
               key={"NotreAction"}
@@ -52,9 +50,9 @@ const SideNavContent = () => {
                 Notre action
               </span>
             </motion.div>
-          }
+          )}
 
-          {isNotreActionHovered &&
+          {isNotreActionHovered && (
             <motion.div
               onMouseLeave={handleMouseLeave}
               key={"Decouvrez"}
@@ -63,22 +61,25 @@ const SideNavContent = () => {
               exit={{ y: -10, opacity: 0 }}
               transition={{ duration: 0.2 }}
             >
-              <span style={{ display: "inline-block", textAlign: "center", color: "#fea82f" }}>
+              <span
+                style={{
+                  display: "inline-block",
+                  textAlign: "center",
+                  color: "#fea82f",
+                }}
+              >
                 Decouvrez
               </span>
             </motion.div>
-          }
+          )}
         </AnimatePresence>
 
         {router.pathname == "/notre-action" ? (
-          <motion.div
-            className={classes["underline"]}
-            layoutId="underline"
-          />
+          <motion.div className={classes["underline"]} layoutId="underline" />
         ) : null}
       </Link>
 
-      <Link href={"/nous-soutenir"}>
+      <Link href={"/nous-soutenir"} onClick={toggleOpen}>
         Nous soutenir
         {router.pathname == "/nous-soutenir" ? (
           <motion.div className={classes["underline"]} layoutId="underline" />

@@ -2,6 +2,18 @@
   width: 100%;
   height: 650px;
   position: relative;
+
+  // @media (max-width: 930px) {
+  //   height: 600px;
+  // }
+
+  // @media (max-width: 700px) {
+  //   height: 400px;
+  // }
+
+  // @media (max-width: 500px) {
+  //   height: 300px;
+  // }
 }
 
 .header-image-container {
@@ -44,8 +56,10 @@
 }
 
 .main-header-content h2 {
-  font-style: italic;
-  font-weight: lighter;
+  font-size: 2rem;
+  // font-style: italic;
+  // font-weight: normal;
+
   margin: 0rem auto 3.5rem;
 }
 
@@ -56,7 +70,7 @@
     left: 0;
     width: 100%;
     object-fit: contain;
-    object-position: left;
+    object-position: right;
   }
 
   .main-header-content h1 span {

@@ -18,15 +18,20 @@ const NotreAction = () => {
     <>
       <div className={classes["gradient-container"]} />
 
-      <div className={classes["image-header-container"]}>
-        <Image
-          src="/photo-physique-d.jpg"
-          alt="Qui sommes nous"
-          fill={true}
-          priority={true}
-          style={{ objectFit: "cover", objectPosition: "50% 10%" }}
-        />
-      </div>
+      <Image
+        src="/photo-physique-d.jpg"
+        alt="Qui sommes nous"
+        priority={true}
+        width={2500}
+        height={1500}
+        style={{
+          maxHeight: "50vh",
+          objectFit: "cover",
+          objectPosition: "50% 10%",
+        }}
+        className="img-100"
+      />
+      {/* </div> */}
 
       {/* <iframe
         id="haWidget"
@@ -114,10 +119,15 @@ const NotreAction = () => {
         </p>
         <ul>
           Elle s'effectue :
-          <li>après les cours, 4 après-midi par semaine</li>
           <li>
-            dans un local proche du Lycée mis à disposition par la Coguiféminine
-            DD (<Link href="#section-quels-acteurs">en savoir plus</Link>)
+            <p>après les cours, 4 après-midi par semaine</p>
+          </li>
+          <li>
+            <p>
+              dans un local proche du Lycée mis à disposition par la
+              Coguiféminine DD (
+              <Link href="#section-quels-acteurs">en savoir plus</Link>)
+            </p>
           </li>
         </ul>
         <p>
@@ -133,22 +143,30 @@ const NotreAction = () => {
           méthodologie.
         </p>
         <ul>
-          Elle se décline:
+          <p>Elle se décline:</p>
           <li>
-            en séances hebdomadaires d'1 heure voire 1 heure 1 /2 réunissant
-            autour d'une matière spécifique un(e) bénévole français(e) et de 1 à
-            5 élèves maximum dans une même classe,
+            <p>
+              en séances hebdomadaires d'1 heure voire 1 heure 1 /2 réunissant
+              autour d'une matière spécifique un(e) bénévole français(e) et de 1
+              à 5 élèves maximum dans une même classe,
+            </p>
           </li>
           <li>
-            par l'intermédiaire d'une application de visiophonie permettant la
-            communication instantanée par oral, écrit et la transmission de
-            documents
+            <p>
+              par l'intermédiaire d'une application de visiophonie permettant la
+              communication instantanée par oral, écrit et la transmission de
+              documents
+            </p>
           </li>
         </ul>
         <ul>
-          L'activité est encadrée bénévolement
-          <li>en France par un membre de l'association Ambélé,</li>
-          <li>à Kobaya par le proviseur du Lycée de Jeunes filles.</li>
+          <p>L'activité est encadrée bénévolement</p>
+          <li>
+            <p>en France par un membre de l'association Ambélé,</p>
+          </li>
+          <li>
+            <p>à Kobaya par le proviseur du Lycée de Jeunes filles.</p>
+          </li>
         </ul>
         <p>
           Les situations d'entraide parmi les élèves avant, pendant et après les
@@ -168,6 +186,7 @@ const NotreAction = () => {
             alt="Accompagnement à la prise en main de l'outil informatique"
             width={500}
             height={380}
+            className="img-100"
           />
 
           <Image
@@ -175,6 +194,7 @@ const NotreAction = () => {
             alt="Accompagnement à la prise en main de l'outil informatique"
             width={500}
             height={380}
+            className="img-100"
           />
           {/* <Image
             src="/IMG/conseil-de-maison.png"
@@ -305,8 +325,10 @@ const NotreAction = () => {
         <ul>
           <h4>En France:</h4>
           <li>
-            l'association Ambélé (
-            <Link href="#section-quels-acteurs">qui sommes nous ?</Link>)
+            <p>
+              l'association Ambélé (
+              <Link href="#section-quels-acteurs">qui sommes nous ?</Link>)
+            </p>
           </li>
           <p>
             Ambélé prend en charge les frais mensuels de connexion internet sur
@@ -329,7 +351,9 @@ const NotreAction = () => {
           </p>
 
           <h4>À Conakry:</h4>
-          <li>Le Lycée de Jeunes Filles de Kobaya</li>
+          <li>
+            <p>Le Lycée de Jeunes Filles de Kobayaqui sommes nous</p>
+          </li>
           <p>
             Situé au cœur du quartier, le lycée accueille 432 élèves dont 270
             collégiens et 162 lycéens, encadrés par une équipe enseignante de 38
@@ -342,6 +366,7 @@ const NotreAction = () => {
               alt="Le Lycée de Jeunes filles de Kobaya (bâtiment de gauche)"
               width={500}
               height={380}
+              className="img-100"
             />
 
             <Image
@@ -349,6 +374,7 @@ const NotreAction = () => {
               alt="Entrée principale du Lycée de Jeunes filles"
               width={500}
               height={380}
+              className="img-100"
             />
           </div>
 
@@ -380,8 +406,10 @@ const NotreAction = () => {
           </p>
 
           <li>
-            La coalition guinéenne Coguifeminine DD (Coalition Guinéenne des
-            Femmes pour les Mines et le Développement Durable)
+            <p>
+              La coalition guinéenne Coguifeminine DD (Coalition Guinéenne des
+              Femmes pour les Mines et le Développement Durable)
+            </p>
           </li>
           <p>
             Cette association sans but lucratif, non confessionnelle et
@@ -412,6 +440,7 @@ const NotreAction = () => {
               alt="L'entrée de la Maison des jeunes de Kobaya"
               width={500}
               height={380}
+              className="img-100"
             />
 
             <Image
@@ -419,6 +448,7 @@ const NotreAction = () => {
               alt="Local (Coguiféminine DD) où se déroule l'activité"
               width={500}
               height={380}
+              className="img-100"
             />
           </div>
 
@@ -619,7 +649,7 @@ const NotreAction = () => {
               lycéens et lycéennes de Conakry.
             </p>
             <p>
-              Grâce à Skype, et à mon tableau disposé devant l’ordinateur - je
+              « Grâce à Skype, et à mon tableau disposé devant l’ordinateur - je
               trouve fascinant de communiquer ainsi grâce aux nouvelles
               technologies, et de faire des mathématiques avec des jeunes qui
               sont à plusieurs milliers de kilomètres de chez moi ! -nous nous
@@ -657,12 +687,18 @@ const NotreAction = () => {
               Jérôme Mbemba Millimouno, proviseur du Lycée de Jeunes Filles de
               Kobaya
             </h4>
-            <p>Nos difficultés se résument par:</p>
+            <p>
+              « Nos difficultés se résument parNos difficultés se résument par:
+            </p>
             <ul>
-              <li>un local trop restreint</li>
               <li>
-                un manque de matériel logistique, de supports adéquats au cours,
-                de matériel didactique (livres, manuels…)
+                <p>un local trop restreint</p>
+              </li>
+              <li>
+                <p>
+                  un manque de matériel logistique, de supports adéquats au
+                  cours, de matériel didactique (livres, manuels…)
+                </p>
               </li>
             </ul>
 
@@ -678,7 +714,7 @@ const NotreAction = () => {
             </p>
             <p>
               A tous et toutes, soutenons les plus démunis et nous réussirons à
-              sauver les vies
+              sauver les vies. »
             </p>
           </div>
 
@@ -728,21 +764,25 @@ const NotreAction = () => {
           <p>Cela, en raison:</p>
           <ul>
             <li>
-              d'une insuffisance de ressource humaine bénévole sur site pour
-              accompagner dans la durée la démarche participative ainsi que le
-              potentiel développement de l'activité : le peu de temps que peut
-              dégager actuellement le coordinateur bénévole, s'ajoutant à ses
-              missions de direction du lycée, est dévolu au suivi du
-              fonctionnement de l'activité de cyber-accompagnement existante,
+              <p>
+                d'une insuffisance de ressource humaine bénévole sur site pour
+                accompagner dans la durée la démarche participative ainsi que le
+                potentiel développement de l'activité : le peu de temps que peut
+                dégager actuellement le coordinateur bénévole, s'ajoutant à ses
+                missions de direction du lycée, est dévolu au suivi du
+                fonctionnement de l'activité de cyber-accompagnement existante,
+              </p>
             </li>
             <li>
-              de contraintes matérielles rédhibitoires ou freinantes : manque de
-              matériel bureautique (imprimante, photocopieur et scanner), et (à
-              la place de la virgule) informatique (écran d'ordinateur de taille
-              insuffisante, matériel de prise de vue et de son de qualité
-              insuffisante), inconfort du local (exiguïté et manque d’équipement
-              du local, forte chaleur, visite de rongeurs dégradant le
-              matériel...)
+              <p>
+                de contraintes matérielles rédhibitoires ou freinantes : manque
+                de matériel bureautique (imprimante, photocopieur et
+                scanner), et (à la place de la virgule) informatique (écran
+                d'ordinateur de taille insuffisante, matériel de prise de vue et
+                de son de qualité insuffisante), inconfort du local (exiguïté et
+                manque d’équipement du local, forte chaleur, visite de rongeurs
+                dégradant le matériel...)
+              </p>
             </li>
           </ul>
 
@@ -762,28 +802,9 @@ const NotreAction = () => {
 
           <video src="/VIDEOS/video-eleve-debout.mp4" controls="true" />
           <p className={classes["video-caption"]}>
-            Des conditions de travail parfois précaires : deux collégiennes se partageant une même chaise, une autre debout.
+            Des conditions de travail parfois précaires : deux collégiennes se
+            partageant une même chaise, une autre debout.
           </p>
-
-          {/* <Image
-            src="/IMG/i-photo-élève-debout.png"
-            alt="Accompagnement à la prise en main de l'outil informatique"
-            width={500}
-            height={500}
-          /> */}
-
-          {/* // TODO: CANNOT USE THE PICTURE ABOVE */}
-          {/* <p
-            style={{
-              fontSize: "3rem",
-              color: "red",
-              lineHeight: "2.5rem",
-            }}
-          >
-            Photo élève debout / Légende : Des conditions de travail parfois
-            précaires : deux collégiennes se partageant une même chaise, une
-            autre debout
-          </p> */}
         </div>
       </div>
     </>

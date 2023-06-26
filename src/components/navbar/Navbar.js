@@ -45,6 +45,11 @@ const Navbar = () => {
     };
   }, []); // * Use an empty dependency array to run the effect only once on mount
 
+  useEffect(() => {
+    console.log(isNotreActionHovered);
+  }, [isNotreActionHovered]);
+
+
   return (
     <>
       {!isNavbarShrinked && (
@@ -52,15 +57,13 @@ const Navbar = () => {
           <Image // ? Position absolute by default
             key={"Logo black"}
             src="/logo-black.svg"
-            alt="Logo"
-            width={100}
-            height={50}
+            alt="Logo black"
+            width={200}
+            height={100}
           />
 
           <div>
-            <Link
-              href={"/"}
-            >
+            <Link href={"/"}>
               Acceuil
               {router.pathname == "/" ? (
                 <motion.div
@@ -71,7 +74,7 @@ const Navbar = () => {
             </Link>
 
             <Link href={"/qui-sommes-nous"}>
-              Qui sommes-nous?
+              Qui sommes-nous ?
               {router.pathname == "/qui-sommes-nous" ? (
                 <motion.div
                   className={classes["underline"]}
@@ -80,33 +83,37 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-            <Link
-              href={"/notre-action"}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
+            <Link href={"/notre-action"}>
               <AnimatePresence mode="wait">
-                <motion.div
-                  key={isNotreActionHovered ? "Decouvrez" : "empty"}
-                  initial={{ y: 10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: -10, opacity: 0 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <span
-                    style={{
-                      display: "inline-block",
-                      width: "115px",
-                      textAlign: "center",
-                    }}
+                {!isNotreActionHovered &&
+                  <motion.div
+                    onMouseEnter={handleMouseEnter}
+                    key={"NotreAction"}
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -10, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
                   >
-                    {isNotreActionHovered ? (
-                      <span style={{ color: "#fea82f" }}>Decouvrez</span>
-                    ) : (
-                      <span>Notre action</span>
-                    )}
-                  </span>
-                </motion.div>
+                    <span style={{ display: "inline-block", width: "115px", textAlign: "center" }}>
+                      Notre action
+                    </span>
+                  </motion.div>
+                }
+
+                {isNotreActionHovered &&
+                  <motion.div
+                    onMouseLeave={handleMouseLeave}
+                    key={"Decouvrez"}
+                    initial={{ y: 10, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: -10, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <span style={{ display: "inline-block", width: "115px", textAlign: "center", color: "#fea82f" }}>
+                      Decouvrez
+                    </span>
+                  </motion.div>
+                }
               </AnimatePresence>
 
               {router.pathname == "/notre-action" ? (
@@ -127,7 +134,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-            <Link href={"/contact"}>
+            {/* <Link href={"/contact"}>
               Nous contacter
               {router.pathname == "/contact" ? (
                 <motion.div
@@ -135,7 +142,7 @@ const Navbar = () => {
                   layoutId="underline"
                 />
               ) : null}
-            </Link>
+            </Link> */}
           </div>
         </nav>
       )}

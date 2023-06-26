@@ -18,9 +18,11 @@
 }
 
 .navbar img {
-  scale: 2;
+  // scale: 2;
   position: absolute;
-  left: 10rem;
+  left: 4rem;
+  width: 200px;
+  height: 100px;
   /* margin-right: auto; */
   /* margin-right: 1rem; */
 }
@@ -136,10 +138,11 @@
   font-size: 2rem;
   padding: 2rem;
   gap: 1rem;
+  border-bottom: 4px solid var(--primary-color);
 
   a {
     white-space: nowrap;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--black);
     text-transform: uppercase;
     text-decoration: none;
@@ -150,9 +153,5 @@
     margin: 1.5rem;
     padding-bottom: 0.2rem;
 
-  }
-
-  .underline {
-    color: rebeccapurple !important;
   }
 }

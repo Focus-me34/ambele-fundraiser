@@ -11,6 +11,7 @@ const MainHeader = () => {
         src="/student-working.jpg"
         alt="Picture of the author"
         fill
+        priority
         style={{
           objectFit: "cover",
         }}
@@ -23,8 +24,8 @@ const MainHeader = () => {
         </h1>
 
         <h2>Solidarité France-Guinée par l'éducation populaire</h2>
-{/* <br /><br /> */}
-        <ButtonCTA />
+
+        <ButtonCTA size={"small"} />
       </div>
     </div>
   );

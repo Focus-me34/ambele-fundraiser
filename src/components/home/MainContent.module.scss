@@ -1,5 +1,6 @@
 .home-content {
   section {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -13,7 +14,8 @@
     }
 
     .text {
-      text-align: justify;
+      position: relative;
+      // text-align: justify;
     }
 
     a { // ? LINK BUTTON FROM NEXT JS // Includes an arrow SVG
@@ -50,4 +52,15 @@
       }
     }
   }
+}
+
+
+.trigger-in-view-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(200%, 300%);
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
 }

@@ -7,6 +7,7 @@ import Image from "next/image";
 import classes from "./MainContent.module.scss";
 import containerClasses from "../../styles/container.module.scss";
 import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+import { bottomNavigationActionClasses } from "@mui/material";
 
 const MainContent = () => {
   const rowAnimation = useAnimationControls();
@@ -29,10 +30,9 @@ const MainContent = () => {
     >
       {/* // ! ================ ROW 1 ================ */}
       <section
-        ref={firstRowRef}
         animate={rowAnimation}
         style={{
-          opacity: firstRowisInView ? 1 : 0.25,
+          opacity: firstRowisInView ? 1 : 0.33,
           transition: "all 1s 0s",
         }}
       >
@@ -48,6 +48,8 @@ const MainContent = () => {
         />
 
         <div className={classes["text"]}>
+          <div ref={firstRowRef} className={classes["trigger-in-view-animation"]}></div>
+
           <h2>Qui Sommes nous?</h2>
           <p>
             Ambélé est une association française qui soutient et accompagne des
@@ -72,10 +74,9 @@ const MainContent = () => {
 
       {/* // ! ================ ROW 2 ================ */}
       <section
-        ref={secondRowRef}
         animate={rowAnimation}
         style={{
-          opacity: secondRowisInView ? 1 : 0.25,
+          opacity: secondRowisInView ? 1 : 0.33,
           transition: "all 1s 0s",
         }}
       >
@@ -91,6 +92,8 @@ const MainContent = () => {
         />
 
         <div className={classes["text"]}>
+          <div ref={secondRowRef} className={classes["trigger-in-view-animation"]}></div>
+
           <h2>Notre action</h2>
           <p>
             Notre action consiste en un projet de cyber-accompagnement pour des
@@ -130,11 +133,11 @@ const MainContent = () => {
 
       {/* // ! ================ ROW 3 ================ */}
       <section
-        ref={thirdRowRef}
         animate={rowAnimation}
         style={{
-          opacity: thirdRowisInView ? 1 : 0.25,
+          opacity: thirdRowisInView ? 1 : 0.33,
           transition: "all 1s 0s",
+          marginBottom: "10rem"
         }}
       >
         <Image // ? Position absolute by default
@@ -150,6 +153,8 @@ const MainContent = () => {
 
         <div className={classes["text"]}>
           <h2>Nous soutenir</h2>
+          <div ref={thirdRowRef} className={classes["trigger-in-view-animation"]}></div>
+
           <p>
             Vos dons sont essentiels pour soutenir l'avancement du projet en
             finançant l'achat de matériels tels que du mobilier de rangement, du

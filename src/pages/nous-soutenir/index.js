@@ -19,7 +19,8 @@ const NousSoutenir = () => {
         <h2>Un don, dans quel but ?</h2>
 
         <h3>
-          Soutenir matériellement l'action, son optimisation et son développement, en participant à l'achat de matériels permettant :
+          Soutenir matériellement l'action, son optimisation et son
+          développement, en participant à l'achat de matériels permettant :
         </h3>
 
         <ul>
@@ -29,21 +30,21 @@ const NousSoutenir = () => {
             des chaises en mauvais état, matériel informatique facilitant
             l'activité pour les élèves et les intervenants bénévoles (écran
             d'ordinateur de grande taille, caméra de visioconférence) mais aussi
-            pour leur accompagnateur : imprimante scanner photocopieur - achat qui
-            éviterait la perte de temps actuelle pour la réalisation de ces
+            pour leur accompagnateur : imprimante scanner photocopieur - achat
+            qui éviterait la perte de temps actuelle pour la réalisation de ces
             opérations dans un «cyber café » du quartier
           </li>
           <li>
             le développement matériel de l'activité en réponse aux attentes des
             adolescents : postes d'ordinateurs supplémentaires pour une
-            familiarisation avec l'outil informatique, mise en place d'une petite
-            bibliothèque auto-gérée
+            familiarisation avec l'outil informatique, mise en place d'une
+            petite bibliothèque auto-gérée
           </li>
         </ul>
 
         <h3>
-          Contribuer au financement d'un poste d'animateur/trice de l'activité via
-          l'association Coguifémine DD :
+          Contribuer au financement d'un poste d'animateur/trice de l'activité
+          via l'association Coguifémine DD :
         </h3>
 
         <ul>
@@ -52,10 +53,10 @@ const NousSoutenir = () => {
             disposition par l'association partenaire Coguifémine DD.
             <br />
             Véritable cheville-ouvrière du projet, missionné(e) sur les tâches
-            administratives et d'animation de l'activité (suivi et accompagnement
-            au quotidien de sa mise en œuvre), il/elle développerait ces missions
-            en complémentarité et en lien avec le Lycée de jeunes filles et
-            l'association Ambélé.
+            administratives et d'animation de l'activité (suivi et
+            accompagnement au quotidien de sa mise en œuvre), il/elle
+            développerait ces missions en complémentarité et en lien avec le
+            Lycée de jeunes filles et l'association Ambélé.
           </li>
           <li>
             Ce poste permettrait:
@@ -78,7 +79,14 @@ const NousSoutenir = () => {
           </li>
         </ul>
 
-      {/* <iframe
+        {/* <iframe
+          id="haWidget"
+          allowtransparency="true"
+          src="https://www.helloasso.com/associations/ambele/formulaires/1/widget"
+          style={{ width: "100%", height: "750px", border: "none" }}
+        ></iframe> */}
+
+        {/* <iframe
         id="haWidget"
         allowtransparency="true"
         src="https://www.helloasso.com/associations/ambele/formulaires/1/widget-bouton"

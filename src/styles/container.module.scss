@@ -45,6 +45,18 @@
   height: 500px;
   position: relative;
 
+  @media (max-width: 930px) {
+    height: 300px;
+  }
+
+  @media (max-width: 700px) {
+    height: 250px;
+  }
+
+  @media (max-width: 500px) {
+    height: 200px;
+  }
+
   img {
     position: absolute;
     opacity: 0;
@@ -64,6 +76,10 @@
     transform: translate(0%, -50%);
     color: white;
     margin-left: 4rem;
+
+    @media (max-width: 930px) {
+      margin-left: 1rem;
+    }
   }
 
   .arrow-right {
@@ -73,6 +89,10 @@
     transform: translate(0%, -50%);
     color: white;
     margin-right: 4rem;
+
+    @media (max-width: 930px) {
+      margin-right: 1rem;
+    }
   }
 
   .arrow-left, .arrow-right {
@@ -101,6 +121,10 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+
+    @media (max-width: 930px) {
+      height: 3.5rem;
+    }
   }
 
   .carousel-indicator {
@@ -112,6 +136,11 @@
 
     &:hover {
       cursor: pointer;
+    }
+
+    @media (max-width: 930px) {
+      width: 1.5rem;
+      height: 1.5rem;
     }
   }
 

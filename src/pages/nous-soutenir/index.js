@@ -1,5 +1,7 @@
-import classes from "../../styles/container.module.scss";
+import ButtonCTA from "@/components/UI/ButtonCTA";
 import Image from "next/image";
+import classes from "../../styles/container.module.scss";
+
 
 const NousSoutenir = () => {
   return (
@@ -78,20 +80,6 @@ const NousSoutenir = () => {
             </ul>
           </li>
         </ul>
-
-        {/* <iframe
-          id="haWidget"
-          allowtransparency="true"
-          src="https://www.helloasso.com/associations/ambele/formulaires/1/widget"
-          style={{ width: "100%", height: "750px", border: "none" }}
-        ></iframe> */}
-
-        {/* <iframe
-        id="haWidget"
-        allowtransparency="true"
-        src="https://www.helloasso.com/associations/ambele/formulaires/1/widget-bouton"
-        style={{ width: "100%", height: "70px", border: "none" }}
-      /> */}
       </div>
     </>
   );

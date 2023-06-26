@@ -1,16 +1,34 @@
 import Link from "next/link";
-import classes from "@/styles/buttons.module.scss";
+import classes from "./ButtonCTA.module.scss";
+import VolunteerActivismRoundedIcon from "@mui/icons-material/VolunteerActivismRounded";
 
-const ButtonCTA = () => {
+
+const ButtonCTA = ({ size }) => {
   return (
-    <Link
-      href="https://www.helloasso.com/associations/ambele/formulaires/1"
-      target="_blank"
-      rel="noopener noreferrer"
-      className={classes["btn-cta-fill"]}
-    >
-      Soutenir le project
-    </Link>
+    <>
+      {size === "small" && (
+        <Link
+          href="https://www.helloasso.com/associations/ambele/formulaires/1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${classes["btn-cta-fill"]} ${classes["small"]}`}
+        >
+          <VolunteerActivismRoundedIcon />
+          Soutenez le project
+        </Link>
+      )}
+
+      {size === "floating" && (
+        <Link
+          href="https://www.helloasso.com/associations/ambele/formulaires/1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${classes["btn-cta-fill"]} ${classes["floating"]}`}
+        >
+          <VolunteerActivismRoundedIcon />
+        </Link>
+      )}
+    </>
   );
 }
 

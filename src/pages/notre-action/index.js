@@ -506,7 +506,7 @@ const NotreAction = () => {
           Matière : mathématiques, classe de 11ème (équivalent 2nde française)
           Exercice de mise en pratique d'un cours  : inégalités et encadrement.
         </p>
-        <video src="/VIDEOS/vidéo-français-2.mp4.mp4" controls="true" />
+        <video src="/VIDEOS/vidéo-français-2.mp4" controls="true" />
         <p className={classes["video-caption"]}>
           Matière: français, classe de 9ème (équivalent de 4ème française)
           Correction d'exercices d'écriture transmis par la bénévole avant la

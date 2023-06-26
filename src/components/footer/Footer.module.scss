@@ -5,7 +5,7 @@
   // height: 13rem;
 
   display: flex;
-  gap: 5rem;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +18,11 @@
 
   img {
     width: 250px;
+    flex: 1 1 0px;
+  }
+
+  div {
+    flex: 1 1 0px;
   }
 
   h2 {

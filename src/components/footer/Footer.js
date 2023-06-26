@@ -12,15 +12,13 @@ const Footer = () => {
 
   return (
     <footer className={classes["footer"]}>
-      {/* <div className={classes["footer-content-container"]}> */}
-      {/* <div className={classes.logo}> */}
-      <Image src="/logo-white.svg" alt="Logo white" width={200} height={100} />
-      {/* </div> */}
+      <Image src="/logo-white.svg" alt="Logo white" width={100} height={50} />
 
       <div className={classes["footer-content"]}>
         <h2>
           Tous ensemble,&nbsp;
-          <div className={classes["content-dynamic-separator"]}></div>
+          <br />
+          {/* <div className={classes["content-dynamic-separator"]}></div> */}
           soutenons Ambélé
         </h2>
 
@@ -37,7 +35,6 @@ const Footer = () => {
           &nbsp;☀️
         </p>
       </div>
-      {/* </div> */}
     </footer>
   );
 }

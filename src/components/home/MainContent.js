@@ -285,8 +285,8 @@ const MainContent = () => {
             <Image
               src="/cogui-DD.png"
               alt="Lycee de jeune filles de Conakry logo"
-              width={350}
-              height={120}
+              width={450}
+              height={170}
               style={{ objectFit: "cover", position: "relative" }}
             />
           </div>

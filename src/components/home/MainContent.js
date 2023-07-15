@@ -196,6 +196,45 @@ const MainContent = () => {
         </div>
       </section>
 
+      {/* // ! ================ ROW 4 ================ */}
+      <section
+        // ref={fourthRowRef}
+        animate={rowAnimation}
+        style={{
+          opacity: fourthRowisInView ? 1 : 0.25,
+          transition: "all 1s 0s",
+        }}
+      >
+        <Image // ? Position absolute by default
+          key={"contact"}
+          src="/contact.svg"
+          alt="Picture of the author"
+          width={350}
+          height={200}
+          style={{
+            objectFit: "cover",
+          }}
+        />
+
+        <div className={classes["text"]}>
+          <h2>Contact</h2>
+          <div
+            ref={fourthRowRef}
+            className={classes["trigger-in-view-animation"]}
+          ></div>
+
+          <p>
+            Une question, une suggestion ou une demande de précision ? N'hesitez pas à nous contacter
+            et nous vous répondrons dans les plus brefs délais.
+          </p>
+
+          <Link href={"/contact"}>
+            <ArrowForwardRoundedIcon />
+            EN SAVOIR PLUS
+          </Link>
+        </div>
+      </section>
+
       {/* // ! ================ PARTNERS ================ */}
       <div className={classes["partner-logo-container"]}>
         <Link
@@ -236,41 +275,6 @@ const MainContent = () => {
           />
         </div>
       </div>
-
-      {/* // ! ================ ROW 4 ================ */}
-      {/* <section
-        ref={fourthRowRef}
-        animate={rowAnimation}
-        style={{
-          opacity: fourthRowisInView ? 1 : 0.25,
-          transition: "all 1s 0s",
-        }}
-      >
-          <Image // ? Position absolute by default
-            key={"contact"}
-            src="/contact.svg"
-            alt="Picture of the author"
-            width={350}
-            height={200}
-            style={{
-              objectFit: "cover",
-            }}
-          />
-
-          <div className={classes["text"]}>
-            <h2>Contact</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-            officiis praesentium alias fugiat sit iusto id ab dolores eveniet
-            accusamus perferendis fugit exercitationem optio numquam ex, ipsam
-            tenetur enim amet?
-
-            <Link href={"/contact"}>
-              <ArrowForwardRoundedIcon />
-              EN SAVOIR PLUS
-            </Link>
-          </div>
-
-      </section> */}
     </main>
   );
 };

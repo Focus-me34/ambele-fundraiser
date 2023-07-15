@@ -1,0 +1,54 @@
+.contact-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+
+  border: 3px solid var(--light-grey);
+  border-radius: 1rem;
+
+  width: 100%;
+  transition: 0.25s ease-in-out;
+
+  &:hover {
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    background-color: rgba(230,230,230, 0.5);
+  }
+
+  @media (max-width: 860px) {
+    margin: 2rem auto 1rem;
+  }
+
+  img {
+    width: 25%;
+    height: auto;
+  }
+
+  h3 {
+    margin: 0;
+
+    @media (max-width: 860px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .text {
+    width: 75%;
+    padding: 0 2rem;
+    margin: 0 auto;
+
+    p {
+      margin-bottom: 0 !important;
+      // font-style: italic;
+      font-weight: bold;
+
+      @media (max-width: 860px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+}

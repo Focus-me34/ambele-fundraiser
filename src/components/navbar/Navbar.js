@@ -146,7 +146,7 @@ const Navbar = () => {
               ) : null}
             </Link>
 
-            {/* <Link href={"/contact"}>
+            <Link href={"/contact"}>
               Nous contacter
               {router.pathname == "/contact" ? (
                 <motion.div
@@ -154,7 +154,7 @@ const Navbar = () => {
                   layoutId="underline"
                 />
               ) : null}
-            </Link> */}
+            </Link>
           </div>
         </nav>
       )}

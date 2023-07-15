@@ -32,7 +32,6 @@ const Footer = () => {
           <Link href="https://github.com/Focus-me34" target="_blank" rel="noopener noreferrer">
             Sunamin
           </Link>
-          &nbsp;☀️
         </p>
       </div>
     </footer>

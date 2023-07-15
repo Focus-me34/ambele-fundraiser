@@ -86,12 +86,12 @@ const SideNavContent = ({ toggleOpen }) => {
         ) : null}
       </Link>
 
-      {/* <Link href={"/contact"}>
+      <Link href={"/contact"}>
         Nous contacter
         {router.pathname == "/contact" ? (
           <motion.div className={classes["underline"]} layoutId="underline" />
         ) : null}
-      </Link> */}
+      </Link>
     </motion.nav>
   );
 };

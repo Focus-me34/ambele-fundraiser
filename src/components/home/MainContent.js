@@ -270,9 +270,9 @@ const MainContent = () => {
           <div
             style={{
               display: "flex",
-              flexDirection: "row",
+              flexDirection: "column",
               alignItems: "center",
-              gap: "2.5rem",
+              gap: "5rem",
             }}
           >
             <Image
@@ -291,17 +291,6 @@ const MainContent = () => {
             />
           </div>
         </div>
-
-        {/* <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "1rem",
-          }}
-        >
-          <h3>Ainsi que</h3>
-        </div> */}
       </div>
     </main>
   );

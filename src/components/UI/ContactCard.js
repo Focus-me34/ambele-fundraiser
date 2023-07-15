@@ -38,8 +38,8 @@ const ContactCard = ({ cardData }) => {
             src={cardData.imgSrc}
             alt={cardData.alt}
             priority={true}
-            width={2500}
-            height={1500}
+            width={350}
+            height={200}
           />
 
           <div className={classes["text"]}>
@@ -55,8 +55,8 @@ const ContactCard = ({ cardData }) => {
             src={cardData.imgSrc}
             alt={cardData.alt}
             priority={true}
-            width={2500}
-            height={1500}
+            width={350}
+            height={200}
           />
 
           <div className={classes["text"]}>
@@ -75,8 +75,8 @@ const ContactCard = ({ cardData }) => {
             src={cardData.imgSrc}
             alt={cardData.alt}
             priority={true}
-            width={2500}
-            height={1500}
+            width={350}
+            height={200}
           />
 
           <div className={classes["text"]}>

@@ -224,8 +224,9 @@ const MainContent = () => {
           ></div>
 
           <p>
-            Une question, une suggestion ou une demande de précision ? N'hesitez pas à nous contacter
-            et nous vous répondrons dans les plus brefs délais.
+            Une question, une suggestion ou une demande de précision ? N'hesitez
+            pas à nous contacter et nous vous répondrons dans les plus brefs
+            délais.
           </p>
 
           <Link href={"/contact"}>
@@ -266,14 +267,42 @@ const MainContent = () => {
         >
           <h3>Et en partenariat avec</h3>
 
-          <Image
-            src="/lycee-konakry-logo.png"
-            alt="Lycee de jeune filles de Conakry logo"
-            width={150}
-            height={150}
-            style={{ objectFit: "cover", position: "relative" }}
-          />
+
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              gap: "5rem",
+            }}
+          >
+            <Image
+              src="/lycee-konakry-logo.png"
+              alt="Lycee de jeune filles de Conakry logo"
+              width={150}
+              height={150}
+              style={{ objectFit: "cover", position: "relative" }}
+              />
+            <Image
+              src="/cogui-DD.png"
+              alt="Lycee de jeune filles de Conakry logo"
+              width={150}
+              height={150}
+              style={{ objectFit: "cover", position: "relative" }}
+              />
+          </div>
         </div>
+
+        {/* <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          <h3>Ainsi que</h3>
+        </div> */}
       </div>
     </main>
   );

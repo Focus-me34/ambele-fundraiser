@@ -1,5 +1,8 @@
 import classes from "../../styles/container.module.scss"
 import Image from "next/image"
+import Link from "next/link";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+
 
 const QuiSommesNous = () => {
   return (
@@ -15,7 +18,7 @@ const QuiSommesNous = () => {
         style={{
           maxHeight: "50vh",
           objectFit: "cover",
-          objectPosition: "50% 40%",
+          objectPosition: "50% 50%",
         }}
         className="img-100"
       />
@@ -110,6 +113,11 @@ const QuiSommesNous = () => {
           Guinée, notamment pour accompagner bénévolement des projets locaux
           d'éducation populaire.
         </p>
+
+        <Link href={"/"} className="go-back-btn">
+          <ArrowForwardRoundedIcon />
+          Revenir à l'accueil
+        </Link>
       </div>
     </>
   );

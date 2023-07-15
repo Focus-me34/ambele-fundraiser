@@ -2,6 +2,8 @@ import classes from "../../styles/container.module.scss"
 import Image from "next/image"
 import Link from "next/link";
 import Carousel from "@/components/UI/Carousel";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+
 // import { useState } from "react";
 
 const NotreAction = () => {
@@ -41,7 +43,7 @@ const NotreAction = () => {
       <div className={classes["gradient-container"]} />
 
       <Image
-        src="/photo-physique-d.jpg"
+        src="/IMG/physique-F.jpg"
         alt="Qui sommes nous"
         priority={true}
         width={2500}
@@ -49,7 +51,7 @@ const NotreAction = () => {
         style={{
           maxHeight: "50vh",
           objectFit: "cover",
-          objectPosition: "50% 10%",
+          objectPosition: "50% 20%",
         }}
         className="img-100"
       />
@@ -74,7 +76,7 @@ const NotreAction = () => {
           Notre action « On est ensemble à Kobaya » : une action d'éducation
           populaire autour d'un cyber accompagnement scolaire
         </h2>
-        <h3>A - On est ensemble à Kobaya, pourquoi ?</h3>
+        <h3>On est ensemble à Kobaya, pourquoi ?</h3>
         <p>
           Dans un contexte local de fortes inégalités dans le maintien dans la
           scolarité des adolescents en fonction des ressources et situations
@@ -140,7 +142,7 @@ const NotreAction = () => {
           responsabilité et de décision.
         </p>
         {/* // ! ===================================== */}
-        <h3>B - On est ensemble à Kobaya, comment ?</h3>
+        <h3>On est ensemble à Kobaya, comment ?</h3>
         <p>
           L’activité concerne des élèves de 13 à 18 ans, provenant
           exclusivement, à ce jour, du Lycée de jeunes filles.
@@ -226,7 +228,7 @@ const NotreAction = () => {
           /> */}
         </div>
         {/* // ! ===================================== */}
-        <h3 id="section-quel-contexte">C - Quel contexte ?</h3>
+        <h3 id="section-quel-contexte">Quel contexte ?</h3>
         <p>
           Le Grand Conakry dans lequel se situe le quartier de Kobaya regroupe
           50% de la population urbaine de Guinée sur 1% du territoire. Il compte
@@ -338,7 +340,7 @@ const NotreAction = () => {
           ayant redoublé ou abandonné leur scolarité.
         </p>
         {/* // ! ===================================== */}
-        <h3 id="section-quels-acteurs">D - Quels acteurs ?</h3>
+        <h3 id="section-quels-acteurs">Quels acteurs ?</h3>
         <p>
           Le projet repose sur un partenariat organisationnel et opérationnel
           entre 3 structures : une française et deux guinéennes.
@@ -485,7 +487,7 @@ const NotreAction = () => {
           </p>
         </ul>
         {/* // ! ===================================== */}
-        <h3>E - Quels résultats ?</h3>
+        <h3>Quels résultats ?</h3>
         <p>
           Le projet s'est mis en place, pas à pas, à partir du mois de février
           2022.
@@ -849,6 +851,11 @@ const NotreAction = () => {
             partageant une même chaise, une autre debout.
           </p>
         </div>
+
+        <Link href={"/"} className="go-back-btn">
+          <ArrowForwardRoundedIcon />
+          Revenir à l'accueil
+        </Link>
       </div>
     </>
   );

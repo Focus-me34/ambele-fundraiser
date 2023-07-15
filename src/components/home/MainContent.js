@@ -196,14 +196,45 @@ const MainContent = () => {
         </div>
       </section>
 
+      {/* // ! ================ PARTNERS ================ */}
       <div className={classes["partner-logo-container"]}>
-        <Image
-          src="/occitanie-cooperation.png"
-          alt="Qui sommes nous"
-          width={ 200 }
-          height={ 200 }
-          style={{ objectFit: "cover", width: "100%", height: "100%" }}
-        />
+        <Link
+          href="https://www.oc-cooperation.org/"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          <h3>Ambélé est membre de</h3>
+          <Image
+            src="/occitanie-cooperation.svg"
+            alt="Occitanie Coopération logo"
+            width={150}
+            height={150}
+            style={{ objectFit: "cover", position: "relative" }}
+          />
+        </Link>
+
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          <h3>Et en partenariat avec</h3>
+
+          <Image
+            src="/lycee-konakry-logo.png"
+            alt="Lycee de jeune filles de Conakry logo"
+            width={150}
+            height={150}
+            style={{ objectFit: "cover", position: "relative" }}
+          />
+        </div>
       </div>
 
       {/* // ! ================ ROW 4 ================ */}

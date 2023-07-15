@@ -22,7 +22,7 @@ const SideNavContent = ({ toggleOpen }) => {
       transition={{ duration: 0.3 }}
     >
       <Link href={"/"}>
-        Acceuil
+        Accueil
         {router.pathname == "/" ? (
           <motion.div className={classes["underline"]} layoutId="underline" />
         ) : null}

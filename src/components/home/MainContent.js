@@ -272,7 +272,7 @@ const MainContent = () => {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              gap: "5rem",
+              gap: "2.5rem",
             }}
           >
             <Image

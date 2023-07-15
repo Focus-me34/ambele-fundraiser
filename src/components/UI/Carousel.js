@@ -52,7 +52,7 @@ const Carousel = ({ carouselData }) => {
             <Image
               key={carouselItem.id}
               src={carouselItem.src}
-              alt={carouselItem.caption}
+              alt={carouselData.caption}
               fill={true}
               className={index === carouselIndex ? classes["active-img"] : ""}
             />

@@ -51,8 +51,16 @@ const Navbar = () => {
 
   // Scroll to top of page when the route changes
   useEffect(() => {
-    window.scrollTo(0, 0, "smooth");
+    if (typeof window !== "undefined") {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+    console.log("route changed");
   }, [router.pathname]);
+
+  console.log(router.pathname);
 
   return (
     <>

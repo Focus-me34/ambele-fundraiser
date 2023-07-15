@@ -614,7 +614,7 @@ const NotreAction = () => {
               Kobaya
             </h4>
             <p>
-              Je suis assistant technique bénévole de l’activité de
+              « Je suis assistant technique bénévole de l’activité de
               cyber-accompagnement auprès des élèves déshérités du quartier
               Kobaya depuis près de 2 ans. Ces élèves appartiennent à des
               familles dans lesquelles bon nombre a abandonné les études à cause
@@ -651,7 +651,7 @@ const NotreAction = () => {
             <p>
               Face à l’injustice de ne pas pouvoir réaliser de bonnes études en
               Guinée faute de moyens suffisants, bon nombre de jeunes éprouvent
-              de la colère et l’envie d’émmigrer en Europe.
+              de la colère et l’envie d’immigrer en Europe.
             </p>
             <p>
               Pour les enfants, suivre ces cours en direct, c’est comme étudier
@@ -671,9 +671,9 @@ const NotreAction = () => {
             <h4>Hawa Dounamou, participante</h4>
             <p>
               « Je fais la 9ème année [équivalent de 4ème française] du Lycée de
-              Jeunes filles de Kobaya.
+              Jeunes filles de Kobaya. <br />
+              Je participe à ce soutien depuis deux années déjà.
             </p>
-            <p>Je participe à ce soutien depuis deux années déjà.</p>
             <p>
               Depuis ce temps, j’ai remarqué beaucoup de progrès dans mon niveau
               de français et je suis très heureuse de ça. En effet, ce soutien
@@ -682,22 +682,33 @@ const NotreAction = () => {
               défendre dans d’autres matières à l’avenir. 
             </p>
             <p>
+              Ce projet m’intéresse aussi car je peux correspondre avec Madame
+              Sophie [bénévole] qui est une adulte d’une autre culture que moi.
+              Je peux mieux comprendre la culture française.
+            </p>
+            <p>
               Vraiment, je remercie Madame Sophie [bénévole] pour le temps
-              précieux qu’elle nous accorde. »
+              précieux qu’elle nous accorde.
+            </p>
+
+            <p>
+              Je participe aussi au projet en aidant Monsieur Millimouno pour le
+              classeur du soutien et pour ranger la salle. Pour moi, c’est bien
+              d’aider, je me sens utile »
             </p>
           </div>
 
           <div className="temoignage">
             <h4>Danièle Grisot, intervenante bénévole</h4>
             <p>
-              Professeure de mathématiques retraitée depuis peu, passionnée par
-              les mathématiques et appréciant de rester en contact avec des
-              jeunes, j’ai répondu favorablement à la proposition de Raphaël
+              « Professeure de mathématiques retraitée depuis peu, passionnée
+              par les mathématiques et appréciant de rester en contact avec des
+              jeunes, j’ai répondu favorablement à la proposition de Raphaël
               l’an dernier, de travailler un après-midi par semaine avec ces
               lycéens et lycéennes de Conakry.
             </p>
             <p>
-              « Grâce à Skype, et à mon tableau disposé devant l’ordinateur - je
+              Grâce à Skype, et à mon tableau disposé devant l’ordinateur - je
               trouve fascinant de communiquer ainsi grâce aux nouvelles
               technologies, et de faire des mathématiques avec des jeunes qui
               sont à plusieurs milliers de kilomètres de chez moi ! -nous nous
@@ -724,11 +735,11 @@ const NotreAction = () => {
             </p>
             <p>
               Ils m’ont fait progressé de mon côté dans l’usage du tableau et de
-              sa position face à l’ordinateur : un véritable échange :) »
+              sa position face à l’ordinateur: un véritable échange :) »
             </p>
           </div>
 
-          <h3>...Mais des limites et difficultés matérielles</h3>
+          <h3>...mais aussi des limites et des difficultés matérielles</h3>
 
           <div className="temoignage">
             <h4>
@@ -736,69 +747,53 @@ const NotreAction = () => {
               Kobaya
             </h4>
             <p>
-              « Nos difficultés se résument parNos difficultés se résument par:
+              « Nos difficultés se résument par un local trop restreint, un
+              manque de matériel logistique, de supports adéquats au cours, de
+              matériel didactique (livres, manuels…).
             </p>
-            <ul>
-              <li>
-                <p>un local trop restreint</p>
-              </li>
-              <li>
-                <p>
-                  un manque de matériel logistique, de supports adéquats au
-                  cours, de matériel didactique (livres, manuels…)
-                </p>
-              </li>
-            </ul>
 
             <p>
               Notre ambition est aussi de toucher un plus grand nombre d’enfants
               de familles pauvres qui veulent réussir leur vie à travers les
-              études.
-            </p>
-            <p>
-              Je souhaiterais que des bienfaiteurs, des donateurs, des
+              études. Je souhaiterais que des bienfaiteurs, des donateurs, des
               partenaires d’Occident soutiennent ce projet presque pour sauver,
-              en changeant les vies d’enfants de familles pauvres de Guinée.
-            </p>
-            <p>
-              A tous et toutes, soutenons les plus démunis et nous réussirons à
-              sauver les vies. »
+              en changeant les vies d’enfants de familles pauvres de Guinée. »
             </p>
           </div>
 
           <div className="temoignage">
             <h4>Hawa Dounamou, participante</h4>
             <p>
-              C’est un beau projet, c’est pourquoi je pense que ce projet serait
-              encore mieux s’il y avait plus de matières et aussi une grande
-              salle, des ordinateurs pour apprendre l’informatique et une
+              « C’est un beau projet, c’est pourquoi je pense que ce projet
+              serait encore mieux s’il y avait plus de matières et aussi une
+              grande salle, des ordinateurs pour apprendre l’informatique et une
               bibliothèque. Et, tout comme nous, ça intéressera beaucoup
-              d’autres élèves. J’aime ce projet et je veux qu’il s’agrandisse. 
+              d’autres élèves. J’aime ce projet et je veux qu’il s’agrandisse. »
             </p>
           </div>
 
           <div className="temoignage">
             <h4>Danièle Grisot, intervenante bénévole</h4>
             <p>
-              Cette année, les jeunes sont nettement moins nombreux, mais
-              sérieux et toujours intéressés : ils savent ce pourquoi ils sont
-              là et les questions sont pertinentes. Il est parfois arrivé que la
-              connexion  à internet soit délicate  mais la nouvelle caméra  a
-              rendu la communication nettement plus facile...
+              « Cette année, les jeunes sont moins nombreux, mais sérieux et
+              toujours intéressés : ils savent ce pourquoi ils sont là et les
+              questions sont pertinentes. Il est parfois arrivé que la connexion
+               à internet soit délicate  mais la nouvelle caméra  a rendu la
+              communication nettement plus facile... »
             </p>
           </div>
 
           {/* // ! TEMOIGNAGE A CE SATDE SONT TERMINES */}
           <p>
-            De fait, rapidement, l'activité a atteint ses limites matérielles et
-            a été l'objet d'une forme de « crise de croissance ». 
+            De fait, l'activité a rapidement atteint ses limites matérielles et
+            a été l'objet d'une forme de « crise de croissance ».
           </p>
           <p>
             Les propositions spontanées de bénévolat en France ont été
             croissantes et, sur place, des élèves d'autres établissements ont
-            rapidement sollicité le Lycée de Jeunes filles sans qu'il n'ait été
-            ni ne soit matériellement possible de saisir ces opportunités et
-            répondre à ces attentes.
+            sollicité le Lycée de Jeunes filles sans qu'il n'ait été ni ne soit
+            matériellement possible de saisir ces opportunités et répondre à ces
+            attentes.
           </p>
           <p>
             Des demandes et propositions récurrentes en matière d'autonomisation
@@ -843,9 +838,9 @@ const NotreAction = () => {
             élèves maximum face à la caméra était la plus adaptée.
           </p>
           <p>
-            Ces limites matérielles et ces ajustements réguliers ont pu être
-            dissuasifs pour certains élèves accompagnés et participants
-            potentiels.
+            Ces limites matérielles et ces ajustements réguliers ont été
+            dissuasifs pour certains élèves accompagnés et sans doute pour des
+            participants potentiels.
           </p>
 
           <video src="/VIDEOS/video-eleve-debout.mp4" controls="true" />

@@ -20,7 +20,7 @@ const NotreAction = () => {
   }
 
   const carouselKobayaData2 = {
-    caption: "Les élèves motivés du lycée de jeunes filles qui travaillent en groupe.",
+    caption: "Des séances à géométrie variable.",
     images: [
       { id: 1, src: "/IMG/physique-F.jpg" },
       { id: 2, src: "/IMG/hawa.jpg" },

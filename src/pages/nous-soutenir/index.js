@@ -1,5 +1,7 @@
 import ButtonCTA from "@/components/UI/ButtonCTA";
 import Image from "next/image";
+import Link from "next/link";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import classes from "../../styles/container.module.scss";
 
 
@@ -14,7 +16,11 @@ const NousSoutenir = () => {
         priority={true}
         width={2500}
         height={1500}
-        style={{ maxHeight: "60vh", objectFit: "cover", objectPosition: "50% 55%" }}
+        style={{
+          maxHeight: "60vh",
+          objectFit: "cover",
+          objectPosition: "50% 55%",
+        }}
         className="img-100"
       />
 
@@ -90,6 +96,11 @@ const NousSoutenir = () => {
             </p>
           </li>
         </ul>
+
+        <Link href={"/"} className="go-back-btn">
+          <ArrowForwardRoundedIcon />
+          Revenir à l'accueil
+        </Link>
       </div>
     </>
   );

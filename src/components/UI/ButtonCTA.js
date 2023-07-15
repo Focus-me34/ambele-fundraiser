@@ -14,7 +14,7 @@ const ButtonCTA = ({ size }) => {
           className={`${classes["btn-cta-fill"]} ${classes["small"]}`}
         >
           <VolunteerActivismRoundedIcon />
-          Soutenez le project
+          Soutenez le projet
         </Link>
       )}
 

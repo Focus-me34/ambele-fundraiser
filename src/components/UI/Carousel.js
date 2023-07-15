@@ -8,19 +8,19 @@ import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRigh
 
 const Carousel = ({ carouselData }) => {
   const [activeIndicator, setActiveIndicator] = useState(0);
-  const [carouselIndex, setCarouselIndex] = useState(0)
+  const [carouselIndex, setCarouselIndex] = useState(0);
 
   const handleCarousel = (direction) => {
     if (direction === "left") {
       if (carouselIndex === 0) {
-        setCarouselIndex(carouselData.length - 1);
-        setActiveIndicator(carouselData.length - 1);
+        setCarouselIndex(carouselData.images.length - 1);
+        setActiveIndicator(carouselData.images.length - 1);
       } else {
         setCarouselIndex(carouselIndex - 1);
         setActiveIndicator(carouselIndex - 1);
       }
     } else if (direction === "right") {
-      if (carouselIndex === carouselData.length - 1) {
+      if (carouselIndex === carouselData.images.length - 1) {
         setCarouselIndex(0);
         setActiveIndicator(0);
       } else {
@@ -35,19 +35,24 @@ const Carousel = ({ carouselData }) => {
     setActiveIndicator(index);
   };
 
+  // ! THIS IS REPONSIBLE FOR THE AUTOMATIC MOVEMENT OF THE CAROUSEL
   useEffect(() => {
-    // TODO SET TIME OUT RIGHT HANDLER HERE
-  })
+    const carouselTimeout = setTimeout(() => {
+      handleCarousel("right");
+    }, 5000);
+
+    return () => clearTimeout(carouselTimeout);
+  }, [carouselIndex]);
 
   return (
     <>
       <div className={classes["carousel-container"]}>
-        {carouselData.map((carouselItem, index) => {
+        {carouselData.images.map((carouselItem, index) => {
           return (
             <Image
               key={carouselItem.id}
               src={carouselItem.src}
-              alt="Un paysage urbain alternant sans transition des environnements sociaux et d'habitats extrêmement contrastés"
+              alt={carouselItem.caption}
               fill={true}
               className={index === carouselIndex ? classes["active-img"] : ""}
             />
@@ -68,7 +73,7 @@ const Carousel = ({ carouselData }) => {
         </div>
 
         <div className={classes["carousel-indicators-container"]}>
-          {carouselData.map((carouselItem, index) => {
+          {carouselData.images.map((carouselItem, index) => {
             return (
               <span
                 key={carouselItem.id}
@@ -82,10 +87,7 @@ const Carousel = ({ carouselData }) => {
         </div>
       </div>
 
-      <p className={classes["carousel-caption"]}>
-        Un paysage urbain alternant sans transition des environnements sociaux
-        et d'habitats extrêmement contrastés
-      </p>
+      <p className={classes["carousel-caption"]}>{carouselData.caption}</p>
     </>
   );
 };

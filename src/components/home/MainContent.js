@@ -48,7 +48,10 @@ const MainContent = () => {
         />
 
         <div className={classes["text"]}>
-          <div ref={firstRowRef} className={classes["trigger-in-view-animation"]}></div>
+          <div
+            ref={firstRowRef}
+            className={classes["trigger-in-view-animation"]}
+          ></div>
 
           <h2>Qui Sommes nous?</h2>
           <p>
@@ -61,8 +64,9 @@ const MainContent = () => {
           <p>
             L'éducation populaire vise l'accès aux savoirs pour tous et
             encourage la participation active de chacun, favorise la coopération
-            et soutient l'exercice de la citoyenneté. Elle permet de corriger
-            les inégalités et est vecteur d'égalité des chances.
+            et soutient l'exercice de la citoyenneté. Elle permet de compenser
+            des différences de situations en étant vectrice d'égalité des
+            chances.
           </p>
 
           <Link href={"/qui-sommes-nous"}>
@@ -92,36 +96,49 @@ const MainContent = () => {
         />
 
         <div className={classes["text"]}>
-          <div ref={secondRowRef} className={classes["trigger-in-view-animation"]}></div>
+          <div
+            ref={secondRowRef}
+            className={classes["trigger-in-view-animation"]}
+          ></div>
 
           <h2>Notre action</h2>
           <p>
-            Notre action consiste en un projet de cyber-accompagnement pour des
-            élèves en difficulté scolaire dans un lycée de jeunes filles en
-            Afrique subsaharienne.
+            Notre action consiste en un accompagnement scolaire à distance via
+            le numérique impliquant des bénévoles français et des élèves du
+            secondaire d'un établissement scolaire public mixte de Conakry.
           </p>
 
           <p>
-            Le projet a été mis en place en février 2022 avec l'implication de
-            deux bénévoles français et quelques collégiens, mais s'est
-            rapidement développé pour impliquer quatre bénévoles aux profils et
-            compétences diverses ainsi que 10 à 15 élèves chaque semaine.
+            Ces élèves en réussite scolaire ou aux potentiels avérés, mais
+            fragilisés par des situations sociales et économiques défavorables,
+            sont identifiés et orientés par leurs enseignants.
           </p>
 
           <p>
-            Le projet vise à avoir un impact significatif sur la scolarité des
-            jeunes en permettant une évaluation sur le long terme. Les élèves
-            inscrits s'engagent à participer à une séance hebdomadaire pendant
-            au moins un trimestre. Les matières scolaires concernées sont le
-            français, les mathématiques, la physique, la chimie, la biologie et
-            l'anglais, en fonction des besoins identifiés des élèves et des
-            ressources bénévoles disponibles.
+            L'action a été mise en place en février 2022 avec la participation
+            de deux enseignants retraités bénévoles et quelques collégiens, puis
+            s'est rapidement développée pour impliquer cinq bénévoles ainsi que
+            8 à 15 élèves chaque semaine.
           </p>
 
           <p>
-            Le projet a pour objectif de développer les compétences académiques
-            des élèves, leur confiance en eux et leur motivation à réussir à
-            l'école.
+            Les matières scolaires concernées sont le français, les
+            mathématiques, la physique, la chimie, la biologie et l'anglais.
+            Elles dépendent des besoins identifiés des élèves et des ressources
+            bénévoles disponibles.
+          </p>
+
+          <p>
+            L'action a pour objectif de soutenir et renforcer la persévérance
+            scolaire des élèves, par le maintien et le développement de leurs
+            compétences scolaires, de leur confiance en soi et de leur
+            motivation.
+          </p>
+
+          <p>
+            Le projet consiste également à développer, dans le cadre du
+            cyber-accompagnement, la démarche participative et citoyenne propre
+            à l'éducation populaire.
           </p>
 
           <Link href={"/notre-action"}>
@@ -137,7 +154,7 @@ const MainContent = () => {
         style={{
           opacity: thirdRowisInView ? 1 : 0.33,
           transition: "all 1s 0s",
-          marginBottom: "0rem"
+          marginBottom: "0rem",
         }}
       >
         <Image // ? Position absolute by default
@@ -153,20 +170,23 @@ const MainContent = () => {
 
         <div className={classes["text"]}>
           <h2>Nous soutenir</h2>
-          <div ref={thirdRowRef} className={classes["trigger-in-view-animation"]}></div>
+          <div
+            ref={thirdRowRef}
+            className={classes["trigger-in-view-animation"]}
+          ></div>
 
           <p>
-            Vos dons sont essentiels pour soutenir l'avancement du projet en
-            finançant l'achat de matériels tels que du mobilier de rangement, du
-            matériel informatique, des postes d'ordinateurs supplémentaires et
-            une petite bibliothèque auto-gérée.
+            Vos dons sont essentiels pour soutenir l'avancement du projet. Ils
+            permettront de le rendre viable sur le plan matériel, par l'achat de
+            mobiliers et de matériel informatique adapté au fonctionnement de
+            l'activité.
           </p>
 
           <p>
-            Ils contribueront également au financement d'un poste
-            d'animateur/trice de l'activité. Avec votre aide, nous pourrons
-            soutenir la démarche participative des élèves impliqués et augmenter
-            le volume d'activité pour accueillir un plus grand nombre d'élèves.
+            Par une contribution au financement d'un poste d'animateur/trice de
+            l'activité sur site, votre aide permettra le développement du volume
+            d'activités et rendra possible l'organisation et le développement de
+            la participation et de l'autonomisation des élèves.
           </p>
 
           <Link href={"/nous-soutenir"}>
@@ -177,39 +197,84 @@ const MainContent = () => {
       </section>
 
       {/* // ! ================ ROW 4 ================ */}
-      {/* <section
-        ref={fourthRowRef}
+      <section
+        // ref={fourthRowRef}
         animate={rowAnimation}
         style={{
           opacity: fourthRowisInView ? 1 : 0.25,
           transition: "all 1s 0s",
         }}
       >
-          <Image // ? Position absolute by default
-            key={"contact"}
-            src="/contact.svg"
-            alt="Picture of the author"
-            width={350}
-            height={200}
-            style={{
-              objectFit: "cover",
-            }}
+        <Image // ? Position absolute by default
+          key={"contact"}
+          src="/contact.svg"
+          alt="Picture of the author"
+          width={350}
+          height={200}
+          style={{
+            objectFit: "cover",
+          }}
+        />
+
+        <div className={classes["text"]}>
+          <h2>Contact</h2>
+          <div
+            ref={fourthRowRef}
+            className={classes["trigger-in-view-animation"]}
+          ></div>
+
+          <p>
+            Une question, une suggestion ou une demande de précision ? N'hesitez pas à nous contacter
+            et nous vous répondrons dans les plus brefs délais.
+          </p>
+
+          <Link href={"/contact"}>
+            <ArrowForwardRoundedIcon />
+            EN SAVOIR PLUS
+          </Link>
+        </div>
+      </section>
+
+      {/* // ! ================ PARTNERS ================ */}
+      <div className={classes["partner-logo-container"]}>
+        <Link
+          href="https://www.oc-cooperation.org/"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          <h3>Ambélé est membre de</h3>
+          <Image
+            src="/occitanie-cooperation.svg"
+            alt="Occitanie Coopération logo"
+            width={150}
+            height={150}
+            style={{ objectFit: "cover", position: "relative" }}
           />
+        </Link>
 
-          <div className={classes["text"]}>
-            <h2>Contact</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
-            officiis praesentium alias fugiat sit iusto id ab dolores eveniet
-            accusamus perferendis fugit exercitationem optio numquam ex, ipsam
-            tenetur enim amet?
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "1rem",
+          }}
+        >
+          <h3>Et en partenariat avec</h3>
 
-            <Link href={"/contact"}>
-              <ArrowForwardRoundedIcon />
-              EN SAVOIR PLUS
-            </Link>
-          </div>
-
-      </section> */}
+          <Image
+            src="/lycee-konakry-logo.png"
+            alt="Lycee de jeune filles de Conakry logo"
+            width={150}
+            height={150}
+            style={{ objectFit: "cover", position: "relative" }}
+          />
+        </div>
+      </div>
     </main>
   );
 };

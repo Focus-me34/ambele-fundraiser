@@ -4,7 +4,7 @@
   --black:#202020;
   --black-test: #220C10;
   --light-grey: #C4C0BA;
-  --dark-gray: #3B3936;
+  --dark-grey: #3B3936;
   --white: #fff;
   /* * CAN TRY THIS BLACK, CAFE-ISH COLOR: #220C10 */
 
@@ -120,4 +120,42 @@ video {
 .img-100 {
   width: 100%;
   height: auto;
+}
+
+.go-back-btn {
+  margin: 4rem 0 2rem;
+  display: block;
+
+  // width: 25rem;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--white) !important;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 860px) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--primary-color) !important;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  svg {
+    // align-self: flex-start;
+    width: 3rem;
+    height: 3rem;
+  }
 }

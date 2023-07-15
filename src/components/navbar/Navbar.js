@@ -49,6 +49,11 @@ const Navbar = () => {
     isOpen && toggleOpen(false);
   },[router.pathname])
 
+  // Scroll to top of page when the route changes
+  useEffect(() => {
+    window.scrollTo(0, 0, "smooth");
+  }, [router.pathname]);
+
   return (
     <>
       {!isNavbarShrinked && (

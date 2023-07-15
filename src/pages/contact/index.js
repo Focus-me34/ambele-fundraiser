@@ -58,9 +58,9 @@ const contactDetails = {
     alt: "Email icon",
   },
   address: {
-    title: "Venez nous voir",
+    title: "Adresse postale",
     text: "10 rue du Pressoir, 34 770 Gigean",
     imgSrc: "/address-blue.svg",
     alt: "Address icon",
-  }
+  },
 };

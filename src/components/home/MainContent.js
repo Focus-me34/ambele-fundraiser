@@ -267,7 +267,6 @@ const MainContent = () => {
         >
           <h3>Et en partenariat avec</h3>
 
-
           <div
             style={{
               display: "flex",
@@ -282,14 +281,14 @@ const MainContent = () => {
               width={150}
               height={150}
               style={{ objectFit: "cover", position: "relative" }}
-              />
+            />
             <Image
               src="/cogui-DD.png"
               alt="Lycee de jeune filles de Conakry logo"
-              width={150}
-              height={150}
+              width={450}
+              height={170}
               style={{ objectFit: "cover", position: "relative" }}
-              />
+            />
           </div>
         </div>
 

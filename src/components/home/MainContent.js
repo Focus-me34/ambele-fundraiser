@@ -250,7 +250,7 @@ const MainContent = () => {
           <Image
             src="/occitanie-cooperation.svg"
             alt="Occitanie Coopération logo"
-            width={500}
+            width={370}
             height={200}
             style={{ objectFit: "cover", position: "relative" }}
           />

@@ -14,6 +14,7 @@ const MainHeader = () => {
         priority
         style={{
           objectFit: "cover",
+          objectPosition: "50% 30%",
         }}
       />
 

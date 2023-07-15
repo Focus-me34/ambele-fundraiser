@@ -616,7 +616,17 @@ const NotreAction = () => {
               Kobaya
             </h4>
             <p>
-              « Je suis assistant technique bénévole de l’activité de
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "5rem",
+                  color: "var(--dark-grey)",
+                  transform: "translateY(1rem)",
+                }}
+              >
+                « 
+              </span>
+              Je suis assistant technique bénévole de l’activité de
               cyber-accompagnement auprès des élèves déshérités du quartier
               Kobaya depuis près de 2 ans. Ces élèves appartiennent à des
               familles dans lesquelles bon nombre a abandonné les études à cause
@@ -665,14 +675,33 @@ const NotreAction = () => {
             </p>
             <p>
               Je me réjouis d’avoir des confrères d’Europe qui apportent aux
-              jeunes guinéens du soutien pour préparer leur avenir. »
+              jeunes guinéens du soutien pour préparer leur avenir.
+              <span
+                style={{
+                  color: "var(--dark-grey)",
+                  transform: "scale(1.6)",
+                  display: "inline-block",
+                }}
+              >
+                  »
+              </span>
             </p>
           </div>
 
           <div className="temoignage">
             <h4>Hawa Dounamou, participante</h4>
             <p>
-              « Je fais la 9ème année [équivalent de 4ème française] du Lycée de
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "5rem",
+                  color: "var(--dark-grey)",
+                  transform: "translateY(1rem)",
+                }}
+              >
+                « 
+              </span>
+              Je fais la 9ème année [équivalent de 4ème française] du Lycée de
               Jeunes filles de Kobaya. <br />
               Je participe à ce soutien depuis deux années déjà.
             </p>
@@ -696,15 +725,34 @@ const NotreAction = () => {
             <p>
               Je participe aussi au projet en aidant Monsieur Millimouno pour le
               classeur du soutien et pour ranger la salle. Pour moi, c’est bien
-              d’aider, je me sens utile »
+              d’aider, je me sens utile.
+              <span
+                style={{
+                  color: "var(--dark-grey)",
+                  transform: "scale(1.6)",
+                  display: "inline-block",
+                }}
+              >
+                  »
+              </span>
             </p>
           </div>
 
           <div className="temoignage">
             <h4>Danièle Grisot, intervenante bénévole</h4>
             <p>
-              « Professeure de mathématiques retraitée depuis peu, passionnée
-              par les mathématiques et appréciant de rester en contact avec des
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "5rem",
+                  color: "var(--dark-grey)",
+                  transform: "translateY(1rem)",
+                }}
+              >
+                « 
+              </span>
+              Professeure de mathématiques retraitée depuis peu, passionnée par
+              les mathématiques et appréciant de rester en contact avec des
               jeunes, j’ai répondu favorablement à la proposition de Raphaël
               l’an dernier, de travailler un après-midi par semaine avec ces
               lycéens et lycéennes de Conakry.
@@ -737,7 +785,16 @@ const NotreAction = () => {
             </p>
             <p>
               Ils m’ont fait progressé de mon côté dans l’usage du tableau et de
-              sa position face à l’ordinateur: un véritable échange :) »
+              sa position face à l’ordinateur: un véritable échange :)
+              <span
+                style={{
+                  color: "var(--dark-grey)",
+                  transform: "scale(1.6)",
+                  display: "inline-block",
+                }}
+              >
+                  »
+              </span>
             </p>
           </div>
 
@@ -749,9 +806,19 @@ const NotreAction = () => {
               Kobaya
             </h4>
             <p>
-              « Nos difficultés se résument par un local trop restreint, un
-              manque de matériel logistique, de supports adéquats au cours, de
-              matériel didactique (livres, manuels…).
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "5rem",
+                  color: "var(--dark-grey)",
+                  transform: "translateY(1rem)",
+                }}
+              >
+                « 
+              </span>
+              Nos difficultés se résument par un local trop restreint, un manque
+              de matériel logistique, de supports adéquats au cours, de matériel
+              didactique (livres, manuels…).
             </p>
 
             <p>
@@ -759,29 +826,76 @@ const NotreAction = () => {
               de familles pauvres qui veulent réussir leur vie à travers les
               études. Je souhaiterais que des bienfaiteurs, des donateurs, des
               partenaires d’Occident soutiennent ce projet presque pour sauver,
-              en changeant les vies d’enfants de familles pauvres de Guinée. »
+              en changeant les vies d’enfants de familles pauvres de Guinée.
+              <span
+                style={{
+                  color: "var(--dark-grey)",
+                  transform: "scale(1.6)",
+                  display: "inline-block",
+                }}
+              >
+                  »
+              </span>
             </p>
           </div>
 
           <div className="temoignage">
             <h4>Hawa Dounamou, participante</h4>
             <p>
-              « C’est un beau projet, c’est pourquoi je pense que ce projet
-              serait encore mieux s’il y avait plus de matières et aussi une
-              grande salle, des ordinateurs pour apprendre l’informatique et une
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "5rem",
+                  color: "var(--dark-grey)",
+                  transform: "translateY(1rem)",
+                }}
+              >
+                « 
+              </span>
+              C’est un beau projet, c’est pourquoi je pense que ce projet serait
+              encore mieux s’il y avait plus de matières et aussi une grande
+              salle, des ordinateurs pour apprendre l’informatique et une
               bibliothèque. Et, tout comme nous, ça intéressera beaucoup
-              d’autres élèves. J’aime ce projet et je veux qu’il s’agrandisse. »
+              d’autres élèves. J’aime ce projet et je veux qu’il s’agrandisse.
+              <span
+                style={{
+                  color: "var(--dark-grey)",
+                  transform: "scale(1.6)",
+                  display: "inline-block",
+                }}
+              >
+                  »
+              </span>
             </p>
           </div>
 
           <div className="temoignage">
             <h4>Danièle Grisot, intervenante bénévole</h4>
             <p>
-              « Cette année, les jeunes sont moins nombreux, mais sérieux et
+              <span
+                style={{
+                  display: "inline-block",
+                  fontSize: "5rem",
+                  color: "var(--dark-grey)",
+                  transform: "translateY(1rem)",
+                }}
+              >
+                « 
+              </span>
+              Cette année, les jeunes sont moins nombreux, mais sérieux et
               toujours intéressés : ils savent ce pourquoi ils sont là et les
               questions sont pertinentes. Il est parfois arrivé que la connexion
                à internet soit délicate  mais la nouvelle caméra  a rendu la
-              communication nettement plus facile... »
+              communication nettement plus facile..
+              <span
+                style={{
+                  color: "var(--dark-grey)",
+                  transform: "scale(1.6)",
+                  display: "inline-block",
+                }}
+              >
+                  »
+              </span>
             </p>
           </div>
 

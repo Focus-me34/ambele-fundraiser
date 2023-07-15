@@ -12,7 +12,11 @@ const QuiSommesNous = () => {
         priority={true}
         width={2500}
         height={1500}
-        style={{ maxHeight: "50vh", objectFit: "cover", objectPosition: "50% 40%" }}
+        style={{
+          maxHeight: "50vh",
+          objectFit: "cover",
+          objectPosition: "50% 40%",
+        }}
         className="img-100"
       />
 
@@ -52,19 +56,12 @@ const QuiSommesNous = () => {
         <h2>Et l'éducation populaire ?</h2>
 
         <p>
-          L'éducation populaire qui puise ses racines dans la philosophie des
-          Lumières, son ambition d'égalité et d'universalisme se déploie
-          parallèlement, voire de manière complémentaire, aux systèmes
-          d'éducation traditionnels et institutionnels, afin de permettre à
-          chacun de choisir et de construire sa place dans la société.
-        </p>
-
-        <p>
-          L'éducation populaire qui puise ses racines dans la philosophie des
-          Lumières, son ambition d'égalité et d'universalisme se déploie
-          parallèlement, voire de manière complémentaire, aux systèmes
-          d'éducation traditionnels et institutionnels, afin de permettre à
-          chacun de choisir et de construire sa place dans la société.
+          L'éducation populaire plonge ses racines dans la philosophie des
+          lumières, son ambition d'égalité et d'universalisme. <br />
+          Elle se déploie parallèlement, voire de manière complémentaire, aux
+          systèmes d'éducation traditionnels et institutionnels, afin de
+          permettre à chacun de choisir et de construire sa place dans la
+          société.
         </p>
 
         <h3>Une éducation pour tous</h3>
@@ -83,11 +80,9 @@ const QuiSommesNous = () => {
         <h3>Une éducation, autrement</h3>
         <p>
           Développée par des structures à but non lucratif, elle explore, par
-          l'expérimentation, des champs éducatifs alternatifs.
-        </p>
-        <p>
+          l'expérimentation, des champs éducatifs alternatifs. <br />
           L'éducation populaire, en corrigeant des inégalités de fait entre des
-          individus d'une même communauté, est vecteur d'égalité des chances.
+          individus d'une même communauté, est vectrice d'égalité des chances.
         </p>
 
         {/* // ! ---------------------------------- */}
@@ -104,14 +99,16 @@ const QuiSommesNous = () => {
 
         <p>
           Raphaël Zajtmann, président fondateur de l'association travaille dans
-          le domaine de l'animation sociale depuis près de 20 ans. Titulaire
-          d'un Desjeps (Diplôme d'Etat supérieur de la jeunesse, de l'éducation
-          populaire et du sport), il est actuellement chef de service dans
-          le pôle Animation de la Vie Sociale de l'association Gammes
-          (Montpellier). A ce titre, il supervise les actions d'un centre social
-          et de deux EVS (espaces de vie sociale). Depuis 2015, il effectue de
-          très réguliers séjours au Sénégal et en Guinée, notamment pour
-          accompagner bénévolement des projets locaux d'éducation populaire.
+          le domaine de l'animation sociale depuis près de 20 ans. <br />
+          Titulaire d'un Desjeps (Diplôme d'Etat supérieur de la jeunesse, de
+          l'éducation populaire et du sport), il est actuellement responsable
+          des équipements d'animation sociale agréés du pôle Animation de la Vie
+          Sociale de l'association Gammes (Montpellier). <br />
+          A ce titre, il supervise les actions d'un centre social et de deux EVS
+          (espaces de vie sociale). <br />
+          Depuis 2015, il effectue de très réguliers séjours au Sénégal et en
+          Guinée, notamment pour accompagner bénévolement des projets locaux
+          d'éducation populaire.
         </p>
       </div>
     </>

@@ -7,12 +7,34 @@ import Carousel from "@/components/UI/Carousel";
 const NotreAction = () => {
   // const [carouselIndex, setCarouselIndex] = useState(0);
 
-  const carouselKobayaData = [
-    { id: 1, src:"/IMG/kobaya-1.jpg" },
-    { id: 2, src:"/IMG/kobaya-2.jpg" },
-    { id: 3, src:"/IMG/kobaya-3.jpg" },
-    { id: 4, src:"/IMG/kobaya-4.jpg" }
-  ]
+  const carouselKobayaData = {
+    caption: "Un paysage urbain alternant sans transition des environnements sociaux et d'habitats extrêmement contrastés" ,
+    images: [
+      { id: 1, src:"/IMG/kobaya-1.jpg" },
+      { id: 2, src:"/IMG/kobaya-2.jpg" },
+      { id: 3, src:"/IMG/kobaya-3.jpg" },
+      { id: 4, src:"/IMG/kobaya-4.jpg" }
+    ]
+  }
+
+  const carouselKobayaData2 = {
+    caption: "Les élèves motivés du lycée de jeunes filles qui travaillent en groupe.",
+    images: [
+      { id: 1, src: "/IMG/physique-F.jpg" },
+      { id: 2, src: "/IMG/hawa.jpg" },
+      { id: 3, src: "/IMG/gpe-avec-S.jpg" },
+      { id: 4, src: "/IMG/physique-E.jpg" },
+      { id: 5, src: "/IMG/physique-D.jpg" },
+      { id: 6, src: "/IMG/gpe-écran-1.jpg" },
+      { id: 7, src: "/IMG/bintou.jpg" },
+      { id: 8, src: "/IMG/maciré.jpg" },
+      { id: 9, src: "/IMG/français-2.jpg" },
+      { id: 10, src: "/IMG/thermomètre.jpg" },
+      { id: 11, src: "/IMG/alain-1.jpg" },
+      { id: 12, src: "/IMG/français-1.jpg" },
+      { id: 13, src: "/IMG/math-1.jpg" },
+    ],
+  };
 
   return (
     <>
@@ -65,37 +87,43 @@ const NotreAction = () => {
         </p>
         <h4>Cette activité de cyber-accompagnement est au centre du projet.</h4>
         <p>
-          Le projet s'appuie sur le constat de trois facteurs facilitants : la
+          Le projet s'appuie sur le constat de trois facteurs facilitants: la
           francophonie partagée, la proximité des systèmes et programmes
           scolaires entre les deux pays et la présence d'une couverture internet
           sur place.
         </p>
         <p>
           Le projet se construit en partenariat avec deux structures locales :
-          un Lycée mixte public du quartier dit Lycée de jeunes filles et la
+          un établissement scolaire mixte public du quartier accueillant des
+          collégiens et des lycéens, dit Lycée de jeunes filles de Conakry et la
           Coguiféminine DD, ONG guinéenne dont le siège se situe dans le
           quartier (<Link href="#section-quels-acteurs">en savoir plus</Link>).
         </p>
         <p>
-          Le projet s'adresse à des élèves aux potentiels reconnus par leurs
-          enseignants, dans des situations de difficultés sociales et/ou
-          économiques avérées et adhérant, ainsi que leurs parents, au projet
-          (sa démarche et son organisation).
+          Le projet s'adresse à des élèves en réussite scolaire ou aux
+          potentiels reconnus par leurs enseignants, dans des situations de
+          difficultés sociales et/ou économiques avérées et adhérant, ainsi que
+          leurs parents, au projet (sa démarche et son organisation).
         </p>
         <p>
-          Le projet vise ainsi à compenser des insuffisances de ressources dans
-          l'environnement de jeunes impactant leur développement de compétences
-          scolaires, en mettant à leur disposition des temps de travail
-          sécurisants et stimulants. Son résultat attendu est la consolidation
-          du parcours scolaire des élèves concernés, voire la légitimation de sa
-          poursuite auprès de leur entourage et une contribution ainsi à la
+          Le projet consiste ainsi à compenser des insuffisances de ressources
+          dans l'environnement de jeunes en mettant à leur disposition des temps
+          de travail sécurisants et stimulants.
+          <br />
+          Il vise à favoriser, soutenir et renforcer leur persévérance scolaire.
+          <br />
+          Ses résultats attendus sont la consolidation de leur parcours scolaire
+          par la montée en compétence scolaire, voire l'atteinte de l'excellence
+          pour certain(e)s d'entre eux, mais aussi par la légitimation auprès de
+          certains entourages familiaux du maintien dans la scolarité ou la
+          poursuite d'études de l’élève. Dans ce cadre, l'action contribue à la
           lutte contre les phénomènes d'abandon contraint, en particulier pour
           les filles.
         </p>
         <p>
-          En raison des inégalités de genre dans le maintien dans la scolarité,
-          une attention particulière est portée sur l'inscription de jeunes
-          filles dans le projet, avec une intégration prioritaire de ces
+          Du fait des inégalités de genre dans le maintien dans la scolarité,
+          une attention particulière est ainsi portée sur l'inscription de
+          jeunes filles dans le projet, avec une intégration prioritaire de ces
           dernières.
         </p>
         <p>
@@ -226,11 +254,11 @@ const NotreAction = () => {
           Désormais, la problématique, spécifiquement dans les zones urbaines
           comme Conakry, est moins celle de l'accès que celle du maintien dans
           la scolarité : le taux d'achèvement des écoles primaires se situe
-          autour de 54%, avec de fortes disparités entre les genres (46% pour
-          les filles contre 64% pour les garçons) chiffres Unicef.
+          autour de 54%, avec de fortes disparités entre les genres -46% pour
+          les filles contre 64% pour les garçons (chiffres Unicef).
         </p>
         <p>
-          En 2022, le taux de réussite du brevet serait de 25% et celui du
+          En 2022, le taux de réussite du brevet a été de 25% , celui du
           baccalauréat de 30%.
         </p>
         <p>
@@ -270,11 +298,10 @@ const NotreAction = () => {
         />
         <p>
           En matière d'éducation, le quartier compte 5 écoles publiques pour 40
-          écoles privées, dans lesquelles la plupart des familles économiquement
-          les moins en difficulté inscrivent leurs enfants, afin d'échapper aux
-          difficultés matérielles et, de ce fait, pédagogiques, des écoles
-          publiques : manque d'équipement et de matériel pédagogiques et
-          effectif pléthorique.
+          écoles privées. La plupart des parents économiquement les moins en
+          difficulté inscrivent leurs enfants dans ces établissements afin
+          d'échapper aux difficultés matérielles des écoles publiques : manque
+          d'équipement et de matériel pédagogiques et effectif pléthorique.
         </p>
         <p>
           Face aux freins cumulés dans le maintien dans la scolarité et en
@@ -313,7 +340,7 @@ const NotreAction = () => {
         {/* // ! ===================================== */}
         <h3 id="section-quels-acteurs">D - Quels acteurs ?</h3>
         <p>
-          Le projet repose sur un partenariat opérationnel et organisationnel
+          Le projet repose sur un partenariat organisationnel et opérationnel
           entre 3 structures : une française et deux guinéennes.
         </p>
         <ul>
@@ -321,32 +348,31 @@ const NotreAction = () => {
           <li>
             <p>
               l'association Ambélé (
-              <Link href="#section-quels-acteurs">qui sommes nous ?</Link>)
+              <Link href="/qui-sommes-nous">qui sommes nous ?</Link>)
             </p>
           </li>
           <p>
             Ambélé prend en charge les frais mensuels de connexion internet sur
-            place (via un don à l'ONG partenaire Coguiféminine)
+            site (via un don à l'ONG partenaire Coguiféminine).
           </p>
           <p>
-            Raphaël Zajtmann, membre du bureau d'Ambélé (Lien Qui sommes-nous?)
-            assure bénévolement la coordination du volet français du projet :
-            recherche (dans un premier temps) de bénévolat, accompagnement et
-            suivi des interventions bénévoles, co-réalisation en lien avec le
-            coordinateur sur site des emplois du temps.
+            Raphaël Zajtmann, membre du bureau d'Ambélé (
+            <Link href="/qui-sommes-nous">qui sommes nous ?</Link>) assure
+            bénévolement la coordination du volet français du projet: recherche
+            (dans un premier temps) de bénévolat, accompagnement et suivi des
+            interventions bénévoles, co-réalisation en lien avec le coordinateur
+            sur site des emplois du temps.
           </p>
           <p>
-            Il se rend régulièrement sur place pour accompagner (à : virer ce
-            « à » stp!) la structuration du projet : aide à l'organisation
-            matérielle, rencontres d'acteurs locaux pour l'insertion du projet
-            dans son environnement, animation de réunions d'informations auprès
-            des élèves et des enseignants et de réunions de concertation
-            (conseil de maison).
+            Il se rend régulièrement sur place pour accompagner la structuration
+            du projet: aide à l'organisation matérielle, rencontres d'acteurs
+            locaux pour l'insertion du projet dans son environnement, animation
+            de réunions d'informations auprès des élèves et des enseignants et
+            de réunions de concertation (conseil de maison).
           </p>
-
           <h4>À Conakry:</h4>
           <li>
-            <p>Le Lycée de Jeunes Filles de Kobayaqui sommes nous</p>
+            <p>Le Lycée de Jeunes Filles de Kobaya</p>
           </li>
           <p>
             Situé au cœur du quartier, le lycée accueille 432 élèves dont 270
@@ -354,23 +380,27 @@ const NotreAction = () => {
             professeurs.
           </p>
 
-          <div className={classes["container-images-flex"]}>
-            <Image
-              src="/IMG/lycée-1.jpg"
-              alt="Le Lycée de Jeunes filles de Kobaya (bâtiment de gauche)"
-              width={500}
-              height={380}
-              className="img-100"
-            />
+          <Image
+            src="/IMG/lycée-1.jpg"
+            alt="Le Lycée de Jeunes filles de Kobaya (bâtiment de gauche)"
+            width={500}
+            height={380}
+            className="img-100"
+          />
+          <p className={classes["media-caption"]}>
+            Le Lycée de Jeunes filles de Kobaya (bâtiment de gauche)
+          </p>
 
-            <Image
-              src="/IMG/lycée-2.jpg"
-              alt="Entrée principale du Lycée de Jeunes filles"
-              width={500}
-              height={380}
-              className="img-100"
-            />
-          </div>
+          <Image
+            src="/IMG/lycée-2.jpg"
+            alt="Entrée principale du Lycée de Jeunes filles"
+            width={500}
+            height={380}
+            className="img-100"
+          />
+          <p className={classes["media-caption"]}>
+            Entrée principale du Lycée de Jeunes filles
+          </p>
 
           <p>
             Le proviseur du Lycée, M. Jérôme Mbemba Millimouno, est le
@@ -382,23 +412,21 @@ const NotreAction = () => {
             et évaluer son impact.
           </p>
           <p>
-            Il est l'interlocuteur des parents des élèves repérés et
-            accompagnés, auprès desquels il explicite le projet, son
-            fonctionnement et ses objectifs afin de lever les freins éventuels à
-            la participation de leurs enfants -notamment pour les jeunes filles,
-            pour lesquelles les réticences parentales sont parfois plus
-            importantes.
+            Il est l'interlocuteur des parents des élèves accompagnés, auprès
+            desquels il explicite le projet, son fonctionnement et ses objectifs
+            afin de lever les freins éventuels à la participation de leurs
+            enfants -notamment pour les jeunes filles, pour lesquelles les
+            réticences parentales sont parfois plus importantes.
           </p>
           <p>
-            Il accompagne les jeunes concernés dans leur participation à
-            l'activité et dans leurs prises de responsabilité.
+            Il accompagne les élèves dans leur participation à l'activité et
+            dans leurs prises de responsabilité.
           </p>
           <p>
             Il est responsable du suivi administratif de l'action en lien avec
             le bénévole de l'association Ambélé avec lequel il est en
             communication quasi quotidienne.
           </p>
-
           <li>
             <p>
               La coalition guinéenne Coguifeminine DD (Coalition Guinéenne des
@@ -428,23 +456,27 @@ const NotreAction = () => {
             disposition de son mobilier et de son équipement informatique.
           </p>
 
-          <div className={classes["container-images-flex"]}>
-            <Image
-              src="/IMG/maison-des-jeunes.jpg"
-              alt="L'entrée de la Maison des jeunes de Kobaya"
-              width={500}
-              height={380}
-              className="img-100"
-            />
+          <Image
+            src="/IMG/maison-des-jeunes.jpg"
+            alt="L'entrée de la Maison des jeunes de Kobaya"
+            width={500}
+            height={380}
+            className="img-100"
+          />
+          <p className={classes["media-caption"]}>
+            L'entrée de la Maison des jeunes de Kobaya
+          </p>
 
-            <Image
-              src="/IMG/local-activité.jpg"
-              alt="Local (Coguiféminine DD) où se déroule l'activité"
-              width={500}
-              height={380}
-              className="img-100"
-            />
-          </div>
+          <Image
+            src="/IMG/local-activité.jpg"
+            alt="Local (Coguiféminine DD) où se déroule l'activité"
+            width={500}
+            height={380}
+            className="img-100"
+          />
+          <p className={classes["media-caption"]}>
+            Local (Coguiféminine DD) où se déroule l'activité
+          </p>
 
           <p>
             Les rôles respectifs de chacun de ces acteurs ainsi que les
@@ -459,9 +491,10 @@ const NotreAction = () => {
           2022.
         </p>
         <p>
-          Impliquant initialement 2 bénévoles français et quelques collégiens,
-          l’activité a rapidement concerné 4 bénévoles de profils et compétences
-          divers et de 8 à 14 élèves chaque semaine.
+          Impliquant initialement 2 enseignants retraités bénévoles français et
+          quelques collégiens, l’activité a rapidement concerné 5 bénévoles de
+          profils et compétences divers et de 8 à 15 élèves (collégiens et
+          lycéens) par semaine.
         </p>
         <p>
           Afin d'avoir un véritable impact sur la scolarité des jeunes et d'en
@@ -474,8 +507,8 @@ const NotreAction = () => {
           eux au cours d'au moins 2 trimestres consécutifs.
         </p>
         <p>
-          Les matières scolaires concernées sont bien sûr liées aux ressources
-          bénévoles et aux demandes des élèves.
+          Les matières scolaires concernées sont liées aux ressources bénévoles
+          et aux demandes des élèves.
         </p>
         <p>
           Il s'agit, à ce jour, du français, des mathématiques, de la physique,
@@ -484,48 +517,76 @@ const NotreAction = () => {
 
         <h3>Un cyber accompagnement sous quelles formes ?</h3>
         <p>
-          Différents types d’activités pédagogiques sont mis en place en
-          fonction des besoins identifiés, des expériences et affinités des
-          bénévoles, en lien avec le coordinateur sur site : reprise, à la
-          demande des élèves, de notions vues en cours (explicitation,
-          entraînement), travail en commun sur des exercices d’entraînement
-          –devoirs transmis par les enseignants ou exercices proposés par le/la
-          bénévole sur des thématiques abordées en cours, séance de conversation
-          en anglais, réalisation de fiches synthétisant les informations
-          principales abordées pendant la séance et transmises aux élèves
-          concernés...
+          Différents types d’activités et de supports pédagogiques sont proposés
+          en fonction des besoins identifiés, des expériences et affinités des
+          bénévoles, en lien avec le coordinateur sur site.
         </p>
+
+        <p>Il peut s'agir:</p>
+        <ul>
+          <li>
+            <p>
+              d'une reprise, à la demande des élèves, de notions vues en cours
+              (explicitation, entraînement),
+            </p>
+          </li>
+
+          <li>
+            <p>
+              d'un travail en commun sur des exercices d’entraînement –devoirs
+              transmis par les enseignants ou exercices proposés par le/la
+              bénévole sur des thématiques abordées en cours,
+            </p>
+          </li>
+
+          <li>
+            <p>de temps de conversation en français ou en anglais,</p>
+          </li>
+
+          <li>
+            <p>
+              de la réalisation par un(e) bénévole de fiches synthétisant les
+              informations principales abordées pendant la séance, puis
+              transmises aux élèves concernés.
+            </p>
+          </li>
+        </ul>
+
+        <h3 style={{ marginBottom: "1rem" }}>
+          Exemples de séances de cyber-accompagnement
+        </h3>
+
         <video src="/VIDEOS/vidéo-physique-1.mp4" controls="true" />
-        <p className={classes["video-caption"]}>
+        <p className={classes["media-caption"]}>
           Matière : physique, classe de 8ème (équivalent 5ème française) Travail
           en commun sur un devoir (exercices écrits) : coefficient de dilatation
           des métaux.
         </p>
         <video src="/VIDEOS/vidéo-math-1.mp4" controls="true" />
-        <p className={classes["video-caption"]}>
+        <p className={classes["media-caption"]}>
           Matière : mathématiques, classe de 11ème (équivalent 2nde française)
           Exercice de mise en pratique d'un cours  : inégalités et encadrement.
         </p>
         <video src="/VIDEOS/vidéo-français-2.mp4" controls="true" />
-        <p className={classes["video-caption"]}>
+        <p className={classes["media-caption"]}>
           Matière: français, classe de 9ème (équivalent de 4ème française)
           Correction d'exercices d'écriture transmis par la bénévole avant la
           séance sur des notions travaillées en cours (la description et le
           récit).
         </p>
         <video src="/VIDEOS/vidéo-math-3.mp4" controls="true" />
-        <p className={classes["video-caption"]}>
+        <p className={classes["media-caption"]}>
           Matière : mathématiques, classe de Terminale Travail en commun sur des
           exercices de mise en pratique d'un cours : fonction exponentielle.
         </p>
         <video src="/VIDEOS/vidéo-math-2.mp4" controls="true" />
-        <p className={classes["video-caption"]}>
+        <p className={classes["media-caption"]}>
           Matière : mathématiques, classe de 12ème (équivalent 1ère française)
           Explicitation d'une notion travaillée depuis peu en cours : résolution
           d’une inéquation.
         </p>
         <video src="/VIDEOS/vidéo-français-1-définitif.mp4" controls="true" />
-        <p className={classes["video-caption"]}>
+        <p className={classes["media-caption"]}>
           Matière travaillée : français, classe de 9ème (équivalent de 4ème
           française) Correction d’exercices d’entraînement effectués avant la
           séance (lexique de l’espace/du lieu puis des sensations), dans le
@@ -533,23 +594,16 @@ const NotreAction = () => {
           vocabulaire transmises par la bénévole.
         </p>
         <video src="/VIDEOS/vidéo-anglais.mp4" controls="true" />
-        <p className={classes["video-caption"]}>
+        <p className={classes["media-caption"]}>
           Matière : anglais, classe de 11ème (équivalent 2nde française)
           Conversation autour du vocabulaire du rythme de la journée.
         </p>
+
+        <Carousel carouselData={carouselKobayaData2} />
+
         {/* // ! ===================================== */}
         {/* // ! TEMOIGNAGE CAROUSEL */}
         <div className="temoignages">
-          <div className="carousel">
-            <div className="carousel-item">
-              {/* <img src={temoignage1} alt="temoignage1" /> */}
-            </div>
-
-            <div className="carousel-item">
-              {/* <img src={temoignage2} alt="temoignage2" /> */}
-            </div>
-          </div>
-
           <h3>
             Des effets quantitatifs et qualitatifs identifiés par les acteurs...
           </h3>
@@ -795,7 +849,7 @@ const NotreAction = () => {
           </p>
 
           <video src="/VIDEOS/video-eleve-debout.mp4" controls="true" />
-          <p className={classes["video-caption"]}>
+          <p className={classes["media-caption"]}>
             Des conditions de travail parfois précaires : deux collégiennes se
             partageant une même chaise, une autre debout.
           </p>

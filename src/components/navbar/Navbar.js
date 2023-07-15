@@ -63,7 +63,7 @@ const Navbar = () => {
 
           <div>
             <Link href={"/"}>
-              Acceuil
+              Accueil
               {router.pathname == "/" ? (
                 <motion.div
                   className={classes["underline"]}

@@ -71,9 +71,10 @@
   align-items: center;
   margin: 2rem auto 4rem;
   gap: 2rem;
-
+  width: 100%;
 
   img {
     width: fit-content;
+    height: 100px;
   }
 }

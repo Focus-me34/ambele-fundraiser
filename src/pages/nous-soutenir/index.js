@@ -74,7 +74,7 @@ const NousSoutenir = () => {
             </p>
           </li>
 
-          <p>Ce poste permettrait:</p>
+          <p>Ce poste permettrait :</p>
           <li>
             <p>
               au coordinateur bénévole de Kobaya de se recentrer sur son rôle

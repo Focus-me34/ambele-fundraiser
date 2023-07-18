@@ -265,7 +265,7 @@ const MainContent = () => {
             gap: "1rem",
           }}
         >
-          <h3>Et en partenariat avec</h3>
+          <h3>et en partenariat avec</h3>
 
           <div
             style={{

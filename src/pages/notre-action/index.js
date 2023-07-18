@@ -89,7 +89,7 @@ const NotreAction = () => {
         </p>
         <h4>Cette activité de cyber-accompagnement est au centre du projet.</h4>
         <p>
-          Le projet s'appuie sur le constat de trois facteurs facilitants: la
+          Le projet s'appuie sur le constat de trois facteurs facilitants : la
           francophonie partagée, la proximité des systèmes et programmes
           scolaires entre les deux pays et la présence d'une couverture internet
           sur place.
@@ -173,7 +173,7 @@ const NotreAction = () => {
           méthodologie.
         </p>
         <ul>
-          <p>Elle se décline:</p>
+          <p>Elle se décline :</p>
           <li>
             <p>
               en séances hebdomadaires d'1 heure voire 1 heure 1 /2 réunissant
@@ -346,7 +346,7 @@ const NotreAction = () => {
           entre 3 structures : une française et deux guinéennes.
         </p>
         <ul>
-          <h4>En France:</h4>
+          <h4>En France :</h4>
           <li>
             <p>
               l'association Ambélé (
@@ -360,19 +360,19 @@ const NotreAction = () => {
           <p>
             Raphaël Zajtmann, membre du bureau d'Ambélé (
             <Link href="/qui-sommes-nous">qui sommes nous ?</Link>) assure
-            bénévolement la coordination du volet français du projet: recherche
+            bénévolement la coordination du volet français du projet : recherche
             (dans un premier temps) de bénévolat, accompagnement et suivi des
             interventions bénévoles, co-réalisation en lien avec le coordinateur
             sur site des emplois du temps.
           </p>
           <p>
             Il se rend régulièrement sur place pour accompagner la structuration
-            du projet: aide à l'organisation matérielle, rencontres d'acteurs
+            du projet : aide à l'organisation matérielle, rencontres d'acteurs
             locaux pour l'insertion du projet dans son environnement, animation
             de réunions d'informations auprès des élèves et des enseignants et
             de réunions de concertation (conseil de maison).
           </p>
-          <h4>À Conakry:</h4>
+          <h4>À Conakry :</h4>
           <li>
             <p>Le Lycée de Jeunes Filles de Kobaya</p>
           </li>
@@ -524,7 +524,7 @@ const NotreAction = () => {
           bénévoles, en lien avec le coordinateur sur site.
         </p>
 
-        <p>Il peut s'agir:</p>
+        <p>Il peut s'agir :</p>
         <ul>
           <li>
             <p>
@@ -571,7 +571,7 @@ const NotreAction = () => {
         </p>
         <video src="/VIDEOS/vidéo-français-2.mp4" controls="true" />
         <p className={classes["media-caption"]}>
-          Matière: français, classe de 9ème (équivalent de 4ème française)
+          Matière : français, classe de 9ème (équivalent de 4ème française)
           Correction d'exercices d'écriture transmis par la bénévole avant la
           séance sur des notions travaillées en cours (la description et le
           récit).
@@ -935,12 +935,11 @@ const NotreAction = () => {
             <li>
               <p>
                 de contraintes matérielles rédhibitoires ou freinantes : manque
-                de matériel bureautique (imprimante, photocopieur et
-                scanner), et (à la place de la virgule) informatique (écran
-                d'ordinateur de taille insuffisante, matériel de prise de vue et
-                de son de qualité insuffisante), inconfort du local (exiguïté et
-                manque d’équipement du local, forte chaleur, visite de rongeurs
-                dégradant le matériel...)
+                de matériel bureautique (imprimante, photocopieur et scanner) et
+                informatique (écran d'ordinateur de taille insuffisante,
+                matériel de prise de vue et de son de qualité insuffisante),
+                inconfort du local (exiguïté et manque d’équipement du local,
+                forte chaleur, visite de rongeurs dégradant le matériel...)
               </p>
             </li>
           </ul>

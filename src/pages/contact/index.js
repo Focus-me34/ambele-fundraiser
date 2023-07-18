@@ -21,7 +21,6 @@ const Contact = () => {
         }}
         className="img-100"
       />
-      ;
       <div className={classes["content-container"]}>
         <h2>
           N'hesitez pas à nous contacter et nous vous répondrons dans les plus

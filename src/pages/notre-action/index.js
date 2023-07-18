@@ -501,7 +501,7 @@ const NotreAction = () => {
         <p>
           Afin d'avoir un véritable impact sur la scolarité des jeunes et d'en
           permettre l'évaluation, les élèves inscrits s'engagent pour une séance
-          hebdomadaire pour au moins un trimestre
+          hebdomadaire pour au moins un trimestre.
         </p>
         <p>
           27 élèves au total ont participé ou participent au projet, dont 15

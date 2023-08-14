@@ -784,7 +784,7 @@ const NotreAction = () => {
               appréciable !
             </p>
             <p>
-              Ils m’ont fait progressé de mon côté dans l’usage du tableau et de
+              Ils m’ont fait progresser de mon côté dans l’usage du tableau et de
               sa position face à l’ordinateur: un véritable échange :)
               <span
                 style={{

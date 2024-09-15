@@ -405,8 +405,9 @@ const NotreAction = () => {
           </p>
 
           <p>
-            Le proviseur du Lycée, M. Jérôme Mbemba Millimouno, est le
-            coordinateur bénévole de l'action sur site.
+            M. Jérôme Mbemba Millimouno, également membre de la Coguiféminine DD
+            (voir ci-dessous), est le coordinateur bénévole de l'action sur
+            site.
           </p>
           <p>
             Il fait le lien avec l'équipe enseignante du Lycée pour identifier
@@ -453,6 +454,10 @@ const NotreAction = () => {
             La Coguiféminine DD assume la responsabilité de l'activité sur site.
           </p>
           <p>
+            Elle désigne et met à disposition un coordinateur référent du projet
+            sur site.
+          </p>
+          <p>
             L'activité se développe dans le local de son siège social, situé au
             sein de la « Maison des jeunes de Kobaya », avec une mise à
             disposition de son mobilier et de son équipement informatique.
@@ -481,9 +486,9 @@ const NotreAction = () => {
           </p>
 
           <p>
-            Les rôles respectifs de chacun de ces acteurs ainsi que les
-            modalités de leur coordination ont été formalisés par une convention
-            tripartite.
+            Les rôles respectifs de ces acteurs ainsi que les
+            modalités de leur coordination ont été formalisés par une
+            convention.
           </p>
         </ul>
         {/* // ! ===================================== */}
@@ -784,8 +789,8 @@ const NotreAction = () => {
               appréciable !
             </p>
             <p>
-              Ils m’ont fait progresser de mon côté dans l’usage du tableau et de
-              sa position face à l’ordinateur: un véritable échange :)
+              Ils m’ont fait progresser de mon côté dans l’usage du tableau et
+              de sa position face à l’ordinateur: un véritable échange :)
               <span
                 style={{
                   color: "var(--dark-grey)",

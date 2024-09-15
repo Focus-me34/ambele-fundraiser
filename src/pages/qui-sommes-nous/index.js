@@ -26,9 +26,16 @@ const QuiSommesNous = () => {
       <div className={classes["content-container"]}>
         <h2>Qui sommes nous ?</h2>
 
-        <p>
+        {/* // ! TO DELETE ONCE RAPHAEL APPROVED THE WORDING */}
+        {/* <p>
           Ambélé (on est ensemble) est une association montpelliéraine Loi 1901
           de solidarité internationale par l’éducation populaire.
+        </p> */}
+
+        <p>
+          Ambélé (on est ensemble) est une association montpelliéraine Loi 1901
+          de solidarité internationale par l’éducation populaire, reconnue
+          d'intérêt général en France.
         </p>
 
         <p>

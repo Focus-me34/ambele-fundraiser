@@ -25,6 +25,11 @@ const NousSoutenir = () => {
       />
 
       <div className={classes["content-container"]}>
+        <p className={classes["top-page-banner"]}>
+          Votre don est déductible à 66 % de votre impôt sur le revenu, si
+          vous êtes imposable.
+        </p>
+
         <h2>Un don, dans quel but ?</h2>
 
         <h3>

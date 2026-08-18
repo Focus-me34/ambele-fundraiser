@@ -75,7 +75,7 @@ const NousSoutenir = () => {
               administratives et d'animation de l'activité (suivi et
               accompagnement au quotidien de sa mise en œuvre), il/elle
               développerait ces missions en complémentarité et en lien avec le
-              Lycée de jeunes filles et l'association Ambélé.
+              Lycée de jeunes filles et l'association Ambelé.
             </p>
           </li>
 

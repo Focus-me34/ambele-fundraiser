@@ -28,18 +28,18 @@ const QuiSommesNous = () => {
 
         {/* // ! TO DELETE ONCE RAPHAEL APPROVED THE WORDING */}
         {/* <p>
-          Ambélé (on est ensemble) est une association montpelliéraine Loi 1901
+          Ambelé (on est ensemble) est une association montpelliéraine Loi 1901
           de solidarité internationale par l’éducation populaire.
         </p> */}
 
         <p>
-          Ambélé (on est ensemble) est une association montpelliéraine Loi 1901
+          Ambelé (on est ensemble) est une association montpelliéraine Loi 1901
           de solidarité internationale par l’éducation populaire, reconnue
           d'intérêt général en France.
         </p>
 
         <p>
-          Ambélé a pour objet de soutenir et accompagner des initiatives et des
+          Ambelé a pour objet de soutenir et accompagner des initiatives et des
           démarches d’éducation populaire d’habitants de l'Afrique subsaharienne
           de l'Ouest francophone. Son projet se déploie actuellement en
           République de Guinée à travers un appui logistique et un transfert de
@@ -48,10 +48,10 @@ const QuiSommesNous = () => {
         </p>
 
         {/* // ! ---------------------------------- */}
-        <h2>Pourquoi "Ambélé" ?</h2>
+        <h2>Pourquoi "Ambelé" ?</h2>
 
         <p>
-          « Ambélé » signifie « on est ensemble » en malinké, une des trois
+          « Ambelé » signifie « on est ensemble » en malinké, une des trois
           langues les plus parlées en République de Guinée.
         </p>
 
@@ -97,12 +97,12 @@ const QuiSommesNous = () => {
 
         {/* // ! ---------------------------------- */}
         <h2>
-          Ambélé, l'éducation populaire comme trait d'union entre la France et
+          Ambelé, l'éducation populaire comme trait d'union entre la France et
           l'Afrique de l'Ouest francophone
         </h2>
 
         <p>
-          Le bureau de l'association Ambélé est composé de professionnels de
+          Le bureau de l'association Ambelé est composé de professionnels de
           l'éducation ou de l'éducation populaire, ayant en commun leurs liens
           avec le Nord-Ouest du continent africain.
         </p>

@@ -19,14 +19,14 @@ const Footer = () => {
           Tous ensemble,&nbsp;
           <br />
           {/* <div className={classes["content-dynamic-separator"]}></div> */}
-          soutenons Ambélé
+          soutenons Ambelé
         </h2>
 
         <ButtonCTA size="small" />
       </div>
 
       <div className={classes["footer-copyright"]}>
-        <p className={classes["copyrights"]}>©{getDate()} Ambélé</p>
+        <p className={classes["copyrights"]}>©{getDate()} Ambelé</p>
         <p className={classes["author"]}>
           Made by{" "}
           <Link href="https://github.com/Focus-me34" target="_blank" rel="noopener noreferrer">

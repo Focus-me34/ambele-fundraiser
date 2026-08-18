@@ -55,7 +55,7 @@ const MainContent = () => {
 
           <h2>Qui sommes-nous ?</h2>
           <p>
-            Ambélé est une association française qui soutient et accompagne des
+            Ambelé est une association française qui soutient et accompagne des
             initiatives d'éducation populaire en Guinée.
           </p>
 
@@ -247,7 +247,7 @@ const MainContent = () => {
             gap: "1rem",
           }}
         >
-          <h3>Ambélé est membre de</h3>
+          <h3>Ambelé est membre de</h3>
           <Image
             src="/occitanie-cooperation.svg"
             alt="Occitanie Coopération logo"

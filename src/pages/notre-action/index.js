@@ -192,7 +192,7 @@ const NotreAction = () => {
         <ul>
           <p>L'activité est encadrée bénévolement</p>
           <li>
-            <p>en France par un membre de l'association Ambélé,</p>
+            <p>en France par un membre de l'association Ambelé,</p>
           </li>
           <li>
             <p>à Kobaya par le proviseur du Lycée de Jeunes filles.</p>
@@ -349,16 +349,16 @@ const NotreAction = () => {
           <h4>En France :</h4>
           <li>
             <p>
-              l'association Ambélé (
+              l'association Ambelé (
               <Link href="/qui-sommes-nous">qui sommes nous ?</Link>)
             </p>
           </li>
           <p>
-            Ambélé prend en charge les frais mensuels de connexion internet sur
+            Ambelé prend en charge les frais mensuels de connexion internet sur
             site (via un don à l'ONG partenaire Coguiféminine).
           </p>
           <p>
-            Raphaël Zajtmann, membre du bureau d'Ambélé (
+            Raphaël Zajtmann, membre du bureau d'Ambelé (
             <Link href="/qui-sommes-nous">qui sommes nous ?</Link>) assure
             bénévolement la coordination du volet français du projet : recherche
             (dans un premier temps) de bénévolat, accompagnement et suivi des
@@ -427,7 +427,7 @@ const NotreAction = () => {
           </p>
           <p>
             Il est responsable du suivi administratif de l'action en lien avec
-            le bénévole de l'association Ambélé avec lequel il est en
+            le bénévole de l'association Ambelé avec lequel il est en
             communication quasi quotidienne.
           </p>
           <li>

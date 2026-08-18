@@ -8,7 +8,7 @@ const ContactCard = ({ cardData }) => {
 
   const emailHandler = () => {
     window.open(
-      `mailto:contact@ambele.org?subject=${"Prise de contact à props du projet Ambélé"}`,
+      `mailto:contact@ambele.org?subject=${"Prise de contact à props du projet Ambelé"}`,
       "_blank",
       "noreferrer"
     );

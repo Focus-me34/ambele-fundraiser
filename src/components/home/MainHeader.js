@@ -19,7 +19,7 @@ const MainHeader = () => {
 
       <div className={classes["main-header-content"]}>
         <h1>
-          Association Ambélé
+          Association Ambelé
           <span>On est ensemble</span>
         </h1>
 
